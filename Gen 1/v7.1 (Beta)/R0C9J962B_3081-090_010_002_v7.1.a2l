@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   3/22/2023 
+   11/20/2023 
    Created with optimization mode
 */
 
@@ -26,6 +26,409 @@ ASAP2_VERSION 1 60
 			CPU_TYPE "JDP"
 			EPK "53/1/MG1CS003/11/MG1CS003_Bx8_R0C2J962B//R0C2J962B///"
 			ADDR_EPK 0x96C8FB4
+
+			/begin MEMORY_SEGMENT Pst8FC0000
+				""
+				RESERVED FLASH INTERN 0x8FC0000 0x20 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst8FC0020
+				""
+				RESERVED FLASH INTERN 0x8FC0020 0xBFE0 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst8FD0000
+				""
+				RESERVED FLASH INTERN 0x8FD0000 0x8000 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst9040000
+				""
+				CODE FLASH INTERN 0x9040000 0x63F7E0 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x0
+						0x1
+						0x0
+						0x0
+						0x0
+						/begin CHECKSUM
+							XCP_CRC_32
+						/end CHECKSUM
+						/begin PAGE
+							0x0
+							ECU_ACCESS_WITH_XCP_ONLY
+							XCP_READ_ACCESS_WITH_ECU_ONLY
+							XCP_WRITE_ACCESS_NOT_ALLOWED
+						/end PAGE
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst967F7E0
+				""
+				RESERVED FLASH INTERN 0x967F7E0 0x520 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst9000000
+				""
+				CODE FLASH INTERN 0x9000000 0x3FD00 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x1
+						0x1
+						0x0
+						0x0
+						0x0
+						/begin CHECKSUM
+							XCP_CRC_32
+						/end CHECKSUM
+						/begin PAGE
+							0x0
+							ECU_ACCESS_WITH_XCP_ONLY
+							XCP_READ_ACCESS_WITH_ECU_ONLY
+							XCP_WRITE_ACCESS_NOT_ALLOWED
+						/end PAGE
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst977F7E0
+				""
+				RESERVED FLASH INTERN 0x977F7E0 0x520 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+           WRITE_AT_DATA_UPDATE USE_FILE
+       ETK_XETK_REF 1
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst60C100
+				""
+				RESERVED FLASH INTERN 0x60C100 0x3F00 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst610100
+				""
+				RESERVED FLASH INTERN 0x610100 0x1FF00 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst60C000
+				""
+				RESERVED FLASH INTERN 0x60C000 0x100 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst610000
+				""
+				RESERVED FLASH INTERN 0x610000 0x100 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst8FD8000
+				""
+				RESERVED FLASH INTERN 0x8FD8000 0x8000 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst903FD00
+				""
+				RESERVED FLASH INTERN 0x903FD00 0x300 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst967FD00
+				""
+				RESERVED FLASH INTERN 0x967FD00 0x300 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst977FD08
+				""
+				RESERVED FLASH INTERN 0x977FD08 0x104 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Pst977FFDC
+				""
+				RESERVED FLASH INTERN 0x977FFDC 0x24 -1 -1 -1 -1 -1
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Dst9680000
+				""
+				DATA FLASH INTERN 0x9680000 0xFF7E0 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x2
+						0x2
+						0x0
+						0x0
+						0x0
+						/begin CHECKSUM
+							XCP_CRC_32
+						/end CHECKSUM
+						/begin PAGE
+							0x0
+							ECU_ACCESS_DONT_CARE
+							XCP_READ_ACCESS_DONT_CARE
+							XCP_WRITE_ACCESS_NOT_ALLOWED
+						/end PAGE
+						/begin PAGE
+							0x1
+							ECU_ACCESS_DONT_CARE
+							XCP_READ_ACCESS_DONT_CARE
+							XCP_WRITE_ACCESS_WITH_ECU_ONLY
+						/end PAGE
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Dst977FD00
+				""
+				DATA FLASH INTERN 0x977FD00 0x8 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x3
+						0x2
+						0x0
+						0x0
+						0x0
+						/begin CHECKSUM
+							XCP_CRC_32
+						/end CHECKSUM
+						/begin PAGE
+							0x0
+							ECU_ACCESS_DONT_CARE
+							XCP_READ_ACCESS_DONT_CARE
+							XCP_WRITE_ACCESS_NOT_ALLOWED
+						/end PAGE
+						/begin PAGE
+							0x1
+							ECU_ACCESS_DONT_CARE
+							XCP_READ_ACCESS_DONT_CARE
+							XCP_WRITE_ACCESS_WITH_ECU_ONLY
+						/end PAGE
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Dst977FE0C
+				""
+				DATA FLASH INTERN 0x977FE0C 0x1D0 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x4
+						0x2
+						0x0
+						0x0
+						0x0
+						/begin CHECKSUM
+							XCP_CRC_32
+						/end CHECKSUM
+						/begin PAGE
+							0x0
+							ECU_ACCESS_DONT_CARE
+							XCP_READ_ACCESS_DONT_CARE
+							XCP_WRITE_ACCESS_NOT_ALLOWED
+						/end PAGE
+						/begin PAGE
+							0x1
+							ECU_ACCESS_DONT_CARE
+							XCP_READ_ACCESS_DONT_CARE
+							XCP_WRITE_ACCESS_WITH_ECU_ONLY
+						/end PAGE
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Ram40000000
+				""
+				VARIABLES RAM INTERN 0x40000000 0x60000 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x5
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Ram50000000
+				""
+				VARIABLES RAM INTERN 0x50000000 0x4000 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x6
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Ram51000000
+				""
+				VARIABLES RAM INTERN 0x51000000 0x4000 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x7
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Ram52000000
+				""
+				VARIABLES RAM INTERN 0x52000000 0x4000 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x8
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Ram50800000
+				""
+				VARIABLES RAM INTERN 0x50800000 0x10000 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0x9
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Ram51800000
+				""
+				VARIABLES RAM INTERN 0x51800000 0x10000 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0xA
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT Ram52800000
+				""
+				VARIABLES RAM INTERN 0x52800000 0xC000 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0xB
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT RamC1FB648
+				""
+				VARIABLES RAM INTERN 0xC1FB648 0x49B8 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0xC
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
+
+			/begin MEMORY_SEGMENT RamC1E0000
+				""
+				CALIBRATION_VARIABLES RAM INTERN 0xC1E0000 0x1B648 -1 -1 -1 -1 -1
+				/begin IF_DATA ETK_XETK
+					/begin ETK_XETK_ACCESS 
+              SERIAL_INTERFACE
+					/end ETK_XETK_ACCESS
+				/end IF_DATA
+				/begin IF_DATA XCPplus 0x0102
+					/begin SEGMENT
+						0xD
+						0x0
+						0x0
+						0x0
+						0x0
+					/end SEGMENT
+				/end IF_DATA
+			/end MEMORY_SEGMENT
 		/end MOD_PAR
 
 		/begin MOD_COMMON
@@ -131,9 +534,9 @@ ASAP2_VERSION 1 60
 
 		/begin AXIS_PTS Antilag_IgnRoll_X_Axis___MGF_CC_PF
 			"Ignition setpoint: Engine speed [Nkw] vs Boost actual [Ps]. (CCv7.1)"
-			0x97752D2
+			0x97750F2
 			Nkw
-			___MGF_CC_Fueling_10x10
+			___MGF_CC_Antilag_Ign_Roll_xAxis
 			0
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			10
@@ -144,9 +547,9 @@ ASAP2_VERSION 1 60
 
 		/begin AXIS_PTS Antilag_IgnRoll_Y_Axis___MGF_CC_PF
 			"Ignition setpoint: Engine speed [Nkw] vs Boost actual [Ps]. (CCv7.1)"
-			0x97752BE
+			0x97750DE
 			Ps
-			___MGF_CC_Fueling_10x10
+			___MGF_CC_Antilag_Ign_Roll_xAxis
 			0
 			___MGF_CC_PressurehPa_d8
 			10
@@ -157,9 +560,9 @@ ASAP2_VERSION 1 60
 
 		/begin AXIS_PTS Antilag_IgnStand_X_Axis___MGF_CC_PF
 			"Ignition setpoint: Engine speed [Nkw] vs Boost actual [Ps]. (CCv7.1)"
-			0x97751E2
+			0x9775002
 			Nkw
-			___MGF_CC_Fueling_10x10
+			___MGF_CC_Antilag_Ign_Roll_xAxis
 			0
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			10
@@ -170,9 +573,9 @@ ASAP2_VERSION 1 60
 
 		/begin AXIS_PTS Antilag_IgnStand_Y_Axis___MGF_CC_PF
 			"Ignition setpoint: Engine speed [Nkw] vs Boost actual [Ps]. (CCv7.1)"
-			0x97751CE
+			0x9774FEE
 			Ps
-			___MGF_CC_Fueling_10x10
+			___MGF_CC_Antilag_Ign_Roll_xAxis
 			0
 			___MGF_CC_PressurehPa_d8
 			10
@@ -183,9 +586,9 @@ ASAP2_VERSION 1 60
 
 		/begin AXIS_PTS Antilag_LambdaRoll_X_Axis___MGF_CC_PF
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.1)"
-			0x97750F2
+			0x97752D2
 			Nkw
-			___MGF_CC_Fueling_10x10
+			___MGF_CC_Antilag_Ign_Roll_xAxis
 			0
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			10
@@ -196,9 +599,9 @@ ASAP2_VERSION 1 60
 
 		/begin AXIS_PTS Antilag_LambdaRoll_Y_Axis___MGF_CC_PF
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.1)"
-			0x97750DE
+			0x97752BE
 			Tabg_vl_xab
-			___MGF_CC_Fueling_10x10
+			___MGF_CC_Antilag_Ign_Roll_xAxis
 			0
 			___MGF_CC_TemperatureCelsius_d10
 			10
@@ -209,9 +612,9 @@ ASAP2_VERSION 1 60
 
 		/begin AXIS_PTS Antilag_LambdaStand_X_Axis___MGF_CC_PF
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.1)"
-			0x9775002
+			0x97751E2
 			Nkw
-			___MGF_CC_Fueling_10x10
+			___MGF_CC_Antilag_Ign_Roll_xAxis
 			0
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			10
@@ -222,9 +625,9 @@ ASAP2_VERSION 1 60
 
 		/begin AXIS_PTS Antilag_LambdaStand_Y_Axis___MGF_CC_PF
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.1)"
-			0x9774FEE
+			0x97751CE
 			Tabg_vl_xab
-			___MGF_CC_Fueling_10x10
+			___MGF_CC_Antilag_Ign_Roll_xAxis
 			0
 			___MGF_CC_TemperatureCelsius_d10
 			10
@@ -818,81 +1221,6 @@ ASAP2_VERSION 1 60
 			DEPOSIT ABSOLUTE
 		/end AXIS_PTS
 
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot0
-			"AXX_KF_ATL_PVERD (Slot 0, CCv7.1, Flex Fuel)"
-			0x977661F
-			BMWtchsp_rat_p_CmprLim_uw
-			_REC_A1AXS_1_MBSE_U2
-			7.9998779296875
-			acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-			20
-			0 7.9998779296875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot0
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot1
-			"AXX_KF_ATL_PVERD (Slot 1, CCv7.1, Flex Fuel)"
-			0x977657F
-			BMWtchsp_rat_p_CmprLim_uw
-			_REC_A1AXS_1_MBSE_U2
-			7.9998779296875
-			acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-			20
-			0 7.9998779296875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot1
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot2
-			"AXX_KF_ATL_PVERD (Slot 2, CCv7.1, Flex Fuel)"
-			0x97765A7
-			BMWtchsp_rat_p_CmprLim_uw
-			_REC_A1AXS_1_MBSE_U2
-			7.9998779296875
-			acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-			20
-			0 7.9998779296875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot2
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot3
-			"AXX_KF_ATL_PVERD (Slot 3, CCv7.1, Flex Fuel)"
-			0x97765CF
-			BMWtchsp_rat_p_CmprLim_uw
-			_REC_A1AXS_1_MBSE_U2
-			7.9998779296875
-			acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-			20
-			0 7.9998779296875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot3
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot4
-			"AXX_KF_ATL_PVERD (Slot 4, CCv7.1, Flex Fuel)"
-			0x97765F7
-			BMWtchsp_rat_p_CmprLim_uw
-			_REC_A1AXS_1_MBSE_U2
-			7.9998779296875
-			acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-			20
-			0 7.9998779296875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot4
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot0
 			"AXX_KF_ATL_PVERD (Slot 0, OEM Address)"
 			0x96B8A20
@@ -964,81 +1292,6 @@ ASAP2_VERSION 1 60
 			0 7.9998779296875
 			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot4
 			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot0
-			"AXY_KF_ATL_PVERD (Slot 0, CCv7.1, Flex Fuel)"
-			0x97766C7
-			BMWtchsp_mf_CmprNorm_uw
-			_REC_A1AXS_1_MBSE_U2
-			2047.96875
-			CByjozc_eCmpBAb_pljBAmd_k__0oa0
-			16
-			0 2047.96875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot0
-			FORMAT "%10.3"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot1
-			"AXY_KF_ATL_PVERD (Slot 1, CCv7.1, Flex Fuel)"
-			0x9776647
-			BMWtchsp_mf_CmprNorm_uw
-			_REC_A1AXS_1_MBSE_U2
-			2047.96875
-			CByjozc_eCmpBAb_pljBAmd_k__0oa0
-			16
-			0 2047.96875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot1
-			FORMAT "%10.3"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot2
-			"AXY_KF_ATL_PVERD (Slot 2, CCv7.1, Flex Fuel)"
-			0x9776667
-			BMWtchsp_mf_CmprNorm_uw
-			_REC_A1AXS_1_MBSE_U2
-			2047.96875
-			CByjozc_eCmpBAb_pljBAmd_k__0oa0
-			16
-			0 2047.96875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot2
-			FORMAT "%10.3"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot3
-			"AXY_KF_ATL_PVERD (Slot 3, CCv7.1, Flex Fuel)"
-			0x9776687
-			BMWtchsp_mf_CmprNorm_uw
-			_REC_A1AXS_1_MBSE_U2
-			2047.96875
-			CByjozc_eCmpBAb_pljBAmd_k__0oa0
-			16
-			0 2047.96875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot3
-			FORMAT "%10.3"
-			BYTE_ORDER MSB_FIRST
-			DEPOSIT ABSOLUTE
-		/end AXIS_PTS
-
-		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot4
-			"AXY_KF_ATL_PVERD (Slot 4, CCv7.1, Flex Fuel)"
-			0x97766A7
-			BMWtchsp_mf_CmprNorm_uw
-			_REC_A1AXS_1_MBSE_U2
-			2047.96875
-			CByjozc_eCmpBAb_pljBAmd_k__0oa0
-			16
-			0 2047.96875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot4
-			FORMAT "%10.3"
 			BYTE_ORDER MSB_FIRST
 			DEPOSIT ABSOLUTE
 		/end AXIS_PTS
@@ -1219,6 +1472,19 @@ ASAP2_VERSION 1 60
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
+		/begin CHARACTERISTIC Antilag_Antilag_CW___MGF_CC
+			"Antilag Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
+			VALUE
+			0x9774E78
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER Antilag_Antilag_CW___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
 		/begin CHARACTERISTIC Antilag_CoolantTempMax___MGF_CC_PF
 			"Maximum coolant temperature (CCv7.1)"
 			VALUE
@@ -1257,19 +1523,6 @@ ASAP2_VERSION 1 60
 			0 255
 			DISPLAY_IDENTIFIER Antilag_CutMethod___MGF_CC_PF
 			FORMAT "%7.0"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC Antilag_CW____MGF_CC
-			"Antilag Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
-			VALUE
-			0x9774E78
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER Antilag_CW____MGF_CC
-			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
@@ -1513,7 +1766,7 @@ ASAP2_VERSION 1 60
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC Burbles_CW____MGF_CC
+		/begin CHARACTERISTIC Burbles_Burbles_CW___MGF_CC
 			"Burbles Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
 			0x9770140
@@ -1521,7 +1774,7 @@ ASAP2_VERSION 1 60
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER Burbles_CW____MGF_CC
+			DISPLAY_IDENTIFIER Burbles_Burbles_CW___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
@@ -1529,7 +1782,7 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC CcmEnterMenuDelay___MGF_CC_PF
 			"Delay to enter Custom Code Menu, CCM (CCv7.1)"
 			VALUE
-			0x97758E7
+			0x9774670
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
@@ -1541,7 +1794,7 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC CcmTimeout___MGF_CC_PF
 			"Timeout until automatic exit of Custom Code Menu, CCM (CCv7.1)"
 			VALUE
-			0x97758E9
+			0x9774672
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
@@ -1550,28 +1803,54 @@ ASAP2_VERSION 1 60
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC CustomCodeMenu_CW____MGF_CC
+		/begin CHARACTERISTIC CustomCodeMenu_CustomCodeMenu_CW___MGF_CC
 			"CustomCodeMenu Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
-			0x9774E7B
+			0x9774E83
 			FklWUb
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER CustomCodeMenu_CW____MGF_CC
+			DISPLAY_IDENTIFIER CustomCodeMenu_CustomCodeMenu_CW___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC ExhaustFlap_CW____MGF_CC
-			"ExhaustFlap Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
+		/begin CHARACTERISTIC CustomCodeMenu_CustomCodeMenu_CW_CruiseControlConfig___MGF_CC
+			"CustomCodeMenu Cruise Control Config Codeword: Set 1 (true) if using RockerCombo and 0 (false) if using UniRocker (CCv7.1)"
 			VALUE
-			0x977589E
+			0x97758E4
 			FklWUb
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER ExhaustFlap_CW____MGF_CC
+			DISPLAY_IDENTIFIER CustomCodeMenu_CustomCodeMenu_CW_CruiseControlConfig___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CustomCodeMenu_CustomCodeMenu_CW_UseAllCruiseControlCanBusData___MGF_CC
+			"CustomCodeMenu Use All Cruise Control Can Bus Data Codeword: Set 1 (true) to use all cruise control CAN bus data and 0 (false) to use only Rocker data (CCv7.1)"
+			VALUE
+			0x97758EA
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CustomCodeMenu_CustomCodeMenu_CW_UseAllCruiseControlCanBusData___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC ExhaustFlap_ExhaustFlap_CW___MGF_CC
+			"ExhaustFlap Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
+			VALUE
+			0x97758E5
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER ExhaustFlap_ExhaustFlap_CW___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
@@ -1579,7 +1858,7 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC ExhaustFlapClosedMaxLoad___MGF_CC_PF
 			"Maximum load before overriding user selection and opening exhaust flaps (CCv7.1)"
 			VALUE
-			0x97758EB
+			0x9774674
 			CurG_Ws16
 			255
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
@@ -1590,41 +1869,41 @@ ASAP2_VERSION 1 60
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC FlexFuel_CW____MGF_CC
+		/begin CHARACTERISTIC FlexFuel_FlexFuel_CW___MGF_CC
 			"FlexFuel Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
-			0x977530C
+			0x97758E6
 			FklWUb
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER FlexFuel_CW____MGF_CC
+			DISPLAY_IDENTIFIER FlexFuel_FlexFuel_CW___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC FlexFuel_CW_Blending___MGF_CC
+		/begin CHARACTERISTIC FlexFuel_FlexFuel_CW_Blending___MGF_CC
 			"FlexFuel Blending Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
-			0x97764FB
+			0x97758E7
 			FklWUb
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER FlexFuel_CW_Blending___MGF_CC
+			DISPLAY_IDENTIFIER FlexFuel_FlexFuel_CW_Blending___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC FlexFuel_CW_SensorEthanol___MGF_CC
+		/begin CHARACTERISTIC FlexFuel_FlexFuel_CW_SensorEthanol___MGF_CC
 			"FlexFuel SensorEthanol Codeword: Set 1 (true) if flex fuel sensor is installed on PT-CAN2 and 0 (false) if not installed (CCv7.1)"
 			VALUE
-			0x9774E83
+			0x97758E9
 			FklWUb
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER FlexFuel_CW_SensorEthanol___MGF_CC
+			DISPLAY_IDENTIFIER FlexFuel_FlexFuel_CW_SensorEthanol___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
@@ -1632,72 +1911,12 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF
 			"Delay to display flex fuel ethanol content on the dash (CCv7.1)"
 			VALUE
-			0x97758ED
+			0x9774676
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
 			0 655.35
 			DISPLAY_IDENTIFIER FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC LabasOffset___MGF_CC_FF_Slot0
-			"[SET TO 158818967 (HEX: 0x09776297) FOR CCv7.1] Switchable Maps Custom Map: KF_LABAS_1___MGF_CC_FF_Slot0 offset (slot dependent!)"
-			VALUE
-			0x9775903
-			SwitchableMaps_RB_Val_Wu32_A2LRECORD_LAYOUT
-			255
-			SwitchableMaps_LabasOffset
-			158818967 158818967
-			DISPLAY_IDENTIFIER LabasOffset___MGF_CC_FF_Slot0
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC LabasOffset___MGF_CC_FF_Slot1
-			"[SET TO 158816519 (HEX: 0x09775907) FOR CCv7.1] Switchable Maps Custom Map: KF_LABAS_1___MGF_CC_FF_Slot1 offset (slot dependent!)"
-			VALUE
-			0x97758F3
-			SwitchableMaps_RB_Val_Wu32_A2LRECORD_LAYOUT
-			255
-			SwitchableMaps_LabasOffset
-			158816519 158816519
-			DISPLAY_IDENTIFIER LabasOffset___MGF_CC_FF_Slot1
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC LabasOffset___MGF_CC_FF_Slot2
-			"[SET TO 158817131 (HEX: 0x09775B6B) FOR CCv7.1] Switchable Maps Custom Map: KF_LABAS_1___MGF_CC_FF_Slot2 offset (slot dependent!)"
-			VALUE
-			0x97758F7
-			SwitchableMaps_RB_Val_Wu32_A2LRECORD_LAYOUT
-			255
-			SwitchableMaps_LabasOffset
-			158817131 158817131
-			DISPLAY_IDENTIFIER LabasOffset___MGF_CC_FF_Slot2
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC LabasOffset___MGF_CC_FF_Slot3
-			"[SET TO 158817743 (HEX: 0x09775DCF) FOR CCv7.1] Switchable Maps Custom Map: KF_LABAS_1___MGF_CC_FF_Slot3 offset (slot dependent!)"
-			VALUE
-			0x97758FB
-			SwitchableMaps_RB_Val_Wu32_A2LRECORD_LAYOUT
-			255
-			SwitchableMaps_LabasOffset
-			158817743 158817743
-			DISPLAY_IDENTIFIER LabasOffset___MGF_CC_FF_Slot3
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC LabasOffset___MGF_CC_FF_Slot4
-			"[SET TO 158818355 (HEX: 0x09776033) FOR CCv7.1] Switchable Maps Custom Map: KF_LABAS_1___MGF_CC_FF_Slot4 offset (slot dependent!)"
-			VALUE
-			0x97758FF
-			SwitchableMaps_RB_Val_Wu32_A2LRECORD_LAYOUT
-			255
-			SwitchableMaps_LabasOffset
-			158818355 158818355
-			DISPLAY_IDENTIFIER LabasOffset___MGF_CC_FF_Slot4
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
@@ -1761,7 +1980,7 @@ ASAP2_VERSION 1 60
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC MaxCooling_CW____MGF_CC
+		/begin CHARACTERISTIC MaxCooling_MaxCooling_CW___MGF_CC
 			"MaxCooling Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
 			0x9770141
@@ -1769,12 +1988,12 @@ ASAP2_VERSION 1 60
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER MaxCooling_CW____MGF_CC
+			DISPLAY_IDENTIFIER MaxCooling_MaxCooling_CW___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC SwitchableMaps_CW_Ethanol___MGF_CC
+		/begin CHARACTERISTIC SwitchableMaps_SwitchableMaps_CW_Ethanol___MGF_CC
 			"SwitchableMaps Ethanol Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
 			0x9770147
@@ -1782,12 +2001,12 @@ ASAP2_VERSION 1 60
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER SwitchableMaps_CW_Ethanol___MGF_CC
+			DISPLAY_IDENTIFIER SwitchableMaps_SwitchableMaps_CW_Ethanol___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC SwitchableMaps_CW_Octane___MGF_CC
+		/begin CHARACTERISTIC SwitchableMaps_SwitchableMaps_CW_Octane___MGF_CC
 			"SwitchableMaps Octane Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
 			0x9770146
@@ -1795,25 +2014,25 @@ ASAP2_VERSION 1 60
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER SwitchableMaps_CW_Octane___MGF_CC
+			DISPLAY_IDENTIFIER SwitchableMaps_SwitchableMaps_CW_Octane___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC TargetPumpSpeed___MGF_CC
-			"minimum flow rate of the EWP22 (CCv7.1)"
+			"Target pump speed when Max Cooling OTF is enabled (CCv7.1)"
 			VALUE
 			0x9770144
 			GkfWU16
 			32767.5
-			bnDwBea_bjuokda_wACukhd_lCRoa0o
+			___MGF_CC_Temperature_2
 			0 32767.5
 			DISPLAY_IDENTIFIER TargetPumpSpeed___MGF_CC
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC TargetTemperature___MGF_CC
-			"Target coolant temperature in the escalation operating class (CCv7.1)"
+			"Target temperature when Max Cooling OTF is enabled (CCv7.1)"
 			VALUE
 			0x9770142
 			CurG_Ws16
@@ -1824,7 +2043,7 @@ ASAP2_VERSION 1 60
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC TcuTorqueLimiter_CW____MGF_CC
+		/begin CHARACTERISTIC TcuTorqueLimiter_TcuTorqueLimiter_CW___MGF_CC
 			"TcuTorqueLimiter Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
 			0x9774E79
@@ -1832,20 +2051,32 @@ ASAP2_VERSION 1 60
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER TcuTorqueLimiter_CW____MGF_CC
+			DISPLAY_IDENTIFIER TcuTorqueLimiter_TcuTorqueLimiter_CW___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC Valet_CW____MGF_CC
+		/begin CHARACTERISTIC UniRockerEnterDetectionDelay___MGF_CC_PF
+			"Delay for 'enter' button detection with UniRocker button configuration in Custom Code Menu, CCM (CCv7.1)"
+			VALUE
+			0x9774E7A
+			GkfWU16
+			655.35
+			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
+			0 655.35
+			DISPLAY_IDENTIFIER UniRockerEnterDetectionDelay___MGF_CC_PF
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC Valet_Valet_CW___MGF_CC
 			"Valet Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.1)"
 			VALUE
-			0x977589D
+			0x97758EB
 			FklWUb
 			1
 			B_TRUE
 			0 1
-			DISPLAY_IDENTIFIER Valet_CW____MGF_CC
+			DISPLAY_IDENTIFIER Valet_Valet_CW___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
@@ -1853,7 +2084,7 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC ValetMaxPedal___MGF_CC_PF
 			"Maximum allowable pedal which uses valet torque level 1, above which uses the more restrictive valet torque level 2 (CCv7.1)"
 			VALUE
-			0x9775310
+			0x97758EC
 			FklWUb
 			255
 			___MGF_CC_Pedal_x100_d256
@@ -1867,7 +2098,7 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC ValetMaxRpm___MGF_CC_PF
 			"Maximum permissable engine speed, RPM (CCv7.1)"
 			VALUE
-			0x97758EF
+			0x977530C
 			GkfWU16
 			32767.5
 			___MGF_CC_EngineSpeed_d4
@@ -1880,7 +2111,7 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC ValetMaxSpeed___MGF_CC_PF
 			"Maximum allowable vehicle speed which uses valet torque level 1, above which uses the more restrictive valet torque level 2 (CCv7.1)"
 			VALUE
-			0x97758F1
+			0x9775310
 			GkfWU16
 			255
 			___MGF_CC_Speedkmh_d64
@@ -1901,6 +2132,7 @@ ASAP2_VERSION 1 60
 			-3276.8 3276.7
 			DISPLAY_IDENTIFIER Antilag_SafetyTorqueCap___MGF_CC_PF
 			BYTE_ORDER MSB_FIRST
+			MATRIX_DIM 18 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw_ref
@@ -2296,136 +2528,6 @@ ASAP2_VERSION 1 60
 			/end AXIS_DESCR
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF_Slot0
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 0, CCv7.1, Flex Fuel)"
-			CURVE
-			0x9776567
-			_REC_A1CUR_1_MBSE_S2_S1
-			655.35
-			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			-327.68 327.67
-			DISPLAY_IDENTIFIER KL_RF_MAX_UESP___MGF_CC_FF_Slot0
-			FORMAT "%7.2"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				NO_INPUT_QUANTITY
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				12
-				-32768 32767
-				AXIS_PTS_REF AXX_KL_RF_MAX_UESP
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY MON_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF_Slot1
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 1, CCv7.1, Flex Fuel)"
-			CURVE
-			0x9776507
-			_REC_A1CUR_1_MBSE_S2_S1
-			655.35
-			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			-327.68 327.67
-			DISPLAY_IDENTIFIER KL_RF_MAX_UESP___MGF_CC_FF_Slot1
-			FORMAT "%7.2"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				NO_INPUT_QUANTITY
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				12
-				-32768 32767
-				AXIS_PTS_REF AXX_KL_RF_MAX_UESP
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY MON_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF_Slot2
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 2, CCv7.1, Flex Fuel)"
-			CURVE
-			0x977651F
-			_REC_A1CUR_1_MBSE_S2_S1
-			655.35
-			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			-327.68 327.67
-			DISPLAY_IDENTIFIER KL_RF_MAX_UESP___MGF_CC_FF_Slot2
-			FORMAT "%7.2"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				NO_INPUT_QUANTITY
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				12
-				-32768 32767
-				AXIS_PTS_REF AXX_KL_RF_MAX_UESP
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY MON_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF_Slot3
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 3, CCv7.1, Flex Fuel)"
-			CURVE
-			0x9776537
-			_REC_A1CUR_1_MBSE_S2_S1
-			655.35
-			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			-327.68 327.67
-			DISPLAY_IDENTIFIER KL_RF_MAX_UESP___MGF_CC_FF_Slot3
-			FORMAT "%7.2"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				NO_INPUT_QUANTITY
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				12
-				-32768 32767
-				AXIS_PTS_REF AXX_KL_RF_MAX_UESP
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY MON_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF_Slot4
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 4, CCv7.1, Flex Fuel)"
-			CURVE
-			0x977654F
-			_REC_A1CUR_1_MBSE_S2_S1
-			655.35
-			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			-327.68 327.67
-			DISPLAY_IDENTIFIER KL_RF_MAX_UESP___MGF_CC_FF_Slot4
-			FORMAT "%7.2"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				NO_INPUT_QUANTITY
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				12
-				-32768 32767
-				AXIS_PTS_REF AXX_KL_RF_MAX_UESP
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY MON_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_PF_Slot0
 			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 0, OEM Address)"
 			CURVE
@@ -2559,13 +2661,14 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC ValetTorqueMap___MGF_CC_PF_Slot1
 			"Target torque during valet in level [1] (CCv7.1, Pump Fuel)"
 			CURVE
-			0x977589F
+			0x977589C
 			_REC_A1CUR_1_MBSE_S2_S1
 			6553.5
 			Mo_trq_nm_q0p1
 			-3276.8 3276.7
 			DISPLAY_IDENTIFIER ValetTorqueMap___MGF_CC_PF_Slot1
 			BYTE_ORDER MSB_FIRST
+			MATRIX_DIM 18 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw_ref
@@ -2584,13 +2687,14 @@ ASAP2_VERSION 1 60
 		/begin CHARACTERISTIC ValetTorqueMap___MGF_CC_PF_Slot2
 			"Target torque during valet in level [2] (CCv7.1, Pump Fuel)"
 			CURVE
-			0x97758C3
+			0x97758C0
 			_REC_A1CUR_1_MBSE_S2_S1
 			6553.5
 			Mo_trq_nm_q0p1
 			-3276.8 3276.7
 			DISPLAY_IDENTIFIER ValetTorqueMap___MGF_CC_PF_Slot2
 			BYTE_ORDER MSB_FIRST
+			MATRIX_DIM 18 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw_ref
@@ -2607,7 +2711,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (CCv7.1)"
+			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, CCv7.1)"
 			MAP
 			0x97755DC
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -2646,7 +2750,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_BMWtchctr_p_DifCrtnPpDyn_M___MGF_CC_PF
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (CCv7.1)"
+			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, CCv7.1)"
 			MAP
 			0x9775678
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -2685,7 +2789,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_BMWtchctr_pwr_Dp_M___MGF_CC_PF
-			"D part of the performance-based boost pressure controller (CCv7.1)"
+			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, CCv7.1)"
 			MAP
 			0x9775714
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -2766,10 +2870,11 @@ ASAP2_VERSION 1 60
 			"Ignition setpoint: Engine speed [Nkw] vs Boost actual [Ps]. (CCv7.1)"
 			MAP
 			0x9775016
-			___MGF_CC_Fueling_10x10
+			CurG_Ws16
 			0
 			___MGF_CC_IgnitionTiming_d10
 			-32768 32767
+			MATRIX_DIM 10 10 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw
@@ -2784,7 +2889,7 @@ ASAP2_VERSION 1 60
 				DEPOSIT ABSOLUTE
 			/end AXIS_DESCR
 			/begin AXIS_DESCR
-				STD_AXIS
+				COM_AXIS
 				Ps
 				___MGF_CC_PressurehPa_d8
 				10
@@ -2802,10 +2907,11 @@ ASAP2_VERSION 1 60
 			"Ignition setpoint: Engine speed [Nkw] vs Boost actual [Ps]. (CCv7.1)"
 			MAP
 			0x9774F26
-			___MGF_CC_Fueling_10x10
+			CurG_Ws16
 			0
 			___MGF_CC_IgnitionTiming_d10
 			-32768 32767
+			MATRIX_DIM 10 10 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw
@@ -2820,7 +2926,7 @@ ASAP2_VERSION 1 60
 				DEPOSIT ABSOLUTE
 			/end AXIS_DESCR
 			/begin AXIS_DESCR
-				STD_AXIS
+				COM_AXIS
 				Ps
 				___MGF_CC_PressurehPa_d8
 				10
@@ -2838,12 +2944,13 @@ ASAP2_VERSION 1 60
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.1)"
 			MAP
 			0x97751F6
-			___MGF_CC_Fueling_10x10
+			CurG_Ws16
 			0
 			___MGF_CC_Fueling_d10
 			-32768 32767
+			MATRIX_DIM 10 10 1
 			/begin AXIS_DESCR
-				STD_AXIS
+				COM_AXIS
 				Nkw
 				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 				10
@@ -2856,7 +2963,7 @@ ASAP2_VERSION 1 60
 				DEPOSIT ABSOLUTE
 			/end AXIS_DESCR
 			/begin AXIS_DESCR
-				STD_AXIS
+				COM_AXIS
 				Tabg_vl_xab
 				___MGF_CC_TemperatureCelsius_d10
 				10
@@ -2874,12 +2981,13 @@ ASAP2_VERSION 1 60
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.1)"
 			MAP
 			0x9775106
-			___MGF_CC_Fueling_10x10
+			CurG_Ws16
 			0
 			___MGF_CC_Fueling_d10
 			-32768 32767
+			MATRIX_DIM 10 10 1
 			/begin AXIS_DESCR
-				STD_AXIS
+				COM_AXIS
 				Nkw
 				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 				10
@@ -2892,7 +3000,7 @@ ASAP2_VERSION 1 60
 				DEPOSIT ABSOLUTE
 			/end AXIS_DESCR
 			/begin AXIS_DESCR
-				STD_AXIS
+				COM_AXIS
 				Tabg_vl_xab
 				___MGF_CC_TemperatureCelsius_d10
 				10
@@ -2907,7 +3015,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot0
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (Slot 0, OEM Address)"
+			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 0, OEM Address)"
 			MAP
 			0x96B87E8
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -2946,7 +3054,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot1
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (Slot 1, CCv7.1, Pump Fuel)"
+			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 1, CCv7.1, Pump Fuel)"
 			MAP
 			0x97741A8
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -2985,7 +3093,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot2
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (Slot 2, CCv7.1, Pump Fuel)"
+			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 2, CCv7.1, Pump Fuel)"
 			MAP
 			0x9774238
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -3024,7 +3132,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot3
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (Slot 3, CCv7.1, Pump Fuel)"
+			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 3, CCv7.1, Pump Fuel)"
 			MAP
 			0x97742C8
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -3063,7 +3171,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot4
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (Slot 4, CCv7.1, Pump Fuel)"
+			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 4, CCv7.1, Pump Fuel)"
 			MAP
 			0x9774358
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -3297,7 +3405,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot0
-			"D part of the performance-based boost pressure controller (Slot 0, OEM Address)"
+			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 0, OEM Address)"
 			MAP
 			0x96B82F0
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -3336,7 +3444,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot1
-			"D part of the performance-based boost pressure controller (Slot 1, CCv7.1, Pump Fuel)"
+			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 1, CCv7.1, Pump Fuel)"
 			MAP
 			0x9773068
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -3375,7 +3483,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot2
-			"D part of the performance-based boost pressure controller (Slot 2, CCv7.1, Pump Fuel)"
+			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 2, CCv7.1, Pump Fuel)"
 			MAP
 			0x97731F0
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -3414,7 +3522,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot3
-			"D part of the performance-based boost pressure controller (Slot 3, CCv7.1, Pump Fuel)"
+			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 3, CCv7.1, Pump Fuel)"
 			MAP
 			0x9773378
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -3453,7 +3561,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot4
-			"D part of the performance-based boost pressure controller (Slot 4, CCv7.1, Pump Fuel)"
+			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 4, CCv7.1, Pump Fuel)"
 			MAP
 			0x9773500
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -3491,203 +3599,8 @@ ASAP2_VERSION 1 60
 			/end AXIS_DESCR
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot0
-			"Compressor map with required compressor / turbine performance (Slot 0, CCv7.1, Flex Fuel)"
-			MAP
-			0x97770E7
-			_REC_A1CUR_1_MBSE_U2_S2
-			127.998046875
-			jucyrzb_bpFgwfd_uqrfhgc_k__aoa0
-			0 127.998046875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot0
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_rat_p_CmprLim_uw
-				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-				20
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot0
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "-"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_mf_CmprNorm_uw
-				CByjozc_eCmpBAb_pljBAmd_k__0oa0
-				16
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot0
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "kg/h"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot1
-			"Compressor map with required compressor / turbine performance (Slot 1, CCv7.1, Flex Fuel)"
-			MAP
-			0x97766E7
-			_REC_A1CUR_1_MBSE_U2_S2
-			127.998046875
-			jucyrzb_bpFgwfd_uqrfhgc_k__aoa0
-			0 127.998046875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot1
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_rat_p_CmprLim_uw
-				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-				20
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot1
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "-"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_mf_CmprNorm_uw
-				CByjozc_eCmpBAb_pljBAmd_k__0oa0
-				16
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot1
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "kg/h"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot2
-			"Compressor map with required compressor / turbine performance (Slot 2, CCv7.1, Flex Fuel)"
-			MAP
-			0x9776967
-			_REC_A1CUR_1_MBSE_U2_S2
-			127.998046875
-			jucyrzb_bpFgwfd_uqrfhgc_k__aoa0
-			0 127.998046875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot2
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_rat_p_CmprLim_uw
-				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-				20
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot2
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "-"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_mf_CmprNorm_uw
-				CByjozc_eCmpBAb_pljBAmd_k__0oa0
-				16
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot2
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "kg/h"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot3
-			"Compressor map with required compressor / turbine performance (Slot 3, CCv7.1, Flex Fuel)"
-			MAP
-			0x9776BE7
-			_REC_A1CUR_1_MBSE_U2_S2
-			127.998046875
-			jucyrzb_bpFgwfd_uqrfhgc_k__aoa0
-			0 127.998046875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot3
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_rat_p_CmprLim_uw
-				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-				20
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot3
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "-"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_mf_CmprNorm_uw
-				CByjozc_eCmpBAb_pljBAmd_k__0oa0
-				16
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot3
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "kg/h"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot4
-			"Compressor map with required compressor / turbine performance (Slot 4, CCv7.1, Flex Fuel)"
-			MAP
-			0x9776E67
-			_REC_A1CUR_1_MBSE_U2_S2
-			127.998046875
-			jucyrzb_bpFgwfd_uqrfhgc_k__aoa0
-			0 127.998046875
-			DISPLAY_IDENTIFIER BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot4
-			FORMAT "%11.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_rat_p_CmprLim_uw
-				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
-				20
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot4
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "-"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				BMWtchsp_mf_CmprNorm_uw
-				CByjozc_eCmpBAb_pljBAmd_k__0oa0
-				16
-				-32768 32767
-				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot4
-				EXTENDED_LIMITS 0 0
-				FORMAT "%6.3"
-				PHYS_UNIT "kg/h"
-				BYTE_ORDER MSB_FIRST
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot0
-			"Compressor map with required compressor / turbine performance (Slot 0, OEM Address)"
+			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 0, OEM Address)"
 			MAP
 			0x96B8568
 			_REC_A1CUR_1_MBSE_U2_S2
@@ -3726,7 +3639,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot1
-			"Compressor map with required compressor / turbine performance (Slot 1, CCv7.1, Pump Fuel)"
+			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 1, CCv7.1, Pump Fuel)"
 			MAP
 			0x9773688
 			_REC_A1CUR_1_MBSE_U2_S2
@@ -3765,7 +3678,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot2
-			"Compressor map with required compressor / turbine performance (Slot 2, CCv7.1, Pump Fuel)"
+			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 2, CCv7.1, Pump Fuel)"
 			MAP
 			0x9773908
 			_REC_A1CUR_1_MBSE_U2_S2
@@ -3804,7 +3717,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot3
-			"Compressor map with required compressor / turbine performance (Slot 3, CCv7.1, Pump Fuel)"
+			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 3, CCv7.1, Pump Fuel)"
 			MAP
 			0x9773B88
 			_REC_A1CUR_1_MBSE_U2_S2
@@ -3843,7 +3756,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot4
-			"Compressor map with required compressor / turbine performance (Slot 4, CCv7.1, Pump Fuel)"
+			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 4, CCv7.1, Pump Fuel)"
 			MAP
 			0x9773E08
 			_REC_A1CUR_1_MBSE_U2_S2
@@ -4648,201 +4561,6 @@ ASAP2_VERSION 1 60
 				16
 				-327.68 327.67
 				AXIS_PTS_REF AXY_KF_FRKKORRF_1
-				FORMAT "%7.2"
-				PHYS_UNIT "%"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF_Slot0
-			"Base lambda in the homogeneous bank 1 (Slot 0, CCv7.1, Flex Fuel)"
-			MAP
-			0x9776297
-			_REC_A1CUR_1_MBSE_U2_S2
-			15.999755859375
-			BumqDkc_mryszAa_EcglxAc_nR_4oa0
-			0 15.999755859375
-			DISPLAY_IDENTIFIER KF_LABAS_1___MGF_CC_FF_Slot0
-			FORMAT "%9.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				Nkw
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				18
-				-32768 32767
-				AXIS_PTS_REF GXX_KF_LABAS
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				Rf
-				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-				17
-				-327.68 327.67
-				AXIS_PTS_REF GXY_KF_LABAS
-				FORMAT "%7.2"
-				PHYS_UNIT "%"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF_Slot1
-			"Base lambda in the homogeneous bank 1 (Slot 1, CCv7.1, Flex Fuel)"
-			MAP
-			0x9775907
-			_REC_A1CUR_1_MBSE_U2_S2
-			15.999755859375
-			BumqDkc_mryszAa_EcglxAc_nR_4oa0
-			0 15.999755859375
-			DISPLAY_IDENTIFIER KF_LABAS_1___MGF_CC_FF_Slot1
-			FORMAT "%9.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				Nkw
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				18
-				-32768 32767
-				AXIS_PTS_REF GXX_KF_LABAS
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				Rf
-				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-				17
-				-327.68 327.67
-				AXIS_PTS_REF GXY_KF_LABAS
-				FORMAT "%7.2"
-				PHYS_UNIT "%"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF_Slot2
-			"Base lambda in the homogeneous bank 1 (Slot 2, CCv7.1, Flex Fuel)"
-			MAP
-			0x9775B6B
-			_REC_A1CUR_1_MBSE_U2_S2
-			15.999755859375
-			BumqDkc_mryszAa_EcglxAc_nR_4oa0
-			0 15.999755859375
-			DISPLAY_IDENTIFIER KF_LABAS_1___MGF_CC_FF_Slot2
-			FORMAT "%9.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				Nkw
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				18
-				-32768 32767
-				AXIS_PTS_REF GXX_KF_LABAS
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				Rf
-				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-				17
-				-327.68 327.67
-				AXIS_PTS_REF GXY_KF_LABAS
-				FORMAT "%7.2"
-				PHYS_UNIT "%"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF_Slot3
-			"Base lambda in the homogeneous bank 1 (Slot 3, CCv7.1, Flex Fuel)"
-			MAP
-			0x9775DCF
-			_REC_A1CUR_1_MBSE_U2_S2
-			15.999755859375
-			BumqDkc_mryszAa_EcglxAc_nR_4oa0
-			0 15.999755859375
-			DISPLAY_IDENTIFIER KF_LABAS_1___MGF_CC_FF_Slot3
-			FORMAT "%9.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				Nkw
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				18
-				-32768 32767
-				AXIS_PTS_REF GXX_KF_LABAS
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				Rf
-				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-				17
-				-327.68 327.67
-				AXIS_PTS_REF GXY_KF_LABAS
-				FORMAT "%7.2"
-				PHYS_UNIT "%"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF_Slot4
-			"Base lambda in the homogeneous bank 1 (Slot 4, CCv7.1, Flex Fuel)"
-			MAP
-			0x9776033
-			_REC_A1CUR_1_MBSE_U2_S2
-			15.999755859375
-			BumqDkc_mryszAa_EcglxAc_nR_4oa0
-			0 15.999755859375
-			DISPLAY_IDENTIFIER KF_LABAS_1___MGF_CC_FF_Slot4
-			FORMAT "%9.4"
-			BYTE_ORDER MSB_FIRST
-			/begin AXIS_DESCR
-				COM_AXIS
-				Nkw
-				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
-				18
-				-32768 32767
-				AXIS_PTS_REF GXX_KF_LABAS
-				FORMAT "%5.0"
-				PHYS_UNIT "1/min"
-				BYTE_ORDER MSB_FIRST
-				MONOTONY STRICT_INCREASE
-				DEPOSIT ABSOLUTE
-			/end AXIS_DESCR
-			/begin AXIS_DESCR
-				COM_AXIS
-				Rf
-				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-				17
-				-327.68 327.67
-				AXIS_PTS_REF GXY_KF_LABAS
 				FORMAT "%7.2"
 				PHYS_UNIT "%"
 				BYTE_ORDER MSB_FIRST
@@ -6724,7 +6442,7 @@ ASAP2_VERSION 1 60
 			FlexFuelEthanolContentValue_CompuMethod
 			1 0
 			0 100
-			ECU_ADDRESS 0x5180F23C
+			ECU_ADDRESS 0x5180F360
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Nkw
@@ -6834,7 +6552,7 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				Antilag_CW____MGF_CC Antilag_Pedal___MGF_CC_PF Antilag_CutMethod___MGF_CC_PF Antilag_ActivationDelay___MGF_CC_PF
+				Antilag_Antilag_CW___MGF_CC Antilag_Pedal___MGF_CC_PF Antilag_CutMethod___MGF_CC_PF Antilag_ActivationDelay___MGF_CC_PF
 			/end DEF_CHARACTERISTIC
 			/begin SUB_FUNCTION
 				"___CCv7.1_Antilag[Rolling]" "___CCv7.1_Antilag[Standing]" "___CCv7.1_Antilag[PIDs]" "___CCv7.1_Antilag[Safety]"
@@ -6890,7 +6608,7 @@ ASAP2_VERSION 1 60
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
 				KF_ZWMIN_KSOT___MGF_CC_PF_Slot0 KF_ZWMIN_KSOT___MGF_CC_PF_Slot1 KF_ZWMIN_KSOT___MGF_CC_PF_Slot2 KF_ZWMIN_KSOT___MGF_CC_PF_Slot3 KF_ZWMIN_KSOT___MGF_CC_PF_Slot4
-				KF_ZWMIN_KSOT___MGF_CC_PF_Slot5 Burbles_CW____MGF_CC
+				KF_ZWMIN_KSOT___MGF_CC_PF_Slot5 Burbles_Burbles_CW___MGF_CC
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -6900,7 +6618,8 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				CustomCodeMenu_CW____MGF_CC CcmEnterMenuDelay___MGF_CC_PF CcmTimeout___MGF_CC_PF
+				CcmEnterMenuDelay___MGF_CC_PF CcmTimeout___MGF_CC_PF UniRockerEnterDetectionDelay___MGF_CC_PF CustomCodeMenu_CustomCodeMenu_CW___MGF_CC CustomCodeMenu_CustomCodeMenu_CW_CruiseControlConfig___MGF_CC
+				CustomCodeMenu_CustomCodeMenu_CW_UseAllCruiseControlCanBusData___MGF_CC
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -6910,7 +6629,7 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				ExhaustFlap_CW____MGF_CC ExhaustFlapClosedMaxLoad___MGF_CC_PF
+				ExhaustFlapClosedMaxLoad___MGF_CC_PF ExhaustFlap_ExhaustFlap_CW___MGF_CC
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -6920,7 +6639,7 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				FlexFuel_CW_SensorEthanol___MGF_CC FlexFuel_CW____MGF_CC FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF FlexFuel_CW_Blending___MGF_CC
+				FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF FlexFuel_FlexFuel_CW___MGF_CC FlexFuel_FlexFuel_CW_Blending___MGF_CC FlexFuel_FlexFuel_CW_SensorEthanol___MGF_CC
 			/end DEF_CHARACTERISTIC
 			/begin SUB_FUNCTION
 				"___CCv7.1_FlexFuel[Flex Fuel]"
@@ -6940,7 +6659,7 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				MaxCooling_CW____MGF_CC TargetTemperature___MGF_CC TargetPumpSpeed___MGF_CC
+				MaxCooling_MaxCooling_CW___MGF_CC TargetTemperature___MGF_CC TargetPumpSpeed___MGF_CC
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -6950,7 +6669,7 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				SwitchableMaps_CW_Octane___MGF_CC SwitchableMaps_CW_Ethanol___MGF_CC
+				SwitchableMaps_SwitchableMaps_CW_Octane___MGF_CC SwitchableMaps_SwitchableMaps_CW_Ethanol___MGF_CC
 			/end DEF_CHARACTERISTIC
 			/begin SUB_FUNCTION
 				"___CCv7.1_SwitchableMaps[Slot0]" "___CCv7.1_SwitchableMaps[Slot1]" "___CCv7.1_SwitchableMaps[Slot2]" "___CCv7.1_SwitchableMaps[Slot3]" "___CCv7.1_SwitchableMaps[Slot4]"
@@ -6970,17 +6689,6 @@ ASAP2_VERSION 1 60
 				KF_ZW_S_PF2___MGF_CC_PF_Slot0 KF_ZW_S_PF1___MGF_CC_PF_Slot0 KF_ZW_PF2___MGF_CC_PF_Slot0 KF_ZW_PF1___MGF_CC_PF_Slot0 KF_ZW_VP_PF2___MGF_CC_PF_Slot0
 				KF_ZW_VP_PF1___MGF_CC_PF_Slot0
 			/end DEF_CHARACTERISTIC
-			/begin SUB_FUNCTION
-				"___CCv7.1_SwitchableMaps[Slot0][Flex Fuel]"
-			/end SUB_FUNCTION
-		/end FUNCTION
-
-		/begin FUNCTION "___CCv7.1_SwitchableMaps[Slot0][Flex Fuel]"
-			"Custom Code"
-			/begin DEF_CHARACTERISTIC
-				BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot0 BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot0 KF_LABAS_1___MGF_CC_FF_Slot0 LabasOffset___MGF_CC_FF_Slot0 KL_RF_MAX_UESP___MGF_CC_FF_Slot0
-				BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot0
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION "___CCv7.1_SwitchableMaps[Slot1]"
@@ -6995,17 +6703,6 @@ ASAP2_VERSION 1 60
 				KF_FDZWT_PF1___MGF_CC_PF_Slot1 BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot1 BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot1 BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot1 BMWtchctr_pct_WgBasc_M___MGF_CC_PF_Slot1
 				KF_ZW_S_PF2___MGF_CC_PF_Slot1 KF_ZW_S_PF1___MGF_CC_PF_Slot1 KF_ZW_PF2___MGF_CC_PF_Slot1 KF_ZW_PF1___MGF_CC_PF_Slot1 KF_ZW_VP_PF2___MGF_CC_PF_Slot1
 				KF_ZW_VP_PF1___MGF_CC_PF_Slot1
-			/end DEF_CHARACTERISTIC
-			/begin SUB_FUNCTION
-				"___CCv7.1_SwitchableMaps[Slot1][Flex Fuel]"
-			/end SUB_FUNCTION
-		/end FUNCTION
-
-		/begin FUNCTION "___CCv7.1_SwitchableMaps[Slot1][Flex Fuel]"
-			"Custom Code"
-			/begin DEF_CHARACTERISTIC
-				BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot1 BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot1 KF_LABAS_1___MGF_CC_FF_Slot1 LabasOffset___MGF_CC_FF_Slot1 KL_RF_MAX_UESP___MGF_CC_FF_Slot1
-				BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot1
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -7022,17 +6719,6 @@ ASAP2_VERSION 1 60
 				KF_ZW_S_PF2___MGF_CC_PF_Slot2 KF_ZW_S_PF1___MGF_CC_PF_Slot2 KF_ZW_PF2___MGF_CC_PF_Slot2 KF_ZW_PF1___MGF_CC_PF_Slot2 KF_ZW_VP_PF2___MGF_CC_PF_Slot2
 				KF_ZW_VP_PF1___MGF_CC_PF_Slot2
 			/end DEF_CHARACTERISTIC
-			/begin SUB_FUNCTION
-				"___CCv7.1_SwitchableMaps[Slot2][Flex Fuel]"
-			/end SUB_FUNCTION
-		/end FUNCTION
-
-		/begin FUNCTION "___CCv7.1_SwitchableMaps[Slot2][Flex Fuel]"
-			"Custom Code"
-			/begin DEF_CHARACTERISTIC
-				BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot2 BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot2 KF_LABAS_1___MGF_CC_FF_Slot2 LabasOffset___MGF_CC_FF_Slot2 KL_RF_MAX_UESP___MGF_CC_FF_Slot2
-				BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot2
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION "___CCv7.1_SwitchableMaps[Slot3]"
@@ -7047,17 +6733,6 @@ ASAP2_VERSION 1 60
 				KF_FDZWT_PF1___MGF_CC_PF_Slot3 BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot3 BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot3 BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot3 BMWtchctr_pct_WgBasc_M___MGF_CC_PF_Slot3
 				KF_ZW_S_PF2___MGF_CC_PF_Slot3 KF_ZW_S_PF1___MGF_CC_PF_Slot3 KF_ZW_PF2___MGF_CC_PF_Slot3 KF_ZW_PF1___MGF_CC_PF_Slot3 KF_ZW_VP_PF2___MGF_CC_PF_Slot3
 				KF_ZW_VP_PF1___MGF_CC_PF_Slot3
-			/end DEF_CHARACTERISTIC
-			/begin SUB_FUNCTION
-				"___CCv7.1_SwitchableMaps[Slot3][Flex Fuel]"
-			/end SUB_FUNCTION
-		/end FUNCTION
-
-		/begin FUNCTION "___CCv7.1_SwitchableMaps[Slot3][Flex Fuel]"
-			"Custom Code"
-			/begin DEF_CHARACTERISTIC
-				BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot3 BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot3 KF_LABAS_1___MGF_CC_FF_Slot3 LabasOffset___MGF_CC_FF_Slot3 KL_RF_MAX_UESP___MGF_CC_FF_Slot3
-				BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot3
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -7074,17 +6749,6 @@ ASAP2_VERSION 1 60
 				KF_ZW_S_PF2___MGF_CC_PF_Slot4 KF_ZW_S_PF1___MGF_CC_PF_Slot4 KF_ZW_PF2___MGF_CC_PF_Slot4 KF_ZW_PF1___MGF_CC_PF_Slot4 KF_ZW_VP_PF2___MGF_CC_PF_Slot4
 				KF_ZW_VP_PF1___MGF_CC_PF_Slot4
 			/end DEF_CHARACTERISTIC
-			/begin SUB_FUNCTION
-				"___CCv7.1_SwitchableMaps[Slot4][Flex Fuel]"
-			/end SUB_FUNCTION
-		/end FUNCTION
-
-		/begin FUNCTION "___CCv7.1_SwitchableMaps[Slot4][Flex Fuel]"
-			"Custom Code"
-			/begin DEF_CHARACTERISTIC
-				BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF_Slot4 BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF_Slot4 KF_LABAS_1___MGF_CC_FF_Slot4 LabasOffset___MGF_CC_FF_Slot4 KL_RF_MAX_UESP___MGF_CC_FF_Slot4
-				BMWtchctr_pwr_Pctl_M___MGF_CC_FF_Slot4
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION "___CCv7.1_TcuTorqueLimiter"
@@ -7093,7 +6757,7 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				TcuTorqueLimiter_CW____MGF_CC
+				TcuTorqueLimiter_TcuTorqueLimiter_CW___MGF_CC
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -7103,8 +6767,8 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				ValetTorqueMap___MGF_CC_PF_Slot1 ValetTorqueMap___MGF_CC_PF_Slot2 ValetMaxPedal___MGF_CC_PF Valet_CW____MGF_CC ValetMaxRpm___MGF_CC_PF
-				ValetMaxSpeed___MGF_CC_PF
+				ValetTorqueMap___MGF_CC_PF_Slot1 ValetTorqueMap___MGF_CC_PF_Slot2 ValetMaxRpm___MGF_CC_PF ValetMaxSpeed___MGF_CC_PF Valet_Valet_CW___MGF_CC
+				ValetMaxPedal___MGF_CC_PF
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -7157,6 +6821,13 @@ ASAP2_VERSION 1 60
 			COEFFS 0 64 0 0 0 1
 		/end COMPU_METHOD
 
+		/begin COMPU_METHOD ___MGF_CC_Temperature_2
+			"default compuMethod"
+			RAT_FUNC
+			"%6.3" "L/h"
+			COEFFS 0 2 0 0 0 1
+		/end COMPU_METHOD
+
 		/begin COMPU_METHOD ___MGF_CC_TemperatureCelsius_d10
 			"default compuMethod"
 			RAT_FUNC
@@ -7197,13 +6868,6 @@ ASAP2_VERSION 1 60
 			RAT_FUNC
 			"%6.3" "-"
 			COEFFS 0 32768 0 0 0 1
-		/end COMPU_METHOD
-
-		/begin COMPU_METHOD bnDwBea_bjuokda_wACukhd_lCRoa0o
-			"bnDwBea_bjuokda_wACukhd_lCRoa0o"
-			RAT_FUNC
-			"%6.3" "l/h"
-			COEFFS 0 2 0 0 0 1
 		/end COMPU_METHOD
 
 		/begin COMPU_METHOD BumqDkc_mryszAa_EcglxAc_nR_4oa0
@@ -7315,10 +6979,8 @@ ASAP2_VERSION 1 60
 			1 "TRUE"
 		/end COMPU_VTAB
 
-		/begin RECORD_LAYOUT ___MGF_CC_Fueling_10x10
-			FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
-			AXIS_PTS_Y 2 SWORD INDEX_INCR DIRECT
-			AXIS_PTS_X 3 SWORD INDEX_INCR DIRECT
+		/begin RECORD_LAYOUT ___MGF_CC_Antilag_Ign_Roll_xAxis
+			AXIS_PTS_X 0 SWORD INDEX_INCR PLONG
 		/end RECORD_LAYOUT
 
 		/begin RECORD_LAYOUT _REC_A1AXS_1_MBSE_S2
