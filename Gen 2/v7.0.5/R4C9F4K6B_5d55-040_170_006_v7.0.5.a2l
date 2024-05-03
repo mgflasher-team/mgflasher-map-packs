@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   11/20/2023 
+   5/3/2024 
    Created with optimization mode
 */
 
@@ -1060,6 +1060,21 @@ ASAP2_VERSION 1 60
 			DEPOSIT ABSOLUTE
 		/end AXIS_PTS
 
+		/begin AXIS_PTS AXY_KF_MDIOP_1_TQE___MGF_CC
+			"Speed / rpm commercial vehicle (CCv7.0.5)"
+			0x80724CC2
+			NO_INPUT_QUANTITY
+			_REC_A1AXS_1_MBSE_S2
+			65535
+			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+			20
+			-32768 32767
+			DISPLAY_IDENTIFIER AXY_KF_MDIOP_1_TQE___MGF_CC
+			FORMAT "%5.0"
+			BYTE_ORDER MSB_LAST
+			DEPOSIT ABSOLUTE
+		/end AXIS_PTS
+
 		/begin AXIS_PTS AXY_KF_ZW_PF1
 			"AXY_KF_ZW_PF1"
 			0x8072D85E
@@ -1638,7 +1653,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_CutMethod___MGF_CC_PF
-			"Method used to hold engine speed: 0 = fuel cut (bit of stuttering but safe), 1 = ignition cut (flame mode, very aggressive), 2 = fuel and ignition cut (untested), 3 = factory rpm limiter (default, smoothest and safest) (CCv7.0.5)"
+			"Method used to hold engine speed: 0 = fuel cut (bit of stuttering but safe), 1 = ignition cut (flame mode, very aggressive), 3 = factory rpm limiter (default, smoothest and safest) (CCv7.0.5)"
 			VALUE
 			0x807C4A3C
 			FklWUb
@@ -1825,6 +1840,19 @@ ASAP2_VERSION 1 60
 			BYTE_ORDER MSB_LAST
 		/end CHARACTERISTIC
 
+		/begin CHARACTERISTIC Antilag_TargetNumberOfCylindersToSuppress___MGF_CC_PF
+			"Target number of cylinders to suppress during antilag (CCv7.0.5)"
+			VALUE
+			0x807C2491
+			FklWUb
+			8
+			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
+			0 8
+			DISPLAY_IDENTIFIER Antilag_TargetNumberOfCylindersToSuppress___MGF_CC_PF
+			FORMAT "%3.0"
+			BYTE_ORDER MSB_LAST
+		/end CHARACTERISTIC
+
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_PF_Slot0
 			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 0, OEM Address)"
 			VALUE
@@ -1912,6 +1940,19 @@ ASAP2_VERSION 1 60
 			B_TRUE
 			0 1
 			DISPLAY_IDENTIFIER MaxCooling_MaxCooling_CW___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_LAST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC RadiatorFlap_RadiatorFlap_CW___MGF_CC
+			"RadiatorFlap Codeword: Set 1 (true) to enable function and 0 (false) to disable function (CCv7.0.5)"
+			VALUE
+			0x807C2490
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER RadiatorFlap_RadiatorFlap_CW___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_LAST
 		/end CHARACTERISTIC
@@ -2756,7 +2797,7 @@ ASAP2_VERSION 1 60
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.0.5)"
 			MAP
 			0x807C0720
-			CurG_Ws16
+			KwUw
 			0
 			___MGF_CC_Fueling_d10
 			-32768 32767
@@ -2793,7 +2834,7 @@ ASAP2_VERSION 1 60
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.0.5)"
 			MAP
 			0x807C07E8
-			CurG_Ws16
+			KwUw
 			0
 			___MGF_CC_Fueling_d10
 			-32768 32767
@@ -6766,7 +6807,7 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				Antilag_ActivationDelay___MGF_CC_PF Antilag_CutMethod___MGF_CC_PF Antilag_Pedal___MGF_CC_PF Antilag_Antilag_CW___MGF_CC
+				Antilag_ActivationDelay___MGF_CC_PF Antilag_TargetNumberOfCylindersToSuppress___MGF_CC_PF Antilag_CutMethod___MGF_CC_PF Antilag_Pedal___MGF_CC_PF Antilag_Antilag_CW___MGF_CC
 			/end DEF_CHARACTERISTIC
 			/begin SUB_FUNCTION
 				"___CCv7.0.5_Antilag[Rolling]" "___CCv7.0.5_Antilag[Standing]" "___CCv7.0.5_Antilag[PIDs]" "___CCv7.0.5_Antilag[Safety]"
@@ -6847,6 +6888,16 @@ ASAP2_VERSION 1 60
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
+		/begin FUNCTION "___CCv7.0.5_RadiatorFlap"
+			"Custom Code"
+			/begin OUT_MEASUREMENT
+			
+			/end OUT_MEASUREMENT
+			/begin DEF_CHARACTERISTIC
+				RadiatorFlap_RadiatorFlap_CW___MGF_CC
+			/end DEF_CHARACTERISTIC
+		/end FUNCTION
+
 		/begin FUNCTION "___CCv7.0.5_SwitchableMaps"
 			"Custom Code"
 			/begin OUT_MEASUREMENT
@@ -6867,12 +6918,12 @@ ASAP2_VERSION 1 60
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
 				AXY_KF_FRKKORRF_1___MGF_CC AXX_KF_FRKKORRF_1___MGF_CC AXX_KL_RF_MAX_UESP___MGF_CC AXX_KL_RF_MAX___MGF_CC BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot0
-				BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot0 BMWtchctr_pwr_Dp_Ay___MGF_CC BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_PF_Slot0 AXX_KF_MDIOP_1_TQE___MGF_CC_PF_Slot0 KF_LABAS_1___MGF_CC_PF_Slot0
-				KF_FRKKORRF_1___MGF_CC_PF_Slot0 KL_RF_MAX_UESP___MGF_CC_PF_Slot0 KL_RF_MAX___MGF_CC_PF_Slot0 BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot0 BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot0
-				BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot0 BMWtchsp_p_ReqMax_C___MGF_CC_PF_Slot0 BMWtchsp_rat_p_CmprMax_M___MGF_CC_PF_Slot0 BMWtchsp_rat_p_CmprPmp_T___MGF_CC_PF_Slot0 KF_MDIOP_1_TQE___MGF_CC_PF_Slot0
-				BMWtqe_tqc_FlApplStgNorm_T___MGF_CC_PF_Slot0 KF_FDZWT_PF2___MGF_CC_PF_Slot0 KF_FDZWT_PF1___MGF_CC_PF_Slot0 BMWtchctr_pct_WgBasc_M___MGF_CC_PF_Slot0 KF_LABAS_2___MGF_CC_PF_Slot0
-				KF_ZW_S_PF2___MGF_CC_PF_Slot0 KF_ZW_S_PF1___MGF_CC_PF_Slot0 KF_ZW_PF2___MGF_CC_PF_Slot0 KF_ZW_PF1___MGF_CC_PF_Slot0 KF_ZW_VP_PF2___MGF_CC_PF_Slot0
-				KF_ZW_VP_PF1___MGF_CC_PF_Slot0
+				BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot0 BMWtchctr_pwr_Dp_Ay___MGF_CC BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_PF_Slot0 AXY_KF_MDIOP_1_TQE___MGF_CC AXX_KF_MDIOP_1_TQE___MGF_CC_PF_Slot0
+				KF_LABAS_1___MGF_CC_PF_Slot0 KF_FRKKORRF_1___MGF_CC_PF_Slot0 KL_RF_MAX_UESP___MGF_CC_PF_Slot0 KL_RF_MAX___MGF_CC_PF_Slot0 BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot0
+				BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot0 BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot0 BMWtchsp_p_ReqMax_C___MGF_CC_PF_Slot0 BMWtchsp_rat_p_CmprMax_M___MGF_CC_PF_Slot0 BMWtchsp_rat_p_CmprPmp_T___MGF_CC_PF_Slot0
+				KF_MDIOP_1_TQE___MGF_CC_PF_Slot0 BMWtqe_tqc_FlApplStgNorm_T___MGF_CC_PF_Slot0 KF_FDZWT_PF2___MGF_CC_PF_Slot0 KF_FDZWT_PF1___MGF_CC_PF_Slot0 BMWtchctr_pct_WgBasc_M___MGF_CC_PF_Slot0
+				KF_LABAS_2___MGF_CC_PF_Slot0 KF_ZW_S_PF2___MGF_CC_PF_Slot0 KF_ZW_S_PF1___MGF_CC_PF_Slot0 KF_ZW_PF2___MGF_CC_PF_Slot0 KF_ZW_PF1___MGF_CC_PF_Slot0
+				KF_ZW_VP_PF2___MGF_CC_PF_Slot0 KF_ZW_VP_PF1___MGF_CC_PF_Slot0
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -7107,6 +7158,13 @@ ASAP2_VERSION 1 60
 			COEFFS 0 512 0 0 0 1
 		/end COMPU_METHOD
 
+		/begin COMPU_METHOD raChrxc_kBtBrmb_FmDuEFa_n__aa0o
+			"Def_q1"
+			RAT_FUNC
+			"%6.3" "-"
+			COEFFS 0 1 0 0 0 1
+		/end COMPU_METHOD
+
 		/begin COMPU_METHOD wDDoctd_cCDyaFa_AvCkvFb_nR_6o0o
 			"wDDoctd_cCDyaFa_AvCkvFb_nR_6o0o"
 			RAT_FUNC
@@ -7117,10 +7175,9 @@ ASAP2_VERSION 1 60
 		/begin COMPU_VTAB ___MGF_CC_EngineSpeedCutMethodCompuVTab
 			""
 			TAB_VERB
-			4
+			3
 			0 "Fuel"
 			1 "Ignition"
-			2 "Fuel&Ignition"
 			3 "Factory"
 			DEFAULT_VALUE "Not Defined, unexpected results"
 		/end COMPU_VTAB

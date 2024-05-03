@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   11/21/2023 
+   5/3/2024 
    Created with optimization mode
 */
 
@@ -876,6 +876,21 @@ ASAP2_VERSION 1 60
 			DEPOSIT ABSOLUTE
 		/end AXIS_PTS
 
+		/begin AXIS_PTS AXX_KF_ZWMIN_WSOT
+			"AXX_KF_ZWMIN_WSOT"
+			0x96BAB92
+			Nkw
+			_REC_A1AXS_1_MBSE_S2
+			65535
+			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+			8
+			-32768 32767
+			DISPLAY_IDENTIFIER AXX_KF_ZWMIN_WSOT
+			FORMAT "%5.0"
+			BYTE_ORDER MSB_FIRST
+			DEPOSIT ABSOLUTE
+		/end AXIS_PTS
+
 		/begin AXIS_PTS AXX_KL_RF_MAX
 			"Nkw"
 			0x969BF20
@@ -1066,6 +1081,21 @@ ASAP2_VERSION 1 60
 			8
 			-327.68 327.67
 			DISPLAY_IDENTIFIER AXY_KF_ZWMIN_KSOT
+			FORMAT "%9.4"
+			BYTE_ORDER MSB_FIRST
+			DEPOSIT ABSOLUTE
+		/end AXIS_PTS
+
+		/begin AXIS_PTS AXY_KF_ZWMIN_WSOT
+			"AXY_KF_ZWMIN_WSOT"
+			0x96BAB52
+			NO_INPUT_QUANTITY
+			_REC_A1AXS_1_MBSE_S2
+			655.35
+			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+			8
+			-327.68 327.67
+			DISPLAY_IDENTIFIER AXY_KF_ZWMIN_WSOT
 			FORMAT "%9.4"
 			BYTE_ORDER MSB_FIRST
 			DEPOSIT ABSOLUTE
@@ -1514,7 +1544,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_CutMethod___MGF_CC_PF
-			"Method used to hold engine speed: 0 = fuel cut (bit of stuttering but safe), 1 = ignition cut (flame mode, very aggressive), 2 = fuel and ignition cut (untested), 3 = factory rpm limiter (default, smoothest and safest) (CCv7.0.5)"
+			"Method used to hold engine speed: 0 = fuel cut (bit of stuttering but safe), 1 = ignition cut (flame mode, very aggressive), 3 = factory rpm limiter (default, smoothest and safest) (CCv7.0.5)"
 			VALUE
 			0x9774F23
 			FklWUb
@@ -1698,6 +1728,19 @@ ASAP2_VERSION 1 60
 			DISPLAY_IDENTIFIER Antilag_TargetBoostStand___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC Antilag_TargetNumberOfCylindersToSuppress___MGF_CC_PF
+			"Target number of cylinders to suppress during antilag (CCv7.0.5)"
+			VALUE
+			0x97758ED
+			FklWUb
+			8
+			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
+			0 8
+			DISPLAY_IDENTIFIER Antilag_TargetNumberOfCylindersToSuppress___MGF_CC_PF
+			FORMAT "%3.0"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
@@ -2685,7 +2728,7 @@ ASAP2_VERSION 1 60
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.0.5)"
 			MAP
 			0x97751F6
-			CurG_Ws16
+			GklWU16
 			0
 			___MGF_CC_Fueling_d10
 			-32768 32767
@@ -2722,7 +2765,7 @@ ASAP2_VERSION 1 60
 			"Fueling setpoint: Engine speed [Nkw] vs Exhaust Gas Temperature [EGT] before turbine [Tabg_vl_xab]. (CCv7.0.5)"
 			MAP
 			0x9775106
-			CurG_Ws16
+			GklWU16
 			0
 			___MGF_CC_Fueling_d10
 			-32768 32767
@@ -6093,6 +6136,234 @@ ASAP2_VERSION 1 60
 			/end AXIS_DESCR
 		/end CHARACTERISTIC
 
+		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot0
+			"Zwmin for sound tuning warm (Slot 0, safety fallback, OEM Address)"
+			MAP
+			0x96C82DC
+			_REC_A1CUR_1_MBSE_S1_S1
+			127.5
+			aAwkuzc_BFpgCmb_tmDukma_q__aa0o
+			-64 63.5
+			DISPLAY_IDENTIFIER KF_ZWMIN_WSOT___MGF_CC_PF_Slot0
+			BYTE_ORDER MSB_FIRST
+			/begin AXIS_DESCR
+				COM_AXIS
+				Nkw
+				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+				8
+				-32768 32767
+				AXIS_PTS_REF AXX_KF_ZWMIN_WSOT
+				FORMAT "%5.0"
+				PHYS_UNIT "1/min"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+			/begin AXIS_DESCR
+				COM_AXIS
+				NO_INPUT_QUANTITY
+				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+				8
+				-327.68 327.67
+				AXIS_PTS_REF AXY_KF_ZWMIN_WSOT
+				FORMAT "%9.4"
+				PHYS_UNIT "%"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot1
+			"Zwmin for sound tuning warm (Slot 1, at 0 RPM, CCv7.0.5, Pump Fuel)"
+			MAP
+			0x97758EE
+			_REC_A1CUR_1_MBSE_S1_S1
+			127.5
+			aAwkuzc_BFpgCmb_tmDukma_q__aa0o
+			-64 63.5
+			DISPLAY_IDENTIFIER KF_ZWMIN_WSOT___MGF_CC_PF_Slot1
+			BYTE_ORDER MSB_FIRST
+			/begin AXIS_DESCR
+				COM_AXIS
+				Nkw
+				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+				8
+				-32768 32767
+				AXIS_PTS_REF AXX_KF_ZWMIN_WSOT
+				FORMAT "%5.0"
+				PHYS_UNIT "1/min"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+			/begin AXIS_DESCR
+				COM_AXIS
+				NO_INPUT_QUANTITY
+				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+				8
+				-327.68 327.67
+				AXIS_PTS_REF AXY_KF_ZWMIN_WSOT
+				FORMAT "%9.4"
+				PHYS_UNIT "%"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot2
+			"Zwmin for sound tuning warm (Slot 2, at 1000 RPM, CCv7.0.5, Pump Fuel)"
+			MAP
+			0x977592E
+			_REC_A1CUR_1_MBSE_S1_S1
+			127.5
+			aAwkuzc_BFpgCmb_tmDukma_q__aa0o
+			-64 63.5
+			DISPLAY_IDENTIFIER KF_ZWMIN_WSOT___MGF_CC_PF_Slot2
+			BYTE_ORDER MSB_FIRST
+			/begin AXIS_DESCR
+				COM_AXIS
+				Nkw
+				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+				8
+				-32768 32767
+				AXIS_PTS_REF AXX_KF_ZWMIN_WSOT
+				FORMAT "%5.0"
+				PHYS_UNIT "1/min"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+			/begin AXIS_DESCR
+				COM_AXIS
+				NO_INPUT_QUANTITY
+				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+				8
+				-327.68 327.67
+				AXIS_PTS_REF AXY_KF_ZWMIN_WSOT
+				FORMAT "%9.4"
+				PHYS_UNIT "%"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot3
+			"Zwmin for sound tuning warm (Slot 3, at 2000 RPM, CCv7.0.5, Pump Fuel)"
+			MAP
+			0x977596E
+			_REC_A1CUR_1_MBSE_S1_S1
+			127.5
+			aAwkuzc_BFpgCmb_tmDukma_q__aa0o
+			-64 63.5
+			DISPLAY_IDENTIFIER KF_ZWMIN_WSOT___MGF_CC_PF_Slot3
+			BYTE_ORDER MSB_FIRST
+			/begin AXIS_DESCR
+				COM_AXIS
+				Nkw
+				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+				8
+				-32768 32767
+				AXIS_PTS_REF AXX_KF_ZWMIN_WSOT
+				FORMAT "%5.0"
+				PHYS_UNIT "1/min"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+			/begin AXIS_DESCR
+				COM_AXIS
+				NO_INPUT_QUANTITY
+				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+				8
+				-327.68 327.67
+				AXIS_PTS_REF AXY_KF_ZWMIN_WSOT
+				FORMAT "%9.4"
+				PHYS_UNIT "%"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot4
+			"Zwmin for sound tuning warm (Slot 4, at 3000 RPM, CCv7.0.5, Pump Fuel)"
+			MAP
+			0x97759AE
+			_REC_A1CUR_1_MBSE_S1_S1
+			127.5
+			aAwkuzc_BFpgCmb_tmDukma_q__aa0o
+			-64 63.5
+			DISPLAY_IDENTIFIER KF_ZWMIN_WSOT___MGF_CC_PF_Slot4
+			BYTE_ORDER MSB_FIRST
+			/begin AXIS_DESCR
+				COM_AXIS
+				Nkw
+				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+				8
+				-32768 32767
+				AXIS_PTS_REF AXX_KF_ZWMIN_WSOT
+				FORMAT "%5.0"
+				PHYS_UNIT "1/min"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+			/begin AXIS_DESCR
+				COM_AXIS
+				NO_INPUT_QUANTITY
+				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+				8
+				-327.68 327.67
+				AXIS_PTS_REF AXY_KF_ZWMIN_WSOT
+				FORMAT "%9.4"
+				PHYS_UNIT "%"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot5
+			"Zwmin for sound tuning warm (Slot 5, at 4000 RPM, CCv7.0.5, Pump Fuel)"
+			MAP
+			0x97759EE
+			_REC_A1CUR_1_MBSE_S1_S1
+			127.5
+			aAwkuzc_BFpgCmb_tmDukma_q__aa0o
+			-64 63.5
+			DISPLAY_IDENTIFIER KF_ZWMIN_WSOT___MGF_CC_PF_Slot5
+			BYTE_ORDER MSB_FIRST
+			/begin AXIS_DESCR
+				COM_AXIS
+				Nkw
+				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+				8
+				-32768 32767
+				AXIS_PTS_REF AXX_KF_ZWMIN_WSOT
+				FORMAT "%5.0"
+				PHYS_UNIT "1/min"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+			/begin AXIS_DESCR
+				COM_AXIS
+				NO_INPUT_QUANTITY
+				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+				8
+				-327.68 327.67
+				AXIS_PTS_REF AXY_KF_ZWMIN_WSOT
+				FORMAT "%9.4"
+				PHYS_UNIT "%"
+				BYTE_ORDER MSB_FIRST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+		/end CHARACTERISTIC
+
 		/begin MEASUREMENT BMWtchbas_p_Dif_sw
 			"Pld_diff (target boost pressure minus actual boost pressure)"
 			SWORD
@@ -6284,7 +6555,7 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				Antilag_Antilag_CW___MGF_CC Antilag_Pedal___MGF_CC_PF Antilag_CutMethod___MGF_CC_PF Antilag_ActivationDelay___MGF_CC_PF
+				Antilag_Antilag_CW___MGF_CC Antilag_Pedal___MGF_CC_PF Antilag_CutMethod___MGF_CC_PF Antilag_ActivationDelay___MGF_CC_PF Antilag_TargetNumberOfCylindersToSuppress___MGF_CC_PF
 			/end DEF_CHARACTERISTIC
 			/begin SUB_FUNCTION
 				"___CCv7.0.5_Antilag[Rolling]" "___CCv7.0.5_Antilag[Standing]" "___CCv7.0.5_Antilag[PIDs]" "___CCv7.0.5_Antilag[Safety]"
@@ -6339,8 +6610,9 @@ ASAP2_VERSION 1 60
 			
 			/end OUT_MEASUREMENT
 			/begin DEF_CHARACTERISTIC
-				KF_ZWMIN_KSOT___MGF_CC_PF_Slot0 KF_ZWMIN_KSOT___MGF_CC_PF_Slot1 KF_ZWMIN_KSOT___MGF_CC_PF_Slot2 KF_ZWMIN_KSOT___MGF_CC_PF_Slot3 KF_ZWMIN_KSOT___MGF_CC_PF_Slot4
-				KF_ZWMIN_KSOT___MGF_CC_PF_Slot5 Burbles_Burbles_CW___MGF_CC
+				KF_ZWMIN_WSOT___MGF_CC_PF_Slot0 KF_ZWMIN_WSOT___MGF_CC_PF_Slot1 KF_ZWMIN_WSOT___MGF_CC_PF_Slot2 KF_ZWMIN_WSOT___MGF_CC_PF_Slot3 KF_ZWMIN_WSOT___MGF_CC_PF_Slot4
+				KF_ZWMIN_WSOT___MGF_CC_PF_Slot5 KF_ZWMIN_KSOT___MGF_CC_PF_Slot0 KF_ZWMIN_KSOT___MGF_CC_PF_Slot1 KF_ZWMIN_KSOT___MGF_CC_PF_Slot2 KF_ZWMIN_KSOT___MGF_CC_PF_Slot3
+				KF_ZWMIN_KSOT___MGF_CC_PF_Slot4 KF_ZWMIN_KSOT___MGF_CC_PF_Slot5 Burbles_Burbles_CW___MGF_CC
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
@@ -6623,6 +6895,13 @@ ASAP2_VERSION 1 60
 			COEFFS 0 10 0 0 0 1
 		/end COMPU_METHOD
 
+		/begin COMPU_METHOD raChrxc_kBtBrmb_FmDuEFa_n__aa0o
+			"Def_q1"
+			RAT_FUNC
+			"%6.3" "-"
+			COEFFS 0 1 0 0 0 1
+		/end COMPU_METHOD
+
 		/begin COMPU_METHOD SwitchableMaps_LabasOffset
 			"SwitchableMaps LabasOffset compuMethod"
 			IDENTICAL
@@ -6639,10 +6918,9 @@ ASAP2_VERSION 1 60
 		/begin COMPU_VTAB ___MGF_CC_EngineSpeedCutMethodCompuVTab
 			""
 			TAB_VERB
-			4
+			3
 			0 "Fuel"
 			1 "Ignition"
-			2 "Fuel&Ignition"
 			3 "Factory"
 			DEFAULT_VALUE "Not Defined, unexpected results"
 		/end COMPU_VTAB
