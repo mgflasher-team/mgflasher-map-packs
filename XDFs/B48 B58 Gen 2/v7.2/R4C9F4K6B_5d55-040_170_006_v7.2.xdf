@@ -33419,109 +33419,6 @@
   </XDFCONSTANT>
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>CW_FlexFuel___MGF_CC</description>
-    <title>Flex Fuel Codeword: Set 1 (true) to enable function and 0 (false) to disable function</title>
-    <CATEGORYMEM index="0" category="14" />
-    <CATEGORYMEM index="1" category="52" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C2469" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units />
-    <decimalpl>11</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>CW_FlexFuelBlending___MGF_CC</description>
-    <title>Flex Fuel Blending Codeword: Set 1 (true) to enable function and 0 (false) to disable function</title>
-    <CATEGORYMEM index="0" category="14" />
-    <CATEGORYMEM index="1" category="52" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C246A" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units />
-    <decimalpl>11</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>CW_FlexFuelBlending_Slot0___MGF_CC</description>
-    <title>Flex Fuel Blending  Slot 0 Codeword: Set 1 (true) to enable function and 0 (false) to disable function</title>
-    <CATEGORYMEM index="0" category="14" />
-    <CATEGORYMEM index="1" category="74" />
-    <CATEGORYMEM index="2" category="52" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C25C4" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units />
-    <decimalpl>11</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>CW_FlexFuelBlending_Slot1___MGF_CC</description>
-    <title>Flex Fuel Blending  Slot 1 Codeword: Set 1 (true) to enable function and 0 (false) to disable function</title>
-    <CATEGORYMEM index="0" category="14" />
-    <CATEGORYMEM index="1" category="76" />
-    <CATEGORYMEM index="2" category="52" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C25C5" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units />
-    <decimalpl>11</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>CW_FlexFuelBlending_Slot2___MGF_CC</description>
-    <title>Flex Fuel Blending  Slot 2 Codeword: Set 1 (true) to enable function and 0 (false) to disable function</title>
-    <CATEGORYMEM index="0" category="14" />
-    <CATEGORYMEM index="1" category="78" />
-    <CATEGORYMEM index="2" category="52" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C25C6" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units />
-    <decimalpl>11</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>CW_FlexFuelBlending_Slot3___MGF_CC</description>
-    <title>Flex Fuel Blending  Slot 3 Codeword: Set 1 (true) to enable function and 0 (false) to disable function</title>
-    <CATEGORYMEM index="0" category="14" />
-    <CATEGORYMEM index="1" category="80" />
-    <CATEGORYMEM index="2" category="52" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C25C7" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units />
-    <decimalpl>11</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>CW_FlexFuelBlending_Slot4___MGF_CC</description>
-    <title>Flex Fuel Blending  Slot 4 Codeword: Set 1 (true) to enable function and 0 (false) to disable function</title>
-    <CATEGORYMEM index="0" category="14" />
-    <CATEGORYMEM index="1" category="82" />
-    <CATEGORYMEM index="2" category="52" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C5044" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units />
-    <decimalpl>11</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>CW_MaxCooling___MGF_CC</description>
     <title>Max Cooling Codeword: Set 1 (true) to enable function and 0 (false) to disable function</title>
     <CATEGORYMEM index="0" category="15" />
@@ -33555,20 +33452,6 @@
     <CATEGORYMEM index="0" category="16" />
     <CATEGORYMEM index="1" category="52" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C2490" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units />
-    <decimalpl>11</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>CW_SensorEthanol___MGF_CC</description>
-    <title>Sensor Ethanol Codeword: Set 1 (true) if flex fuel sensor is installed on PT-CAN2 and 0 (false) if not installed </title>
-    <CATEGORYMEM index="0" category="14" />
-    <CATEGORYMEM index="1" category="52" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C246C" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units />
     <decimalpl>11</decimalpl>
     <outputtype>2</outputtype>
@@ -33730,19 +33613,6 @@
     <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7C2414" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>-</units>
     <decimalpl>0</decimalpl>
-    <outputtype>2</outputtype>
-    <MATH equation="X/100">
-      <VAR id="X" />
-    </MATH>
-  </XDFCONSTANT>
-
-  <XDFCONSTANT uniqueid="0x0" flags="0x0">
-    <description>FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF</description>
-    <title>Delay to display flex fuel ethanol content on the dash</title>
-    <CATEGORYMEM index="0" category="14" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7C2416" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-    <units>s</units>
-    <decimalpl>3</decimalpl>
     <outputtype>2</outputtype>
     <MATH equation="X/100">
       <VAR id="X" />

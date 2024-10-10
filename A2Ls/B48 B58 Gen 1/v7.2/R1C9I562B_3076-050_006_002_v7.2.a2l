@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   10/2/2024 
+   10/9/2024 
    Created with optimization mode
 */
 
@@ -5341,97 +5341,6 @@ ASAP2_VERSION 1 60
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC CW_FlexFuel___MGF_CC
-			"Flex Fuel Codeword: Set 1 (true) to enable function and 0 (false) to disable function"
-			VALUE
-			0x97758E6
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER CW_FlexFuel___MGF_CC
-			FORMAT "%13.11"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC CW_FlexFuelBlending___MGF_CC
-			"Flex Fuel Blending Codeword: Set 1 (true) to enable function and 0 (false) to disable function"
-			VALUE
-			0x97758E7
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER CW_FlexFuelBlending___MGF_CC
-			FORMAT "%13.11"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC CW_FlexFuelBlending_Slot0___MGF_CC
-			"Flex Fuel Blending  Slot 0 Codeword: Set 1 (true) to enable function and 0 (false) to disable function"
-			VALUE
-			0x97778D4
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER CW_FlexFuelBlending_Slot0___MGF_CC
-			FORMAT "%13.11"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC CW_FlexFuelBlending_Slot1___MGF_CC
-			"Flex Fuel Blending  Slot 1 Codeword: Set 1 (true) to enable function and 0 (false) to disable function"
-			VALUE
-			0x97778D5
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER CW_FlexFuelBlending_Slot1___MGF_CC
-			FORMAT "%13.11"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC CW_FlexFuelBlending_Slot2___MGF_CC
-			"Flex Fuel Blending  Slot 2 Codeword: Set 1 (true) to enable function and 0 (false) to disable function"
-			VALUE
-			0x9778926
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER CW_FlexFuelBlending_Slot2___MGF_CC
-			FORMAT "%13.11"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC CW_FlexFuelBlending_Slot3___MGF_CC
-			"Flex Fuel Blending  Slot 3 Codeword: Set 1 (true) to enable function and 0 (false) to disable function"
-			VALUE
-			0x9778927
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER CW_FlexFuelBlending_Slot3___MGF_CC
-			FORMAT "%13.11"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC CW_FlexFuelBlending_Slot4___MGF_CC
-			"Flex Fuel Blending  Slot 4 Codeword: Set 1 (true) to enable function and 0 (false) to disable function"
-			VALUE
-			0x9778928
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER CW_FlexFuelBlending_Slot4___MGF_CC
-			FORMAT "%13.11"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
 		/begin CHARACTERISTIC CW_MaxCooling___MGF_CC
 			"Max Cooling Codeword: Set 1 (true) to enable function and 0 (false) to disable function"
 			VALUE
@@ -5454,19 +5363,6 @@ ASAP2_VERSION 1 60
 			B_TRUE
 			0 1
 			DISPLAY_IDENTIFIER CW_OctaneSwitch___MGF_CC
-			FORMAT "%13.11"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC CW_SensorEthanol___MGF_CC
-			"Sensor Ethanol Codeword: Set 1 (true) if flex fuel sensor is installed on PT-CAN2 and 0 (false) if not installed "
-			VALUE
-			0x97758E9
-			FklWUb
-			1
-			B_TRUE
-			0 1
-			DISPLAY_IDENTIFIER CW_SensorEthanol___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
@@ -5586,19 +5482,6 @@ ASAP2_VERSION 1 60
 			DISPLAY_IDENTIFIER ExhaustFlapClosedMaxLoad___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
-			BYTE_ORDER MSB_FIRST
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF
-			"Delay to display flex fuel ethanol content on the dash"
-			VALUE
-			0x9774676
-			GkfWU16
-			655.35
-			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
-			0 655.35
-			DISPLAY_IDENTIFIER FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF
-			FORMAT "%7.2"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
@@ -18840,9 +18723,6 @@ ASAP2_VERSION 1 60
 
 		/begin FUNCTION FlexFuel
 			"Blend fuel maps with an ECA or hard-coded E%"
-			/begin DEF_CHARACTERISTIC
-				FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF
-			/end DEF_CHARACTERISTIC
 			/begin SUB_FUNCTION
 				FlexFuel_Codewords FlexFuel_Slot0 FlexFuel_Slot1 FlexFuel_Slot2 FlexFuel_Slot3
 				FlexFuel_Slot4
@@ -18851,9 +18731,6 @@ ASAP2_VERSION 1 60
 
 		/begin FUNCTION FlexFuel_Codewords
 			""
-			/begin DEF_CHARACTERISTIC
-				CW_FlexFuelBlending___MGF_CC CW_FlexFuel___MGF_CC CW_SensorEthanol___MGF_CC
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION FlexFuel_Slot0
@@ -18869,9 +18746,6 @@ ASAP2_VERSION 1 60
 
 		/begin FUNCTION FlexFuel_Slot0_Codewords
 			""
-			/begin DEF_CHARACTERISTIC
-				CW_FlexFuelBlending_Slot0___MGF_CC
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION FlexFuel_Slot0_SensorlessValues
@@ -18891,9 +18765,6 @@ ASAP2_VERSION 1 60
 
 		/begin FUNCTION FlexFuel_Slot1_Codewords
 			""
-			/begin DEF_CHARACTERISTIC
-				CW_FlexFuelBlending_Slot1___MGF_CC
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION FlexFuel_Slot1_SensorlessValues
@@ -18913,9 +18784,6 @@ ASAP2_VERSION 1 60
 
 		/begin FUNCTION FlexFuel_Slot2_Codewords
 			""
-			/begin DEF_CHARACTERISTIC
-				CW_FlexFuelBlending_Slot2___MGF_CC
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION FlexFuel_Slot2_SensorlessValues
@@ -18935,9 +18803,6 @@ ASAP2_VERSION 1 60
 
 		/begin FUNCTION FlexFuel_Slot3_Codewords
 			""
-			/begin DEF_CHARACTERISTIC
-				CW_FlexFuelBlending_Slot3___MGF_CC
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION FlexFuel_Slot3_SensorlessValues
@@ -18957,9 +18822,6 @@ ASAP2_VERSION 1 60
 
 		/begin FUNCTION FlexFuel_Slot4_Codewords
 			""
-			/begin DEF_CHARACTERISTIC
-				CW_FlexFuelBlending_Slot4___MGF_CC
-			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
 		/begin FUNCTION FlexFuel_Slot4_SensorlessValues
