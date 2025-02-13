@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   1/27/2025 
+   2/12/2025 
    Created with optimization mode
 */
 
@@ -496,9 +496,8 @@ ASAP2_VERSION 1 60
 			0
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			10
-			-32768 32767
+			0 15000
 			DISPLAY_IDENTIFIER Antilag_IgnRoll_X_Axis___MGF_CC_PF
-			EXTENDED_LIMITS 0 0
 		/end AXIS_PTS
 
 		/begin AXIS_PTS Antilag_IgnRoll_Y_Axis___MGF_CC_PF
@@ -509,9 +508,8 @@ ASAP2_VERSION 1 60
 			0
 			___MGF_CC_PressurehPa_d8
 			10
-			-32768 32767
+			-3000 3000
 			DISPLAY_IDENTIFIER Antilag_IgnRoll_Y_Axis___MGF_CC_PF
-			EXTENDED_LIMITS 0 0
 		/end AXIS_PTS
 
 		/begin AXIS_PTS Antilag_IgnStand_X_Axis___MGF_CC_PF
@@ -522,9 +520,8 @@ ASAP2_VERSION 1 60
 			0
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			10
-			-32768 32767
+			0 15000
 			DISPLAY_IDENTIFIER Antilag_IgnStand_X_Axis___MGF_CC_PF
-			EXTENDED_LIMITS 0 0
 		/end AXIS_PTS
 
 		/begin AXIS_PTS Antilag_IgnStand_Y_Axis___MGF_CC_PF
@@ -535,9 +532,8 @@ ASAP2_VERSION 1 60
 			0
 			___MGF_CC_PressurehPa_d8
 			10
-			-32768 32767
+			-3000 3000
 			DISPLAY_IDENTIFIER Antilag_IgnStand_Y_Axis___MGF_CC_PF
-			EXTENDED_LIMITS 0 0
 		/end AXIS_PTS
 
 		/begin AXIS_PTS Antilag_LambdaRoll_X_Axis___MGF_CC_PF
@@ -548,9 +544,8 @@ ASAP2_VERSION 1 60
 			0
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			10
-			-32768 32767
+			0 15000
 			DISPLAY_IDENTIFIER Antilag_LambdaRoll_X_Axis___MGF_CC_PF
-			EXTENDED_LIMITS 0 0
 		/end AXIS_PTS
 
 		/begin AXIS_PTS Antilag_LambdaRoll_Y_Axis___MGF_CC_PF
@@ -561,9 +556,8 @@ ASAP2_VERSION 1 60
 			0
 			Eiknlpb_abDCfba_smgoaCc_qCRooa0
 			10
-			-32768 32767
+			-3000 3000
 			DISPLAY_IDENTIFIER Antilag_LambdaRoll_Y_Axis___MGF_CC_PF
-			EXTENDED_LIMITS 0 0
 		/end AXIS_PTS
 
 		/begin AXIS_PTS Antilag_LambdaStand_X_Axis___MGF_CC_PF
@@ -574,9 +568,8 @@ ASAP2_VERSION 1 60
 			0
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			10
-			-32768 32767
+			0 15000
 			DISPLAY_IDENTIFIER Antilag_LambdaStand_X_Axis___MGF_CC_PF
-			EXTENDED_LIMITS 0 0
 		/end AXIS_PTS
 
 		/begin AXIS_PTS Antilag_LambdaStand_Y_Axis___MGF_CC_PF
@@ -587,9 +580,8 @@ ASAP2_VERSION 1 60
 			0
 			Eiknlpb_abDCfba_smgoaCc_qCRooa0
 			10
-			-32768 32767
+			-3000 3000
 			DISPLAY_IDENTIFIER Antilag_LambdaStand_Y_Axis___MGF_CC_PF
-			EXTENDED_LIMITS 0 0
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_FlexFuel_StartupEnrichment___MGF_CC
@@ -600,10 +592,9 @@ ASAP2_VERSION 1 60
 			0
 			Eiknlpb_abDCfba_smgoaCc_qCRooa0
 			16
-			-32768 32767
+			0 0
 			DISPLAY_IDENTIFIER AXX_FlexFuel_StartupEnrichment___MGF_CC
 			PHYS_UNIT "°C"
-			EXTENDED_LIMITS 0 0
 			DEPOSIT ABSOLUTE
 		/end AXIS_PTS
 
@@ -3244,9 +3235,8 @@ ASAP2_VERSION 1 60
 			0
 			FlexFuelEthanolContentValue_CompuMethod
 			21
-			-32768 32767
+			0 0
 			DISPLAY_IDENTIFIER BlendFactorAxis___MGF_CC
-			EXTENDED_LIMITS 0 0
 			DEPOSIT ABSOLUTE
 		/end AXIS_PTS
 
@@ -5158,7 +5148,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
-			0 655.35
+			0 60
 			DISPLAY_IDENTIFIER Antilag_ActivationDelay___MGF_CC_PF
 			FORMAT "%7.2"
 			BYTE_ORDER MSB_FIRST
@@ -5171,7 +5161,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			DchEpAd_DBCFgoa_Ckhahgc_q__aoa0
-			0 255
+			-300 300
 			DISPLAY_IDENTIFIER Antilag_CoolantTempMax___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5185,7 +5175,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			DchEpAd_DBCFgoa_Ckhahgc_q__aoa0
-			0 255
+			-300 300
 			DISPLAY_IDENTIFIER Antilag_CoolantTempMin___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5199,7 +5189,7 @@ ASAP2_VERSION 1 60
 			FklWUb
 			255
 			___MGF_CC_EngineSpeedCutMethodCompuMethod
-			0 255
+			0 3
 			DISPLAY_IDENTIFIER Antilag_CutMethod___MGF_CC_PF
 			FORMAT "%7.0"
 			BYTE_ORDER MSB_FIRST
@@ -5212,7 +5202,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			___MGF_CC_TemperatureCelsius_d10
-			0 255
+			-1000 2000
 			DISPLAY_IDENTIFIER Antilag_EgtTempMax___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5226,7 +5216,7 @@ ASAP2_VERSION 1 60
 			FklWUb
 			255
 			___MGF_CC_TemperatureCelsius_x3_d4_s48
-			0 255
+			-300 300
 			DISPLAY_IDENTIFIER Antilag_IatTempMax___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5240,7 +5230,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
-			0 655.35
+			0 5000
 			DISPLAY_IDENTIFIER Antilag_MaxDuration___MGF_CC_PF
 			FORMAT "%7.2"
 			BYTE_ORDER MSB_FIRST
@@ -5253,7 +5243,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			___MGF_CC_PressurehPa_d8
-			0 255
+			0 5000
 			DISPLAY_IDENTIFIER Antilag_OverBoostThreshold___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5267,7 +5257,7 @@ ASAP2_VERSION 1 60
 			FklWUb
 			255
 			___MGF_CC_Pedal_x100_d256
-			0 255
+			0 100
 			DISPLAY_IDENTIFIER Antilag_Pedal___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5281,7 +5271,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			___MGF_CC_Speedkmh_d64
-			0 255
+			0 300
 			DISPLAY_IDENTIFIER Antilag_RollingSpeedThreshold___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5295,7 +5285,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			32767.5
 			EngN
-			-16384 16383.5
+			0 15000
 			DISPLAY_IDENTIFIER Antilag_RollRpmMax___MGF_CC_PF
 			FORMAT "%8.2"
 			BYTE_ORDER MSB_FIRST
@@ -5308,7 +5298,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			32767.5
 			EngN
-			-16384 16383.5
+			0 15000
 			DISPLAY_IDENTIFIER Antilag_RollRpmMin___MGF_CC_PF
 			FORMAT "%8.2"
 			BYTE_ORDER MSB_FIRST
@@ -5321,7 +5311,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			32767.5
 			EngN
-			-16384 16383.5
+			0 20000
 			DISPLAY_IDENTIFIER Antilag_RpmDelayUntilCutRoll___MGF_CC_PF
 			FORMAT "%8.2"
 			BYTE_ORDER MSB_FIRST
@@ -5334,7 +5324,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			32767.5
 			EngN
-			-16384 16383.5
+			0 20000
 			DISPLAY_IDENTIFIER Antilag_RpmDelayUntilCutStand___MGF_CC_PF
 			FORMAT "%8.2"
 			BYTE_ORDER MSB_FIRST
@@ -5347,7 +5337,7 @@ ASAP2_VERSION 1 60
 			CurG_Ws16
 			32767.5
 			EngN
-			-16384 16383.5
+			0 15000
 			DISPLAY_IDENTIFIER Antilag_RpmSetpoint___MGF_CC_PF
 			FORMAT "%8.2"
 			BYTE_ORDER MSB_FIRST
@@ -5360,7 +5350,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			___MGF_CC_PressurehPa_d8
-			0 255
+			0 3000
 			DISPLAY_IDENTIFIER Antilag_TargetBoostRoll___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5374,7 +5364,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			___MGF_CC_PressurehPa_d8
-			0 255
+			0 3000
 			DISPLAY_IDENTIFIER Antilag_TargetBoostStand___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -5887,7 +5877,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
-			0 655.35
+			0 5000
 			DISPLAY_IDENTIFIER CcmEnterMenuDelay___MGF_CC_PF
 			FORMAT "%7.2"
 			BYTE_ORDER MSB_FIRST
@@ -5900,7 +5890,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
-			0 655.35
+			0 5000
 			DISPLAY_IDENTIFIER CcmTimeout___MGF_CC_PF
 			FORMAT "%7.2"
 			BYTE_ORDER MSB_FIRST
@@ -5920,52 +5910,52 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC CustomCanBusCruiseControlIdMap___MGF_CC_PF
-			""
+			"CAN bus ID for cruise control module (Default = 0x189)"
 			VALUE
 			0x97094A8
-			FklWUb
+			GkfWU16
 			255
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
-			0 255
+			0 4095
 			DISPLAY_IDENTIFIER CustomCanBusCruiseControlIdMap___MGF_CC_PF
 			FORMAT "%7.0"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC CustomCanBusEcaIdMap___MGF_CC_PF
-			""
+			"CAN bus ID for Ethanol Content Analyzer (ECA) module (Commonly 0x0EC, 0x0EB, or 0x4CB)"
 			VALUE
 			0x97094B8
-			FklWUb
+			GkfWU16
 			255
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
-			0 255
+			0 4095
 			DISPLAY_IDENTIFIER CustomCanBusEcaIdMap___MGF_CC_PF
 			FORMAT "%7.0"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC CustomCanBusMotivReflexOutputIdMap___MGF_CC_PF
-			""
+			"CAN bus ID for Motiv's Re|Flex module (Commonly 0x0EC, 0x0EB, 0x4CB, or 0x334)"
 			VALUE
 			0x97094BC
-			FklWUb
+			GkfWU16
 			255
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
-			0 255
+			0 4095
 			DISPLAY_IDENTIFIER CustomCanBusMotivReflexOutputIdMap___MGF_CC_PF
 			FORMAT "%7.0"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC CustomCanBusTurnSignalIdMap___MGF_CC_PF
-			""
+			"CAN bus ID for turn signal module (Default = 0x1EE)"
 			VALUE
 			0x97094C0
-			FklWUb
+			GkfWU16
 			255
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
-			0 255
+			0 4095
 			DISPLAY_IDENTIFIER CustomCanBusTurnSignalIdMap___MGF_CC_PF
 			FORMAT "%7.0"
 			BYTE_ORDER MSB_FIRST
@@ -6368,7 +6358,7 @@ ASAP2_VERSION 1 60
 			CurG_Ws16
 			255
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			0 255
+			-327 327
 			DISPLAY_IDENTIFIER ExhaustFlapClosedMaxLoad___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -6382,7 +6372,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
-			0 655.35
+			0 5000
 			DISPLAY_IDENTIFIER FlexFuelEthanolDisplayActivationDelay___MGF_CC_PF
 			FORMAT "%7.2"
 			BYTE_ORDER MSB_FIRST
@@ -6395,7 +6385,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			0 255
+			0 100
 			DISPLAY_IDENTIFIER FlexFuelEthanolValue___MGF_CC_FF1_Slot0
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -6409,7 +6399,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			0 255
+			0 100
 			DISPLAY_IDENTIFIER FlexFuelEthanolValue___MGF_CC_FF1_Slot1
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -6423,7 +6413,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			0 255
+			0 100
 			DISPLAY_IDENTIFIER FlexFuelEthanolValue___MGF_CC_FF1_Slot2
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -6437,7 +6427,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			0 255
+			0 100
 			DISPLAY_IDENTIFIER FlexFuelEthanolValue___MGF_CC_FF1_Slot3
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -6451,7 +6441,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
-			0 255
+			0 100
 			DISPLAY_IDENTIFIER FlexFuelEthanolValue___MGF_CC_FF1_Slot4
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -7107,7 +7097,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			32767.5
 			___MGF_CC_Temperature_2
-			0 32767.5
+			0 2000
 			DISPLAY_IDENTIFIER TargetPumpSpeed___MGF_CC
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
@@ -7119,7 +7109,7 @@ ASAP2_VERSION 1 60
 			CurG_Ws16
 			655.35
 			DchEpAd_DBCFgoa_Ckhahgc_q__aoa0
-			-327.68 327.67
+			-200 200
 			DISPLAY_IDENTIFIER TargetTemperature___MGF_CC
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
@@ -7157,7 +7147,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			655.35
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
-			0 655.35
+			0 5000
 			DISPLAY_IDENTIFIER UniRockerEnterDetectionDelay___MGF_CC_PF
 			FORMAT "%7.2"
 			BYTE_ORDER MSB_FIRST
@@ -7170,7 +7160,7 @@ ASAP2_VERSION 1 60
 			FklWUb
 			255
 			___MGF_CC_Pedal_x100_d256
-			0 255
+			0 100
 			DISPLAY_IDENTIFIER ValetMaxPedal___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -7184,7 +7174,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			32767.5
 			___MGF_CC_EngineSpeed_d4
-			-16384 16383.5
+			0 15000
 			DISPLAY_IDENTIFIER ValetMaxRpm___MGF_CC_PF
 			FORMAT "%8.2"
 			BYTE_ORDER MSB_FIRST
@@ -7197,7 +7187,7 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			255
 			___MGF_CC_Speedkmh_d64
-			0 255
+			0 327
 			DISPLAY_IDENTIFIER ValetMaxSpeed___MGF_CC_PF
 			FORMAT "%7.0"
 			PHYS_UNIT "-"
@@ -7250,7 +7240,7 @@ ASAP2_VERSION 1 60
 			_REC_A1CUR_2_MBSE_S2_S1
 			6553.5
 			Mo_trq_nm_q0p1
-			-3276.8 3276.7
+			-3000 3000
 			DISPLAY_IDENTIFIER Antilag_SafetyTorqueCap___MGF_CC_PF
 			BYTE_ORDER MSB_FIRST
 			MATRIX_DIM 18 1 1
@@ -7813,16 +7803,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -7836,16 +7825,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -7859,16 +7847,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -7882,16 +7869,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -7905,16 +7891,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -7928,16 +7913,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -7951,16 +7935,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -7974,16 +7957,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -7997,16 +7979,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8020,16 +8001,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8043,16 +8023,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8066,16 +8045,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8089,16 +8067,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8112,16 +8089,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8135,16 +8111,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8158,16 +8133,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8181,16 +8155,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8204,16 +8177,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8227,16 +8199,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8250,16 +8221,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8273,16 +8243,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8296,16 +8265,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8319,16 +8287,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8342,16 +8309,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8365,16 +8331,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8388,16 +8353,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8411,16 +8375,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8434,16 +8397,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8457,16 +8419,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8480,16 +8441,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8503,16 +8463,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8526,16 +8485,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8549,16 +8507,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8572,16 +8529,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -8595,16 +8551,15 @@ ASAP2_VERSION 1 60
 			FklWUb
 			0
 			FlexFuelEthanolContentValue_CompuMethod
-			-32768 32767
+			0 0
 			MATRIX_DIM 21 1 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -11757,16 +11712,15 @@ ASAP2_VERSION 1 60
 			CurG_Ws16
 			0
 			___MGF_CC_IgnitionTiming_d10
-			-32768 32767
+			-100 100
 			MATRIX_DIM 10 10 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw
 				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 				10
-				-32768 32767
+				0 15000
 				AXIS_PTS_REF Antilag_IgnRoll_X_Axis___MGF_CC_PF
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "1/min"
 				BYTE_ORDER MSB_FIRST
@@ -11777,9 +11731,8 @@ ASAP2_VERSION 1 60
 				Ps
 				___MGF_CC_PressurehPa_d8
 				10
-				-32768 32767
+				-3000 3000
 				AXIS_PTS_REF Antilag_IgnRoll_Y_Axis___MGF_CC_PF
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -11794,16 +11747,15 @@ ASAP2_VERSION 1 60
 			CurG_Ws16
 			0
 			___MGF_CC_IgnitionTiming_d10
-			-32768 32767
+			-100 100
 			MATRIX_DIM 10 10 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw
 				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 				10
-				-32768 32767
+				0 15000
 				AXIS_PTS_REF Antilag_IgnStand_X_Axis___MGF_CC_PF
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "1/min"
 				BYTE_ORDER MSB_FIRST
@@ -11814,9 +11766,8 @@ ASAP2_VERSION 1 60
 				Ps
 				___MGF_CC_PressurehPa_d8
 				10
-				-32768 32767
+				-3000 3000
 				AXIS_PTS_REF Antilag_IgnStand_Y_Axis___MGF_CC_PF
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -11831,16 +11782,15 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			0
 			___MGF_CC_Fueling_d10
-			-32768 32767
+			0 2
 			MATRIX_DIM 10 10 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw
 				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 				10
-				-32768 32767
+				0 15000
 				AXIS_PTS_REF Antilag_LambdaRoll_X_Axis___MGF_CC_PF
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "1/min"
 				BYTE_ORDER MSB_FIRST
@@ -11851,9 +11801,8 @@ ASAP2_VERSION 1 60
 				Tabg_vl_xab
 				Eiknlpb_abDCfba_smgoaCc_qCRooa0
 				10
-				-32768 32767
+				-3000 3000
 				AXIS_PTS_REF Antilag_LambdaRoll_Y_Axis___MGF_CC_PF
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "° C"
 				BYTE_ORDER MSB_FIRST
@@ -11868,16 +11817,15 @@ ASAP2_VERSION 1 60
 			GkfWU16
 			0
 			___MGF_CC_Fueling_d10
-			-32768 32767
+			0 2
 			MATRIX_DIM 10 10 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				Nkw
 				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 				10
-				-32768 32767
+				0 15000
 				AXIS_PTS_REF Antilag_LambdaStand_X_Axis___MGF_CC_PF
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "1/min"
 				BYTE_ORDER MSB_FIRST
@@ -11888,9 +11836,8 @@ ASAP2_VERSION 1 60
 				Tabg_vl_xab
 				Eiknlpb_abDCfba_smgoaCc_qCRooa0
 				10
-				-32768 32767
+				-3000 3000
 				AXIS_PTS_REF Antilag_LambdaStand_Y_Axis___MGF_CC_PF
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "° C"
 				BYTE_ORDER MSB_FIRST
@@ -12453,9 +12400,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12466,9 +12412,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF1_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12492,9 +12437,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12505,9 +12449,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF1_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12531,9 +12474,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12544,9 +12486,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF1_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12570,9 +12511,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12583,9 +12523,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF1_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12609,9 +12548,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12622,9 +12560,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF1_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12648,9 +12585,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12661,9 +12597,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF2_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12687,9 +12622,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12700,9 +12634,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF2_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12726,9 +12659,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12739,9 +12671,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF2_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12765,9 +12696,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12778,9 +12708,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF2_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12804,9 +12733,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12817,9 +12745,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_FF2_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12843,9 +12770,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12856,9 +12782,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_PF_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12882,9 +12807,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12895,9 +12819,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_PF_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12921,9 +12844,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12934,9 +12856,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_PF_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12960,9 +12881,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -12973,9 +12893,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_PF_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -12999,9 +12918,8 @@ ASAP2_VERSION 1 60
 				BMWtchbas_p_Dif_sw
 				___MGF_CC_PressurehPa_d8
 				12
-				-32768 32767
+				-1000 1000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ax
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "hPa"
 				BYTE_ORDER MSB_FIRST
@@ -13012,9 +12930,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_Ex_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				6
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_p_DifCrtnPp_Ay___MGF_CC_PF_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14403,9 +14320,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF1_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14416,9 +14332,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14442,9 +14357,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF1_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14455,9 +14369,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14481,9 +14394,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF1_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14494,9 +14406,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14520,9 +14431,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF1_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14533,9 +14443,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14559,9 +14468,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF1_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14572,9 +14480,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14598,9 +14505,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF2_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14611,9 +14517,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14637,9 +14542,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF2_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14650,9 +14554,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14676,9 +14579,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF2_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14689,9 +14591,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14715,9 +14616,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF2_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14728,9 +14628,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14754,9 +14653,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_FF2_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14767,9 +14665,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14793,9 +14690,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14806,9 +14702,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14832,9 +14727,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14845,9 +14739,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot1
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14871,9 +14764,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14884,9 +14776,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14910,9 +14801,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14923,9 +14813,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot3
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -14949,9 +14838,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_rat_p_CmprLim_uw
 				acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 				20
-				-32768 32767
+				0 5
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ax___MGF_CC_PF_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "-"
 				BYTE_ORDER MSB_FIRST
@@ -14962,9 +14850,8 @@ ASAP2_VERSION 1 60
 				BMWtchsp_mf_CmprNorm_uw
 				CByjozc_eCmpBAb_pljBAmd_k__0oa0
 				16
-				-32768 32767
+				0 2000
 				AXIS_PTS_REF BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot4
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "kg/h"
 				BYTE_ORDER MSB_FIRST
@@ -15401,16 +15288,15 @@ ASAP2_VERSION 1 60
 			_REC_A1CUR_2_MBSE_U2_S1
 			0
 			___MGF_CC_FlexFuel_StartupEnrichment_d100
-			-32768 32767
+			0.5 2
 			MATRIX_DIM 21 16 1
 			/begin AXIS_DESCR
 				COM_AXIS
 				FlexFuelEthanolContentValue___MGF_CC
 				FlexFuelEthanolContentValue_CompuMethod
 				21
-				-32768 32767
+				0 0
 				AXIS_PTS_REF BlendFactorAxis___MGF_CC
-				EXTENDED_LIMITS 0 0
 				FORMAT "%8.3"
 				PHYS_UNIT "%"
 				DEPOSIT ABSOLUTE
@@ -15420,9 +15306,8 @@ ASAP2_VERSION 1 60
 				Toel
 				Eiknlpb_abDCfba_smgoaCc_qCRooa0
 				16
-				-32768 32767
+				0 0
 				AXIS_PTS_REF AXX_FlexFuel_StartupEnrichment___MGF_CC
-				EXTENDED_LIMITS 0 0
 				PHYS_UNIT "°C"
 				DEPOSIT ABSOLUTE
 			/end AXIS_DESCR
@@ -23633,9 +23518,8 @@ ASAP2_VERSION 1 60
 				Rf_zh_ber
 				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
 				18
-				-32768 32767
+				0 327
 				AXIS_PTS_REF AXX_KF_MDIOP_1_TQE___MGF_CC_PF_Slot0
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "%"
 				BYTE_ORDER MSB_FIRST
@@ -23646,9 +23530,8 @@ ASAP2_VERSION 1 60
 				Nkw
 				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 				20
-				-32768 32767
+				0 15000
 				AXIS_PTS_REF AXY_KF_MDIOP_1_TQE
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "1/min"
 				BYTE_ORDER MSB_FIRST
@@ -23709,9 +23592,8 @@ ASAP2_VERSION 1 60
 				Rf_zh_ber
 				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
 				18
-				-32768 32767
+				0 327
 				AXIS_PTS_REF AXX_KF_MDIOP_1_TQE___MGF_CC_PF_Slot2
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "%"
 				BYTE_ORDER MSB_FIRST
@@ -23722,9 +23604,8 @@ ASAP2_VERSION 1 60
 				Nkw
 				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 				20
-				-32768 32767
+				0 15000
 				AXIS_PTS_REF AXY_KF_MDIOP_1_TQE
-				EXTENDED_LIMITS 0 0
 				FORMAT "%6.3"
 				PHYS_UNIT "1/min"
 				BYTE_ORDER MSB_FIRST
