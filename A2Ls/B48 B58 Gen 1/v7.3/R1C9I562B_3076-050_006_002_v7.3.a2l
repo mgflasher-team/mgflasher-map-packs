@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   2/12/2025 
+   7/29/2025 
    Created with optimization mode
 */
 
@@ -807,7 +807,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KF_EHUB_MX
-			"Book_ref"
+			"Nkw_ref"
 			0x969842A
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -912,7 +912,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KF_FDZWT_BEST_PF1
-			"Factor temperature correction ZW-Best path 1"
+			"Temperature correction factor ZW-Best path 1"
 			0x96A9C66
 			Tmot
 			_REC_A1AXS_1_MBSE_S2
@@ -927,7 +927,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KF_FDZWT_BEST_PF2
-			"Factor temperature correction ZW-Best path 2"
+			"Temperature correction factor ZW-Best path 2"
 			0x96A9C5A
 			Tmot
 			_REC_A1AXS_1_MBSE_S2
@@ -1759,7 +1759,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_LAMX
-			"Commercial vehicle * kl_taschen_aus"
+			"Nkw * kl_tasche_aus"
 			0x9697EE4
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2177,7 +2177,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_TD_SOUND_MX_FREI
-			"AXX_KL_TD_SOUND_MX_FREE"
+			"AXX_KL_TD_SOUND_MX_FREI"
 			0x96A0F00
 			V_fzg_plaus
 			_REC_A1AXS_1_MBSE_S2
@@ -2279,7 +2279,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_DZW_DYN
-			"AXY_KF_DZW_MAN"
+			"AXY_KF_DZW_DYN"
 			0x96A9E12
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2324,7 +2324,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_DZWT_PF1
-			"AXY_KF_DZWT_PF1"
+			"AXY_KF_CLOSE_PF1"
 			0x96B629E
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2518,7 +2518,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_FDZWT_BEST_PF1
-			"Factor temperature correction ZW-Best path 1"
+			"Temperature correction factor ZW-Best path 1"
 			0x96A9C4E
 			Tans
 			_REC_A1AXS_1_MBSE_S2
@@ -2533,7 +2533,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_FDZWT_BEST_PF2
-			"Factor temperature correction ZW-Best path 2"
+			"Temperature correction factor ZW-Best path 2"
 			0x96A9C42
 			Tans
 			_REC_A1AXS_1_MBSE_S2
@@ -2578,7 +2578,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_FMS_DKPSRPL_MN
-			"Rf_soll"
+			"Rf_target"
 			0x96B7934
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2593,7 +2593,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_FMS_DKPSRPL_MX
-			"Rf_soll"
+			"Rf_target"
 			0x96B7928
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2608,7 +2608,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_FMS_HFMPL_MN
-			"Rf_soll"
+			"Rf_target"
 			0x968C14E
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2623,7 +2623,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_FMS_HFMPL_MX
-			"Rf_soll"
+			"Rf_target"
 			0x968C142
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2727,7 +2727,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_LA_BEZ
-			"AXY_KF_LA_BEZ"
+			"AXY_KF"
 			0x96AA01A
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -3035,7 +3035,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXY_KF_TA_IKSOLL
-			"AXY_KF_EXIT"
+			"AXY_KF_TA_EXOLL"
 			0x96AE9BE
 			Rf_atm
 			_REC_A1AXS_1_MBSE_S2
@@ -3241,7 +3241,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_lam_InjMpl_Ax
-			"Catalyst heating after start() a/fratio (lambda)(lambda) injection multiple axis x direction "
+			"Catalyst heating after start() a/fratio (lambda)(lambda) injection(injection) multiple(multiple) axis x direction (X-axis) "
 			0x96ACCDC
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3271,7 +3271,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_lam_InjMplThr_Ax
-			"Catalyst heating after start() a/fratio (lambda)(lambda) injection multiple throttle axis x direction "
+			"Catalyst heating after start() a/fratio (lambda)(lambda) injection(injection) multiple(multiple) throttle(throttle, throttle) axis x direction (X-axis) "
 			0x96ACCF0
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3286,7 +3286,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_lam_InjMplThr_Ay
-			"Catalyst heating after start() a/fratio (lambda)(lambda) injection(injection) multiple(multiple) throttle(throttle, throttling) axis y direction (Y-axis) "
+			"Catalyst heating after start() a/fratio (lambda)(lambda) injection(injection) multiple(multiple) throttle(throttle, throttle) axis y direction (Y-axis) "
 			0x96ACAAC
 			BMWchas_tq_CmbEng_sw
 			_REC_A1AXS_1_MBSE_S2
@@ -3301,7 +3301,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_lam_InjSng_Ax
-			"Catalyst heating after start() a/fratio (lambda)(lambda) injection single axis x direction "
+			"Catalyst heating after start() a/fratio (lambda)(lambda) injection(einspritzung) single(einzeln) axis x direction (X-Achse) "
 			0x96ACCA4
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3331,7 +3331,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_lam_InjSngThr_Ax
-			"Catalyst heating after start() a/fratio (lambda)(lambda) injection single throttle axis x direction "
+			"Catalyst heating after start() a/fratio (lambda)(lambda) injection(injection) single(single) throttle(throttle, throttle) axis x direction (X-axis) "
 			0x96ACCB8
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3346,7 +3346,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_lam_InjSngThr_Ay
-			"Catalyst heating after start() a/fratio (lambda)(lambda) injection(injection) single(single) throttle(throttle, throttling) axis y direction (Y-axis) "
+			"Catalyst heating after start() a/fratio (lambda)(lambda) injection(injection) single(single) throttle(throttle, throttle) axis y direction (Y-axis) "
 			0x96ACA74
 			BMWchas_tq_CmbEng_sw
 			_REC_A1AXS_1_MBSE_S2
@@ -3361,7 +3361,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_p_RailInjMpl_Ax
-			"Catalyst heating after start() pressure rail (rail, line; meant for common rail injection) injection multiple axis x direction (X-axis) "
+			"Catalyst heating after start() pressure(pressure) rail(rail, line; meant for the common rail injection) injection(injection) multiple(multiple) axis x direction (X-axis) "
 			0x96ACC98
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3391,7 +3391,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_p_RailInjSng_Ax
-			"Catalyst heating after start() pressure rail (rail, line; meant for common rail injection) injection single axis x direction (X-axis) "
+			"Catalyst heating after start() pressure(pressure) rail(rail, line; meant for the common rail injection) injection(injection) single(single) axis x direction (X-axis) "
 			0x96ACC88
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3449,7 +3449,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWinjafs_fac_RatAirMax_Ax
-			"Characteristic curve axis upper limit Rf for L-stoich adaptation"
+			"Characteristic axis upper limit Rf for L-stoich adaptation"
 			0x968DACC
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3464,7 +3464,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWinjmon_fac_HppEff_Ax
-			"Injection map factor efficiency high-pressure pump (X-axis)"
+			"Injection map factor efficiency high pressure pump (X-axis)"
 			0x96ADAF6
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3479,7 +3479,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWinjmon_fac_HppEff_Ay
-			"Injection map factor efficiency high-pressure pump (Y-axis)"
+			"Injection map factor efficiency high pressure pump (Y-axis)"
 			0x96ADAD6
 			Prail_ist
 			_REC_A1AXS_1_MBSE_U2
@@ -3494,7 +3494,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWlpa_n_EfpEngStrtAmb_Ax
-			"EKP Speed ??Default Start Environment X-Axis"
+			"EKP speed default start environment X-axis"
 			0x9692736
 			Tumg
 			_REC_A1AXS_1_MBSE_S2
@@ -3524,7 +3524,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWlpa_n_EfpEngStrtPRail_Ax
-			"EKP speed default start rail pressure x-axis"
+			"EKP speed setting start rail pressure x-axis"
 			0x969272A
 			Prail_ist
 			_REC_A1AXS_1_MBSE_U2
@@ -3629,7 +3629,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWls_pct_FiMaxIgOfs_Gx
-			"Filling limitation characteristic curve depending on ignition angle retard"
+			"Characteristic curve filling limitation depending on ignition angle retardation"
 			0x9697ED0
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -3644,7 +3644,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWls_pct_FiMaxIgOfs_Gy
-			"Filling limitation characteristic curve depending on ignition angle retard"
+			"Characteristic curve filling limitation depending on ignition angle retardation"
 			0x9697EC0
 			Dzw_tot_kr
 			_REC_A1AXS_1_MBSE_S2
@@ -4334,7 +4334,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay
-			"AXY_KF_ATL_PVERD"
+			"AXY_KF_ATL_VALUE"
 			0x96B44E2
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4349,7 +4349,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot0
-			"AXY_KF_ATL_PVERD (Slot 0, Flex Fuel 1)"
+			"AXY_KF_ATL_VALUE (Slot 0, Flex Fuel 1)"
 			0x9776C2A
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4364,7 +4364,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot1
-			"AXY_KF_ATL_PVERD (Slot 1, Flex Fuel 1)"
+			"AXY_KF_ATL_VALUE (Slot 1, Flex Fuel 1)"
 			0x9776BAA
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4379,7 +4379,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot2
-			"AXY_KF_ATL_PVERD (Slot 2, Flex Fuel 1)"
+			"AXY_KF_ATL_VALUE (Slot 2, Flex Fuel 1)"
 			0x9776BCA
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4394,7 +4394,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot3
-			"AXY_KF_ATL_PVERD (Slot 3, Flex Fuel 1)"
+			"AXY_KF_ATL_VALUE (Slot 3, Flex Fuel 1)"
 			0x9776BEA
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4409,7 +4409,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF1_Slot4
-			"AXY_KF_ATL_PVERD (Slot 4, Flex Fuel 1)"
+			"AXY_KF_ATL_VALUE (Slot 4, Flex Fuel 1)"
 			0x9776C0A
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4424,7 +4424,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot0
-			"AXY_KF_ATL_PVERD (Slot 0, Flex Fuel 2)"
+			"AXY_KF_ATL_VALUE (Slot 0, Flex Fuel 2)"
 			0x970311C
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4439,7 +4439,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot1
-			"AXY_KF_ATL_PVERD (Slot 1, Flex Fuel 2)"
+			"AXY_KF_ATL_VALUE (Slot 1, Flex Fuel 2)"
 			0x970313C
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4454,7 +4454,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot2
-			"AXY_KF_ATL_PVERD (Slot 2, Flex Fuel 2)"
+			"AXY_KF_ATL_VALUE (Slot 2, Flex Fuel 2)"
 			0x970315C
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4469,7 +4469,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot3
-			"AXY_KF_ATL_PVERD (Slot 3, Flex Fuel 2)"
+			"AXY_KF_ATL_VALUE (Slot 3, Flex Fuel 2)"
 			0x970317C
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4484,7 +4484,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_FF2_Slot4
-			"AXY_KF_ATL_PVERD (Slot 4, Flex Fuel 2)"
+			"AXY_KF_ATL_VALUE (Slot 4, Flex Fuel 2)"
 			0x970319C
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4499,7 +4499,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot0
-			"AXY_KF_ATL_PVERD (Slot 0, OEM Address)"
+			"AXY_KF_ATL_VALUE (Slot 0, OEM Address)"
 			0x96B44E2
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4514,7 +4514,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot1
-			"AXY_KF_ATL_PVERD (Slot 1, Pump Fuel)"
+			"AXY_KF_ATL_VALUE (Slot 1, Pump Fuel)"
 			0x9774088
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4529,7 +4529,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot2
-			"AXY_KF_ATL_PVERD (Slot 2, Pump Fuel)"
+			"AXY_KF_ATL_VALUE (Slot 2, Pump Fuel)"
 			0x97740D0
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4544,7 +4544,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot3
-			"AXY_KF_ATL_PVERD (Slot 3, Pump Fuel)"
+			"AXY_KF_ATL_VALUE (Slot 3, Pump Fuel)"
 			0x9774118
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4559,7 +4559,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtchctr_pwr_Pctl_Ay___MGF_CC_PF_Slot4
-			"AXY_KF_ATL_PVERD (Slot 4, Pump Fuel)"
+			"AXY_KF_ATL_VALUE (Slot 4, Pump Fuel)"
 			0x9774160
 			BMWtchsp_mf_CmprNorm_uw
 			_REC_A1AXS_1_MBSE_U2
@@ -4844,7 +4844,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtqe_b_SptDet4NoiseAcvn_Ay
-			"Torque Engine(Torque combustion engine) bit, boolean, flag, binary message or variable(log. condition) sport(Sport) detection(Detection) four(Four, 4) noise(Noise) activation(Activation) axis y direction(Y-axis)"
+			"Torque Engine(Torque combustion engine) bit, boolean, flag, binary message or variable(log. condition) sport(Sport) detection(Detection) four(four, 4) noise(Noise) activation(Activation) axis y direction(Y-axis)"
 			0x96BC2F0
 			St_dsc_can
 			_REC_A1AXS_1_MBSE_U1
@@ -5009,7 +5009,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS GXX_KF_LABAS
-			"X axis groups for KF_LABASxxx and KF_LA_SK"
+			"Group X-axis for KF_LABASxxx and KF_LA_SK"
 			0x96B73C8
 			Nkw
 			_REC_A1AXS_1_MBSE_S2
@@ -5039,7 +5039,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS GXY_KF_LABAS
-			"Groups Y axis for KF_LABASxxx and KF_LA_SK"
+			"Group Y-axis for KF_LABASxxx and KF_LA_SK"
 			0x96B73A6
 			Rf
 			_REC_A1AXS_1_MBSE_S2
@@ -5069,7 +5069,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS IKCtl_LoadAdd04_X_AX
-			"Support point distribution relative filling, 4 Sst."
+			"Support point distribution relative filling, 4 hours"
 			0x96E82C7
 			rl_msg
 			Axis_Xu8
@@ -5129,7 +5129,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin CHARACTERISTIC AKR_stSpt_C
-			"Status Sports mode"
+			"Sports Mode Status"
 			VALUE
 			0x96DDD76
 			FklWUb
@@ -5411,7 +5411,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_fac_AirLimOvrTMin_C
-			"LoPAsst filling limitation due to EKP excess temperature factor minimum"
+			"LoPAsst filling limitation due to EKP overtemperature factor minimum"
 			VALUE
 			0x96AEAF4
 			GkfWU16
@@ -5423,7 +5423,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_n_EfpModMax_C
-			"EKP speed specification Max-Mode"
+			"EKP speed setting max mode"
 			VALUE
 			0x969263C
 			GkfWU16
@@ -5436,7 +5436,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_rat_AirLimGraNeg_C
-			"Filling limitation due to EKP gradient limitation Negative"
+			"Filling limitation due to EKP gradient limitation negative"
 			VALUE
 			0x96AEAFA
 			GkfWU16
@@ -5472,7 +5472,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_volf_FuFpcOvrT_C
-			"LoPAsst filling limitation due to EKP overtemperature, maximum volume flow"
+			"LoPAsst filling limitation due to EKP overtemperature maximum volume flow"
 			VALUE
 			0x96AEAFC
 			CurG_Ws16
@@ -5497,7 +5497,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWmondmf_swi_StallStru_C
-			"Enable / disable stall detection"
+			"Enable / Disable stall detection"
 			VALUE
 			0x96C0983
 			FklWUb
@@ -5534,7 +5534,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_n_PpLimMax_C
-			"Max speed limit for activating the limitation of the P component when switching gears."
+			"Max speed limit for activating the limitation of the P component when shifting gears."
 			VALUE
 			0x96B3CE8
 			CurG_Ws16
@@ -5547,7 +5547,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_ti_ToutPpLim_C
-			"Timeout for activating the limitation of the P component when changing gears."
+			"Timeout for activating the limitation of the P component when shifting the gear."
 			VALUE
 			0x96C09FC
 			FklWUb
@@ -5560,7 +5560,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchdiag_n_EngMin_C
-			"Lower speed threshold for leakage detection"
+			"Lower speed threshold for leak detection"
 			VALUE
 			0x969B72C
 			CurG_Ws16
@@ -5573,7 +5573,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchdiag_rf_SpMin_C
-			"Desired filling (from Rf_soll_md, limited between Rf_max and Rf_min)"
+			"Target filling (from Rf_soll_md, limited between Rf_max and Rf_min)"
 			VALUE
 			0x969B724
 			CurG_Ws16
@@ -5612,7 +5612,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_OfsMax_C
-			"Offset on the Pld_soll_max. This is subtracted from Pld_soll_max. If the actual pressure Pvdkds rises above this threshold, the Rf_max_pldmax calculation is switched on (load is high enough so that Fups and Pirg can be used for an Rfmax calculation"
+			"Offset to the Pld_soll_max. This is subtracted from Pld_soll_max. If the actual pressure Pvdkds rises above this threshold, the Rf_max_pldmax calculation is activated (load is high enough so that Fups and Pirg can be used for an Rfmax calculation)."
 			VALUE
 			0x969BB80
 			GkfWU16
@@ -5625,7 +5625,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C
-			"Maximum target boost pressure due to boost pressure sensor diagnosis"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics"
 			VALUE
 			0x969BB7C
 			GkfWU16
@@ -5638,7 +5638,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF1_Slot0
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 0, Flex Fuel 1)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 0, Flex Fuel 1)"
 			VALUE
 			0x9703E44
 			GkfWU16
@@ -5651,7 +5651,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF1_Slot1
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 1, Flex Fuel 1)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 1, Flex Fuel 1)"
 			VALUE
 			0x9703E3C
 			GkfWU16
@@ -5664,7 +5664,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF1_Slot2
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 2, Flex Fuel 1)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 2, Flex Fuel 1)"
 			VALUE
 			0x9703E3E
 			GkfWU16
@@ -5677,7 +5677,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF1_Slot3
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 3, Flex Fuel 1)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 3, Flex Fuel 1)"
 			VALUE
 			0x9703E40
 			GkfWU16
@@ -5690,7 +5690,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF1_Slot4
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 4, Flex Fuel 1)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 4, Flex Fuel 1)"
 			VALUE
 			0x9703E42
 			GkfWU16
@@ -5703,7 +5703,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF2_Slot0
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 0, Flex Fuel 2)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 0, Flex Fuel 2)"
 			VALUE
 			0x9703E46
 			GkfWU16
@@ -5716,7 +5716,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF2_Slot1
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 1, Flex Fuel 2)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 1, Flex Fuel 2)"
 			VALUE
 			0x9703E48
 			GkfWU16
@@ -5729,7 +5729,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF2_Slot2
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 2, Flex Fuel 2)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 2, Flex Fuel 2)"
 			VALUE
 			0x9703E4A
 			GkfWU16
@@ -5742,7 +5742,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF2_Slot3
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 3, Flex Fuel 2)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 3, Flex Fuel 2)"
 			VALUE
 			0x9703E4C
 			GkfWU16
@@ -5755,7 +5755,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_FF2_Slot4
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 4, Flex Fuel 2)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 4, Flex Fuel 2)"
 			VALUE
 			0x9703E4E
 			GkfWU16
@@ -5768,7 +5768,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_PF_Slot0
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 0, OEM Address)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 0, OEM Address)"
 			VALUE
 			0x969BB7C
 			GkfWU16
@@ -5781,7 +5781,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_PF_Slot1
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 1, Pump Fuel)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 1, Pump Fuel)"
 			VALUE
 			0x977466E
 			GkfWU16
@@ -5794,7 +5794,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_PF_Slot2
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 2, Pump Fuel)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 2, Pump Fuel)"
 			VALUE
 			0x9774418
 			GkfWU16
@@ -5807,7 +5807,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_PF_Slot3
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 3, Pump Fuel)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 3, Pump Fuel)"
 			VALUE
 			0x977441A
 			GkfWU16
@@ -5820,7 +5820,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchsp_p_ReqMax_C___MGF_CC_PF_Slot4
-			"Maximum target boost pressure due to boost pressure sensor diagnosis (Slot 4, Pump Fuel)"
+			"Maximum target boost pressure due to boost pressure sensor diagnostics (Slot 4, Pump Fuel)"
 			VALUE
 			0x977441C
 			GkfWU16
@@ -5833,7 +5833,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqc_pct_MoPwrRelDifThd_C
-			"torque coordination () percentage, relative (percentage size, relative size) motor (electric motor, motorized) power (force, power) relative (relative) difference (difference) threshold (threshold) constant (constant)"
+			"torque coordination () percentage, relative (percentage, relative size) motor (electric motor, motor) power (power, power) relative (relative) difference (difference) threshold (threshold) constant (constant)"
 			VALUE
 			0x968A3B0
 			CurG_Ws16
@@ -5846,7 +5846,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqc_pct_MoTqRelDifThd_C
-			"torque coordination () percentage, relative (percentage size, relative size) motor (electric motor, motorized) torque (torque) relative (relative) difference (difference) threshold (threshold) constant (constant)"
+			"torque coordination (torque coordination) () percentage, relative (percentage, relative size) motor (electric motor, motor) torque (torque) relative (relative) difference (difference) threshold (threshold) constant (constant)"
 			VALUE
 			0x968A3AE
 			CurG_Ws16
@@ -5859,7 +5859,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqe_rf_StrTqMaxOfs_C
-			"Torque Engine(torque combustion engine) relative filling(relative filling) start, eg status of the cumbustion engine(start(e.g. status of the combustion engine)) torque(torque) maximum(maximum) offset(offset, offset) constant(constant)"
+			"Torque Engine (torque of the combustion engine) relative filling (relative filling) start, e.g. status of the combustion engine (start (e.g. status of the combustion engine)) torque (torque) maximum (maximum) offset (offset) constant (constant)"
 			VALUE
 			0x96A44A6
 			CurG_Ws16
@@ -5897,7 +5897,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC CoEng_ratChrgAirCylMaxDesLim_C
-			"Upper limit for the filling value requested by the hybrid coordinator."
+			"Upper limit for the fill value requested by the hybrid coordinator."
 			VALUE
 			0x96DC83A
 			GkfWU16
@@ -6074,6 +6074,370 @@ ASAP2_VERSION 1 60
 			B_TRUE
 			0 1
 			DISPLAY_IDENTIFIER CW_FlexFuelBlending___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_BMWtchctr_p_DifCrtnPp_M___MGF_CC
+			"BMWtchctr_p_DifCrtnPp_M Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x970948B
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_BMWtchctr_p_DifCrtnPp_M___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_BMWtchctr_pct_WgBasc_M___MGF_CC
+			"BMWtchctr_pct_WgBasc_M Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094A5
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_BMWtchctr_pct_WgBasc_M___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_BMWtchctr_pwr_Dp_M___MGF_CC
+			"BMWtchctr_pwr_Dp_M Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094A6
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_BMWtchctr_pwr_Dp_M___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_BMWtchctr_pwr_Pctl_M___MGF_CC
+			"BMWtchctr_pwr_Pctl_M Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094A7
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_BMWtchctr_pwr_Pctl_M___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_BMWtchsp_p_ReqMax_C___MGF_CC
+			"BMWtchsp_p_ReqMax_C Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094AA
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_BMWtchsp_p_ReqMax_C___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_IKCtl_FacKnockDetThd0_GM___MGF_CC
+			"IKCtl_FacKnockDetThd0_GM Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094AB
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_IKCtl_FacKnockDetThd0_GM___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_IKCtl_FacKnockDetThd1_GM___MGF_CC
+			"IKCtl_FacKnockDetThd1_GM Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094AC
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_IKCtl_FacKnockDetThd1_GM___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_IKCtl_FacKnockDetThd2_GM___MGF_CC
+			"IKCtl_FacKnockDetThd2_GM Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094AD
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_IKCtl_FacKnockDetThd2_GM___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_IKCtl_FacKnockDetThd3_GM___MGF_CC
+			"IKCtl_FacKnockDetThd3_GM Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094AE
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_IKCtl_FacKnockDetThd3_GM___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_IKCtl_FacKnockDetThd4_GM___MGF_CC
+			"IKCtl_FacKnockDetThd4_GM Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094AF
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_IKCtl_FacKnockDetThd4_GM___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_IKCtl_FacKnockDetThd5_GM___MGF_CC
+			"IKCtl_FacKnockDetThd5_GM Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094B0
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_IKCtl_FacKnockDetThd5_GM___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_FDZWT_PF1___MGF_CC
+			"KF_FDZWT_PF1 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094B1
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_FDZWT_PF1___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_FDZWT_PF2___MGF_CC
+			"KF_FDZWT_PF2 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094B2
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_FDZWT_PF2___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_FRKKORRF_1___MGF_CC
+			"KF_FRKKORRF_1 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094B3
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_FRKKORRF_1___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_LABAS_1___MGF_CC
+			"KF_LABAS_1 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094B4
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_LABAS_1___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_LABAS_2___MGF_CC
+			"KF_LABAS_2 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094B5
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_LABAS_2___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_PHA_H_B1_W___MGF_CC
+			"KF_PHA_H_B1_W Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094B6
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_PHA_H_B1_W___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_PHA_H_E1___MGF_CC
+			"KF_PHA_H_E1 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094B7
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_PHA_H_E1___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_ZW_PF1___MGF_CC
+			"KF_ZW_PF1 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094BA
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_ZW_PF1___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_ZW_PF2___MGF_CC
+			"KF_ZW_PF2 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094BB
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_ZW_PF2___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_ZW_S_PF1___MGF_CC
+			"KF_ZW_S_PF1 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094BE
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_ZW_S_PF1___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_ZW_S_PF2___MGF_CC
+			"KF_ZW_S_PF2 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094BF
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_ZW_S_PF2___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_ZW_UESP_PF1___MGF_CC
+			"KF_ZW_UESP_PF1 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094C2
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_ZW_UESP_PF1___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_ZW_UESP_PF2___MGF_CC
+			"KF_ZW_UESP_PF2 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094C3
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_ZW_UESP_PF2___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_ZW_VP_PF1___MGF_CC
+			"KF_ZW_VP_PF1 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094C4
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_ZW_VP_PF1___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KF_ZW_VP_PF2___MGF_CC
+			"KF_ZW_VP_PF2 Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094C5
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KF_ZW_VP_PF2___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KL_RF_MAX___MGF_CC
+			"KL_RF_MAX Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094C6
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KL_RF_MAX___MGF_CC
+			FORMAT "%13.11"
+			BYTE_ORDER MSB_FIRST
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC CW_FlexFuelBlending_KL_RF_MAX_UESP___MGF_CC
+			"KL_RF_MAX_UESP Blending Codeword: Set 1 (true) to enable blending of this map and 0 (false) to disable blending of this map (in all slots)"
+			VALUE
+			0x97094C7
+			FklWUb
+			1
+			B_TRUE
+			0 1
+			DISPLAY_IDENTIFIER CW_FlexFuelBlending_KL_RF_MAX_UESP___MGF_CC
 			FORMAT "%13.11"
 			BYTE_ORDER MSB_FIRST
 		/end CHARACTERISTIC
@@ -6449,7 +6813,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_BS_MN
-			"Lambda minimum value for component protection"
+			"Minimum lambda value for component protection"
 			VALUE
 			0x96910D8
 			GkfWU16
@@ -6461,7 +6825,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_MD_ANZ_BS_SCAL_CODE0
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B9134
 			FklWUb
@@ -6473,7 +6837,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_MD_ANZ_BS_SCAL_CODE1
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B9133
 			FklWUb
@@ -6485,7 +6849,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_MD_ANZ_BS_SCAL_CODE2
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B9132
 			FklWUb
@@ -6497,7 +6861,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_MD_ANZ_BS_SCAL_CODE3
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B9131
 			FklWUb
@@ -6509,7 +6873,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_MD_ANZ_BS_SCAL_CODE4
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B9130
 			FklWUb
@@ -6521,7 +6885,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_P_ANZ_SPORT_BS_SCAL_CODE0
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B912F
 			FklWUb
@@ -6533,7 +6897,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_P_ANZ_SPORT_BS_SCAL_CODE1
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B912E
 			FklWUb
@@ -6545,7 +6909,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_P_ANZ_SPORT_BS_SCAL_CODE2
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B912D
 			FklWUb
@@ -6557,7 +6921,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_EDA_P_ANZ_SPORT_BS_SCAL_CODE3
-			"Base scaling per area in the display"
+			"Basic scaling per area in the display"
 			VALUE
 			0x96B912C
 			FklWUb
@@ -6582,7 +6946,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_F_SOT_RUECKBLICK_RS
-			"Offset for factor for thrust bubbling when downshifting"
+			"Offset for factor for overrun bubbling when downshifting"
 			VALUE
 			0x96B8DB3
 			FklWUb
@@ -6621,7 +6985,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_FRFMXBS_MN
-			"Limiting factor filling intervention at BS at grease running limit"
+			"Limiting factor filling intervention at BS at fat running limit"
 			VALUE
 			0x9691084
 			GkfWU16
@@ -6634,7 +6998,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_HFMPLCD_NKW_MX
-			"Enable mass flow diagnosis HFM in Coast Down, engine speed threshold maximum"
+			"Release mass flow diagnosis HFM in Coast Down, engine speed threshold maximum"
 			VALUE
 			0x96AD040
 			CurG_Ws16
@@ -6647,7 +7011,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_KSU_INTREG_MX
-			"Maximum value for integral component PI controller"
+			"Maximum value for integral part PI controller"
 			VALUE
 			0x969D398
 			CurG_Ws16
@@ -6671,7 +7035,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_KSU_MDEINGRIFFPROP_MN
-			"I was the least CltPrt_MdDec_P"
+			"Minimum for CltPrt_MdDec_P"
 			VALUE
 			0x969D396
 			CurG_Ws16
@@ -6683,7 +7047,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_KSU_MDEINGRIFFPROP_MX
-			"I was the greatest CltPrt_MdDec_P"
+			"Maximum for CltPrt_MdDec_P"
 			VALUE
 			0x969D394
 			CurG_Ws16
@@ -6695,7 +7059,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_LA_FETTDELAY
-			"Lambda threshold from which a rich request from KF_LABAS_XXX is suppressed"
+			"Lambda threshold above which a rich fuel demand from KF_LABAS_XXX is suppressed"
 			VALUE
 			0x96B6C60
 			GkfWU16
@@ -6760,7 +7124,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_MSVANST_DIFFPRAIL
-			"Constant monitoring HDP activation minimum rail pressure undershoot"
+			"Constant monitoring of HDP control for minimum rail pressure undershoot"
 			VALUE
 			0x96ADA20
 			GkfWU16
@@ -6773,7 +7137,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_NKW_PEMAX
-			"Speed ??at which the engine has its maximum power"
+			"Speed at which the engine has its maximum power"
 			VALUE
 			0x969D16E
 			CurG_Ws16
@@ -6825,7 +7189,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_T_FETTDELAY_SPERR
-			"Time during which a renewed suppression of enrichment is blocked"
+			"Time in which a new enrichment suppression is blocked"
 			VALUE
 			0x96C2DEE
 			FklWUb
@@ -6886,7 +7250,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_TKW_WA
-			"Target coolant temperature in warm-up mode"
+			"Coolant target temperature in warm-up mode"
 			VALUE
 			0x96A99C0
 			CurG_Ws16
@@ -6898,7 +7262,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_V_SOT_MN
-			"Min. driving speed for thrust bubbling"
+			"Min. driving speed for push bubbling"
 			VALUE
 			0x9689B7E
 			CurG_Ws16
@@ -6948,7 +7312,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC MoFTrqAct_nThd_C
-			"Speed threshold from which MoFTrqAct_Eng is active"
+			"Speed threshold at which MoFTrqAct_Eng is active"
 			VALUE
 			0x96C4784
 			CurG_Ws16
@@ -6961,7 +7325,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC MoFTrqAct_trqPtdInjActv_C
-			"Maximum permitted actual torque, injections active"
+			"Maximum allowed actual torque, injections active"
 			VALUE
 			0x96C47C4
 			CurG_Ws16
@@ -6987,7 +7351,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC MoFTrqPtd_tqCluMax_C
-			"Maximum combustion torque at the coupling in the function monitoring"
+			"Maximum combustion torque at the clutch in the function monitoring"
 			VALUE
 			0x96C4346
 			CurG_Ws16
@@ -7000,7 +7364,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC NMXHDR
-			"RPM limit on HDR error"
+			"Speed limit in case of HDR error"
 			VALUE
 			0x96EA1CE
 			CurG_Ws16
@@ -7052,7 +7416,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC S_AUSWAHL_FETTDELAY
-			"Switch for switching the lambda setpoint during enrichment suppression. Either Lamda=1 or max selection between La_main and K_LA_FETTDELAY is output."
+			"Switch for switching the lambda setpoint during enrichment suppression. Either lambda=1 or the maximum selection between La_main and K_LA_FETTDELAY is output."
 			VALUE
 			0x96C2DED
 			FklWUb
@@ -7065,7 +7429,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC S_BSRFMX
-			"Filling limitation switch for component protection at the rich running limit"
+			"Switch filling limitation for component protection at grease running limit"
 			VALUE
 			0x96B982C
 			FklWUb
@@ -7128,7 +7492,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC TVSTAKR
-			"Delay time for triggering the exhaust flap after start"
+			"Delay time for controlling the exhaust flap after start"
 			VALUE
 			0x96DDDC4
 			GkfWU16
@@ -7195,7 +7559,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC VMAXOVC
-			"Vmax limit value, variant coded"
+			"Vmax limit value, variant-coded"
 			VALUE
 			0x96EEEB4
 			GkfWU16
@@ -7285,7 +7649,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_n_EfpEngStrtPRail_T
-			"EKP speed specification start rail pressure"
+			"EKP speed setting start rail pressure"
 			CURVE
 			0x9692706
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -7311,7 +7675,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_rat_EfpPwm_T
-			"EKP speed control in PWM"
+			"EKP control speed in PWM"
 			CURVE
 			0x969264A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -7363,7 +7727,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchco_fac_FadePl_T
-			"Blending factor for boost pressure precontrol for partial load operation"
+			"Blend factor for boost pressure pre-control for partial load operation"
 			CURVE
 			0x96BA6D4
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -7389,7 +7753,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_fac_Dp_T
-			"Correction factor for D-part of the performance-based boost pressure regulator"
+			"Correction factor for the D component of the performance-based boost pressure regulator"
 			CURVE
 			0x96B406E
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -7415,7 +7779,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_fac_DpDyn_T
-			"Correction factor for D-part of the performance-based boost pressure regulator"
+			"Correction factor for the D component of the performance-based boost pressure regulator"
 			CURVE
 			0x96B407A
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -7441,7 +7805,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_fac_pwr_CompLimPctl_T
-			"Factor for pre-control up to which the controller with the P and D component can increase the compressor output during operation via pre-control"
+			"Factor on pre-control up to which the controller with the P and D component can increase the compressor capacity during operation via pre-control"
 			CURVE
 			0x96B4998
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -7772,7 +8136,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqe_b_Clu4NoiseDeac_T
-			"Torque Engine(torque combustion engine) bit, boolean, flag, binary message or variable(log. condition) clutch(clutch) four(four) noise(noise) deactivation(deactivation) curve, table(characteristic curve)"
+			"Torque Engine(Torque combustion engine) bit, boolean, flag, binary message or variable(log. condition) clutch(clutch) four(four) noise(noise) deactivation(deactivation) curve, table(characteristic curve)"
 			CURVE
 			0x96BC2E4
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -8567,7 +8931,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC FWIHDR
-			"Weighting factor PI controller parameter HDR; I-part"
+			"Weighting factor PI controller parameter HDR; I-component"
 			CURVE
 			0x96E7C22
 			Cur_Xu8Wu8
@@ -8591,7 +8955,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC FWPHDR
-			"Weighting factor PI controller parameter HDR; P-part"
+			"Weighting factor PI controller parameter HDR; P-component"
 			CURVE
 			0x96E7C33
 			Cur_Xu8Wu8
@@ -8615,7 +8979,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_DKVL
-			"Maximum value for setpoint throttle valve (only with S_WDKSVL_VAR=1)"
+			"Maximum value for throttle valve setpoint (only with S_WDKSVL_VAR=1)"
 			CURVE
 			0x969617C
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -8641,7 +9005,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_ENA_NREG_DSC
-			"Characteristic curves DSC Mode"
+			"DSC Mode characteristics"
 			CURVE
 			0x96BAF5C
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -8666,7 +9030,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_FLD_KKS
-			"Requirement to switch the KKS as a function of the filtered mean value of the throttle valve pressure"
+			"Request to switch the KKS depending on the filtered mean value of the throttle valve pressure"
 			CURVE
 			0x9687920
 			_REC_S4CUR_52_KL_U1_1_U2
@@ -8690,7 +9054,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_FRFMXBS
-			"Characteristic curve factor filling intervention at BS at grease running limit"
+			"Characteristic curve factor filling intervention at BS at rich running limit"
 			CURVE
 			0x9691088
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -8716,7 +9080,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_LA_SBL
-			"Characteristic Lambda specification thrust bubbling"
+			"Lambda characteristic curve thrust bubbling"
 			CURVE
 			0x96B6C62
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -8793,7 +9157,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_BST_HS
-			"Speed-dependent boost characteristic of the combustion engine (Nkw_opt) for manual switches"
+			"Speed-dependent boost characteristic of the combustion engine (Nkw_opt) for manual transmission"
 			CURVE
 			0x96B5A42
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -8870,7 +9234,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_RNSTART_STRG_AT
-			"Speed-dependent strategic transmission input limitation during race start for automatic"
+			"Speed-dependent strategic transmission input limitation during race start for automatic transmission"
 			CURVE
 			0x96B4DBE
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -8947,7 +9311,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_RST_HS
-			"Speed-dependent race start characteristic of the combustion engine (Nkw_opt) for manual switches"
+			"Speed-dependent race start characteristic of the combustion engine (Nkw_opt) for manual transmission"
 			CURVE
 			0x96B5A12
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9074,7 +9438,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDG_MAX_GANG_AT
-			"Gear-dependent transmission input limitation for automatic"
+			"Gear-dependent transmission input limitation for automatic transmission"
 			CURVE
 			0x96B4E1A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9100,7 +9464,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDG_MAX_GANG_HS
-			"Gear-dependent transmission input limitation for manual switch"
+			"Gear-dependent transmission input limitation for manual transmission"
 			CURVE
 			0x96B4E06
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9177,7 +9541,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDKMX_VL_APPLZ
-			"Applicable limitation of Mdk_max_vm_nobgr"
+			"Applicable limit of Mdk_max_vm_nobgr"
 			CURVE
 			0x96A3E32
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9202,7 +9566,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDKMX_VL_APPLZ___MGF_CC_PF_Slot0
-			"Applicable limitation of Mdk_max_vm_nobgr (Slot 0, OEM Address)"
+			"Applicable limit of Mdk_max_vm_nobgr (Slot 0, OEM Address)"
 			CURVE
 			0x96A3E32
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9227,7 +9591,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDKMX_VL_APPLZ___MGF_CC_PF_Slot1
-			"Applicable limitation of Mdk_max_vm_nobgr (Slot 1, Pump Fuel)"
+			"Applicable limit of Mdk_max_vm_nobgr (Slot 1, Pump Fuel)"
 			CURVE
 			0x97745DE
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9252,7 +9616,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDKMX_VL_APPLZ___MGF_CC_PF_Slot2
-			"Applicable limitation of Mdk_max_vm_nobgr (Slot 2, Pump Fuel)"
+			"Applicable limit of Mdk_max_vm_nobgr (Slot 2, Pump Fuel)"
 			CURVE
 			0x9774602
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9277,7 +9641,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDKMX_VL_APPLZ___MGF_CC_PF_Slot3
-			"Applicable limitation of Mdk_max_vm_nobgr (Slot 3, Pump Fuel)"
+			"Applicable limit of Mdk_max_vm_nobgr (Slot 3, Pump Fuel)"
 			CURVE
 			0x9774626
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9302,7 +9666,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDKMX_VL_APPLZ___MGF_CC_PF_Slot4
-			"Applicable limitation of Mdk_max_vm_nobgr (Slot 4, Pump Fuel)"
+			"Applicable limit of Mdk_max_vm_nobgr (Slot 4, Pump Fuel)"
 			CURVE
 			0x977464A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9327,7 +9691,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MDRED_NKW
-			"Factor for reducing the target engine torque as a function of the engine speed"
+			"Factor for reducing the engine target torque depending on the engine speed"
 			CURVE
 			0x9685A88
 			_REC_S4CUR_52_KL_U1_1_S2
@@ -9351,7 +9715,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_NEL_TMOT
-			"E-fan speed requirement by the motor temperature"
+			"Electric fan speed requirement due to engine temperature"
 			CURVE
 			0x9685288
 			_REC_S4CUR_52_KL_U1_1_S2
@@ -9375,7 +9739,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_NKW_SOUND_MN
-			"Min. speed threshold for activating BMWtqe_b_NoisePre_bo depending on the gear"
+			"Min. speed threshold for activation of BMWtqe_b_NoisePre_bo depending on the gear"
 			CURVE
 			0x96A0EC8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9400,7 +9764,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_NKW_SOUND_MX
-			"Max. speed threshold for activating BMWtqe_b_NoisePre_bo depending on the gear"
+			"Max. speed threshold for activation of BMWtqe_b_NoisePre_bo depending on the gear"
 			CURVE
 			0x96A0EB8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9425,7 +9789,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX
-			"Characteristic maximum permissible filling over speed"
+			"Characteristic curve maximum permissible filling over speed"
 			CURVE
 			0x9697D14
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9451,7 +9815,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF1_Slot0
-			"Characteristic maximum permissible filling over speed (Slot 0, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed (Slot 0, Flex Fuel 1)"
 			CURVE
 			0x977B1B8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9477,7 +9841,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF1_Slot1
-			"Characteristic maximum permissible filling over speed (Slot 1, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed (Slot 1, Flex Fuel 1)"
 			CURVE
 			0x977B158
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9503,7 +9867,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF1_Slot2
-			"Characteristic maximum permissible filling over speed (Slot 2, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed (Slot 2, Flex Fuel 1)"
 			CURVE
 			0x977B170
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9529,7 +9893,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF1_Slot3
-			"Characteristic maximum permissible filling over speed (Slot 3, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed (Slot 3, Flex Fuel 1)"
 			CURVE
 			0x977B188
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9555,7 +9919,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF1_Slot4
-			"Characteristic maximum permissible filling over speed (Slot 4, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed (Slot 4, Flex Fuel 1)"
 			CURVE
 			0x977B1A0
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9581,7 +9945,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF2_Slot0
-			"Characteristic maximum permissible filling over speed (Slot 0, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed (Slot 0, Flex Fuel 2)"
 			CURVE
 			0x9705E44
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9607,7 +9971,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF2_Slot1
-			"Characteristic maximum permissible filling over speed (Slot 1, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed (Slot 1, Flex Fuel 2)"
 			CURVE
 			0x9705E5C
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9633,7 +9997,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF2_Slot2
-			"Characteristic maximum permissible filling over speed (Slot 2, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed (Slot 2, Flex Fuel 2)"
 			CURVE
 			0x9705E74
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9659,7 +10023,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF2_Slot3
-			"Characteristic maximum permissible filling over speed (Slot 3, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed (Slot 3, Flex Fuel 2)"
 			CURVE
 			0x9705E8C
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9685,7 +10049,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_FF2_Slot4
-			"Characteristic maximum permissible filling over speed (Slot 4, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed (Slot 4, Flex Fuel 2)"
 			CURVE
 			0x9705EA4
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9711,7 +10075,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_PF_Slot0
-			"Characteristic maximum permissible filling over speed (Slot 0, OEM Address)"
+			"Characteristic curve maximum permissible filling over speed (Slot 0, OEM Address)"
 			CURVE
 			0x9697D14
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9737,7 +10101,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_PF_Slot1
-			"Characteristic maximum permissible filling over speed (Slot 1, Pump Fuel)"
+			"Characteristic curve maximum permissible filling over speed (Slot 1, Pump Fuel)"
 			CURVE
 			0x97701A8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9763,7 +10127,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_PF_Slot2
-			"Characteristic maximum permissible filling over speed (Slot 2, Pump Fuel)"
+			"Characteristic curve maximum permissible filling over speed (Slot 2, Pump Fuel)"
 			CURVE
 			0x97701C0
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9789,7 +10153,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_PF_Slot3
-			"Characteristic maximum permissible filling over speed (Slot 3, Pump Fuel)"
+			"Characteristic curve maximum permissible filling over speed (Slot 3, Pump Fuel)"
 			CURVE
 			0x97701D8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9815,7 +10179,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX___MGF_CC_PF_Slot4
-			"Characteristic maximum permissible filling over speed (Slot 4, Pump Fuel)"
+			"Characteristic curve maximum permissible filling over speed (Slot 4, Pump Fuel)"
 			CURVE
 			0x97701F0
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9867,7 +10231,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP
-			"Characteristic of the maximum permissible filling over the speed when flushing"
+			"Characteristic curve maximum permissible filling over speed during flushing"
 			CURVE
 			0x9697CFC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9893,7 +10257,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF1_Slot0
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 0, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 0, Flex Fuel 1)"
 			CURVE
 			0x977B248
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9919,7 +10283,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF1_Slot1
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 1, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 1, Flex Fuel 1)"
 			CURVE
 			0x977B1E8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9945,7 +10309,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF1_Slot2
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 2, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 2, Flex Fuel 1)"
 			CURVE
 			0x977B200
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9971,7 +10335,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF1_Slot3
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 3, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 3, Flex Fuel 1)"
 			CURVE
 			0x977B218
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -9997,7 +10361,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF1_Slot4
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 4, Flex Fuel 1)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 4, Flex Fuel 1)"
 			CURVE
 			0x977B230
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10023,7 +10387,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF2_Slot0
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 0, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 0, Flex Fuel 2)"
 			CURVE
 			0x9705EBC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10049,7 +10413,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF2_Slot1
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 1, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 1, Flex Fuel 2)"
 			CURVE
 			0x9705ED4
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10075,7 +10439,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF2_Slot2
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 2, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 2, Flex Fuel 2)"
 			CURVE
 			0x9705EEC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10101,7 +10465,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF2_Slot3
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 3, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 3, Flex Fuel 2)"
 			CURVE
 			0x9705F04
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10127,7 +10491,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_FF2_Slot4
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 4, Flex Fuel 2)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 4, Flex Fuel 2)"
 			CURVE
 			0x9705F1C
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10153,7 +10517,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_PF_Slot0
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 0, OEM Address)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 0, OEM Address)"
 			CURVE
 			0x9697CFC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10179,7 +10543,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_PF_Slot1
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 1, Pump Fuel)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 1, Pump Fuel)"
 			CURVE
 			0x9770148
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10205,7 +10569,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_PF_Slot2
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 2, Pump Fuel)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 2, Pump Fuel)"
 			CURVE
 			0x9770160
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10231,7 +10595,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_PF_Slot3
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 3, Pump Fuel)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 3, Pump Fuel)"
 			CURVE
 			0x9770178
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10257,7 +10621,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RF_MAX_UESP___MGF_CC_PF_Slot4
-			"Characteristic of the maximum permissible filling over the speed when flushing (Slot 4, Pump Fuel)"
+			"Characteristic curve maximum permissible filling over speed during flushing (Slot 4, Pump Fuel)"
 			CURVE
 			0x9770190
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10309,7 +10673,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_RFMIN_KRSTSYS
-			"Minimum charge for charge limitation from injection monitoring"
+			"Minimum filling for filling limitation from injection monitoring"
 			CURVE
 			0x96ADB1E
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10387,7 +10751,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_T_IKAT_SOUND_MX
-			"Temperature threshold cat for thrust bubble release "
+			"Temperature threshold cat for thrust bubbling release "
 			CURVE
 			0x96A0EB0
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -10487,7 +10851,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_TKW_HI
-			"Coolant target temperature in High operating mode depending on the ambient temperature"
+			"Coolant setpoint temperature in High operating mode depending on the ambient temperature"
 			CURVE
 			0x9685B0E
 			_REC_S4CUR_52_KL_S2_1_S2
@@ -10511,7 +10875,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_TKW_NO
-			"Target coolant temperature in normal operating mode depending on the ambient temperature"
+			"Coolant setpoint temperature in Normal operating mode depending on the ambient temperature"
 			CURVE
 			0x9685AFC
 			_REC_S4CUR_52_KL_S2_1_S2
@@ -10734,7 +11098,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCC
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot, with the convertible top closed"
+			"Map for exhaust flap control depending on gangsist and nmot, with the convertible top closed"
 			MAP
 			0x96DD23A
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -10768,7 +11132,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCC_VAR1
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD726
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -10802,7 +11166,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCC_VAR2
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD766
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -10836,7 +11200,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCC_VAR3
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD7A6
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -10870,7 +11234,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCAT
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top closed"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with the convertible top closed"
 			MAP
 			0x96DD2CA
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -10904,7 +11268,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCAT_VAR1
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top closed"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with the convertible top closed"
 			MAP
 			0x96DD4E0
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -10938,7 +11302,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCAT_VAR2
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top closed"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with the convertible top closed"
 			MAP
 			0x96DD532
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -10972,7 +11336,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCAT_VAR3
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top closed"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with the convertible top closed"
 			MAP
 			0x96DD584
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11006,7 +11370,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCATM
-			"Map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD35A
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11040,7 +11404,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCATM_VAR1
-			"Map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD3EA
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11074,7 +11438,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCATM_VAR2
-			"Map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD43C
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11108,7 +11472,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCATM_VAR3
-			"Map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD48E
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11142,7 +11506,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCM
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD5D6
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11176,7 +11540,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCM_VAR1
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD666
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11210,7 +11574,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCM_VAR2
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD6A6
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11244,7 +11608,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCCM_VAR3
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top closed and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with the convertible top closed and the sport button activated"
 			MAP
 			0x96DD6E6
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11278,7 +11642,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCO
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot, with the convertible top open"
+			"Map for exhaust flap control depending on gangsist and nmot, with open convertible top"
 			MAP
 			0x96DD7E6
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11312,7 +11676,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCO_VAR1
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot, with the convertible top open"
+			"Map for exhaust flap control depending on gangsist and nmot, with open convertible top"
 			MAP
 			0x96DDB0A
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11346,7 +11710,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCOAT
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top open"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with open convertible top"
 			MAP
 			0x96DD876
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11380,7 +11744,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCOAT_VAR1
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top open"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with open convertible top"
 			MAP
 			0x96DD9E8
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11414,7 +11778,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCOATM
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top open and the sport button activated and the sport button activated"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with open convertible top and activated sport button and activated sport button"
 			MAP
 			0x96DD906
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11448,7 +11812,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCOATM_VAR1
-			"Characteristic map for exhaust flap control depending on the gangsist and nmot (DKG or AT transmission), with the convertible top open and the sport button activated and the sport button activated"
+			"Map for exhaust flap control depending on gangsist and nmot (DKG or AT transmission), with open convertible top and activated sport button and activated sport button"
 			MAP
 			0x96DD996
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11482,7 +11846,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCOM
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top open and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with open convertible top and activated sport button"
 			MAP
 			0x96DDA3A
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11516,7 +11880,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC AKRGRCOM_VAR1
-			"Map for exhaust flap control depending on the gangsist and nmot, with the convertible top open and the sports button activated"
+			"Map for exhaust flap control depending on gangsist and nmot, with open convertible top and activated sport button"
 			MAP
 			0x96DDACA
 			KfAxU8AyU8SstxU8SstyU8WU8
@@ -11550,7 +11914,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, )"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, )"
 			MAP
 			0x97755DC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -11589,7 +11953,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_BMWtchctr_p_DifCrtnPpDyn_M___MGF_CC_PF
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, )"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, )"
 			MAP
 			0x9775678
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -11628,7 +11992,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_BMWtchctr_pwr_Dp_M___MGF_CC_PF
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch)"
 			MAP
 			0x9775714
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -11667,7 +12031,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC Antilag_BMWtchctr_pwr_Pctl_M___MGF_CC_PF
-			"Compressor map with required compressor / turbine performance ()"
+			"Compressor map with required compressor/turbine power ()"
 			MAP
 			0x9775312
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -12151,7 +12515,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_n_EfpEngStrtAmb_M
-			"EKP speed specification start environment"
+			"EKP speed setting start environment"
 			MAP
 			0x969270A
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -12190,7 +12554,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_n_EfpModSafe_M
-			"EKP speed specification safe mode"
+			"EKP speed setting safe mode"
 			MAP
 			0x9692656
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -12268,7 +12632,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWls_pct_FiMaxIgOfs_M
-			"Filling limitation characteristic curve depending on ignition angle retard"
+			"Characteristic curve filling limitation depending on ignition angle retardation"
 			MAP
 			0x9697D80
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12307,7 +12671,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWls_pct_FiMaxIgOfsSpt_M
-			"Characteristic filling limitation depending on ignition angle retardation in sport mode"
+			"Characteristic curve filling limitation depending on ignition angle retardation in sport mode"
 			MAP
 			0x9697E20
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12346,7 +12710,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator"
 			MAP
 			0x96B4306
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12385,7 +12749,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF1_Slot0
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 0, Flex Fuel 1)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 0, Flex Fuel 1)"
 			MAP
 			0x9775D0A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12422,7 +12786,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF1_Slot1
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 1, Flex Fuel 1)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 1, Flex Fuel 1)"
 			MAP
 			0x9775ACA
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12459,7 +12823,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF1_Slot2
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 2, Flex Fuel 1)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 2, Flex Fuel 1)"
 			MAP
 			0x9775B5A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12496,7 +12860,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF1_Slot3
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 3, Flex Fuel 1)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 3, Flex Fuel 1)"
 			MAP
 			0x9775BEA
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12533,7 +12897,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF1_Slot4
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 4, Flex Fuel 1)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 4, Flex Fuel 1)"
 			MAP
 			0x9775C7A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12570,7 +12934,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF2_Slot0
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 0, Flex Fuel 2)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 0, Flex Fuel 2)"
 			MAP
 			0x970203C
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12607,7 +12971,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF2_Slot1
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 1, Flex Fuel 2)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 1, Flex Fuel 2)"
 			MAP
 			0x97020CC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12644,7 +13008,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF2_Slot2
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 2, Flex Fuel 2)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 2, Flex Fuel 2)"
 			MAP
 			0x970215C
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12681,7 +13045,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF2_Slot3
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 3, Flex Fuel 2)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 3, Flex Fuel 2)"
 			MAP
 			0x97021EC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12718,7 +13082,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_FF2_Slot4
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 4, Flex Fuel 2)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 4, Flex Fuel 2)"
 			MAP
 			0x970227C
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12755,7 +13119,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot0
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 0, OEM Address)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 0, OEM Address)"
 			MAP
 			0x96B4306
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12792,7 +13156,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot1
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 1, Pump Fuel)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 1, Pump Fuel)"
 			MAP
 			0x97741A8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12829,7 +13193,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot2
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 2, Pump Fuel)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 2, Pump Fuel)"
 			MAP
 			0x9774238
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12866,7 +13230,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot3
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 3, Pump Fuel)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 3, Pump Fuel)"
 			MAP
 			0x97742C8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12903,7 +13267,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPp_M___MGF_CC_PF_Slot4
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller (X-Axis does not switch, Slot 4, Pump Fuel)"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator (X-Axis does not switch, Slot 4, Pump Fuel)"
 			MAP
 			0x9774358
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -12940,7 +13304,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_p_DifCrtnPpDyn_M
-			"Correction of pressure difference f. P-part of the performance-based boost pressure controller"
+			"Correction of pressure difference for the P-component of the performance-based boost pressure regulator"
 			MAP
 			0x96B4396
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13603,7 +13967,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_CmprGra_M
-			"P-component of the power-based boost pressure controller. Gradient compressor performance according to pressure ratio."
+			"P-component of the power-based boost pressure controller. Gradient compressor power based on pressure ratio."
 			MAP
 			0x96B3CEE
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -13642,7 +14006,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M
-			"D part of the performance-based boost pressure controller"
+			"D-component of the performance-based boost pressure regulator"
 			MAP
 			0x96B3EE6
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13681,7 +14045,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF1_Slot0
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 0, Flex Fuel 1)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 0, Flex Fuel 1)"
 			MAP
 			0x977695A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13720,7 +14084,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF1_Slot1
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 1, Flex Fuel 1)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 1, Flex Fuel 1)"
 			MAP
 			0x977633A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13759,7 +14123,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF1_Slot2
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 2, Flex Fuel 1)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 2, Flex Fuel 1)"
 			MAP
 			0x97764C2
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13798,7 +14162,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF1_Slot3
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 3, Flex Fuel 1)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 3, Flex Fuel 1)"
 			MAP
 			0x977664A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13837,7 +14201,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF1_Slot4
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 4, Flex Fuel 1)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 4, Flex Fuel 1)"
 			MAP
 			0x97767D2
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13876,7 +14240,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF2_Slot0
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 0, Flex Fuel 2)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 0, Flex Fuel 2)"
 			MAP
 			0x97028AC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13915,7 +14279,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF2_Slot1
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 1, Flex Fuel 2)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 1, Flex Fuel 2)"
 			MAP
 			0x9702A34
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13954,7 +14318,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF2_Slot2
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 2, Flex Fuel 2)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 2, Flex Fuel 2)"
 			MAP
 			0x9702BBC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13993,7 +14357,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF2_Slot3
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 3, Flex Fuel 2)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 3, Flex Fuel 2)"
 			MAP
 			0x9702D44
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -14032,7 +14396,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_FF2_Slot4
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 4, Flex Fuel 2)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 4, Flex Fuel 2)"
 			MAP
 			0x9702ECC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -14071,7 +14435,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot0
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 0, OEM Address)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 0, OEM Address)"
 			MAP
 			0x96B3EE6
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -14110,7 +14474,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot1
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 1, Pump Fuel)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 1, Pump Fuel)"
 			MAP
 			0x9773068
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -14149,7 +14513,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot2
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 2, Pump Fuel)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 2, Pump Fuel)"
 			MAP
 			0x97731F0
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -14188,7 +14552,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot3
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 3, Pump Fuel)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 3, Pump Fuel)"
 			MAP
 			0x9773378
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -14227,7 +14591,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Dp_M___MGF_CC_PF_Slot4
-			"D part of the performance-based boost pressure controller (X-Axis and Y-Axis do not switch, Slot 4, Pump Fuel)"
+			"D-component of the performance-based boost pressure regulator (X-Axis and Y-Axis do not switch, Slot 4, Pump Fuel)"
 			MAP
 			0x9773500
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -14266,7 +14630,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M
-			"Compressor map with required compressor / turbine performance"
+			"Compressor map with required compressor/turbine power"
 			MAP
 			0x96B4086
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14305,7 +14669,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF1_Slot0
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 0, Flex Fuel 1)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 0, Flex Fuel 1)"
 			MAP
 			0x977764A
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14342,7 +14706,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF1_Slot1
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 1, Flex Fuel 1)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 1, Flex Fuel 1)"
 			MAP
 			0x9776C4A
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14379,7 +14743,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF1_Slot2
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 2, Flex Fuel 1)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 2, Flex Fuel 1)"
 			MAP
 			0x9776ECA
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14416,7 +14780,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF1_Slot3
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 3, Flex Fuel 1)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 3, Flex Fuel 1)"
 			MAP
 			0x977714A
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14453,7 +14817,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF1_Slot4
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 4, Flex Fuel 1)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 4, Flex Fuel 1)"
 			MAP
 			0x97773CA
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14490,7 +14854,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF2_Slot0
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 0, Flex Fuel 2)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 0, Flex Fuel 2)"
 			MAP
 			0x97031BC
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14527,7 +14891,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF2_Slot1
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 1, Flex Fuel 2)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 1, Flex Fuel 2)"
 			MAP
 			0x970343C
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14564,7 +14928,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF2_Slot2
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 2, Flex Fuel 2)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 2, Flex Fuel 2)"
 			MAP
 			0x97036BC
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14601,7 +14965,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF2_Slot3
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 3, Flex Fuel 2)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 3, Flex Fuel 2)"
 			MAP
 			0x970393C
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14638,7 +15002,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_FF2_Slot4
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 4, Flex Fuel 2)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 4, Flex Fuel 2)"
 			MAP
 			0x9703BBC
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14675,7 +15039,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot0
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 0, OEM Address)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 0, OEM Address)"
 			MAP
 			0x96B4086
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14712,7 +15076,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot1
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 1, Pump Fuel)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 1, Pump Fuel)"
 			MAP
 			0x9773688
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14749,7 +15113,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot2
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 2, Pump Fuel)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 2, Pump Fuel)"
 			MAP
 			0x9773908
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14786,7 +15150,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot3
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 3, Pump Fuel)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 3, Pump Fuel)"
 			MAP
 			0x9773B88
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14823,7 +15187,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_Pctl_M___MGF_CC_PF_Slot4
-			"Compressor map with required compressor / turbine performance (X-Axis does not switch, Slot 4, Pump Fuel)"
+			"Compressor map with required compressor/turbine power (X-Axis does not switch, Slot 4, Pump Fuel)"
 			MAP
 			0x9773E08
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -14860,7 +15224,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_t_ExGasMdl_M
-			"Exhaust gas temperature during dynamic load changes for the physical ATL pilot control"
+			"Exhaust gas temperature during dynamic load changes for the physical ATL pre-control"
 			MAP
 			0x96B46BC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -14899,7 +15263,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_t_ExGasMdlScav_M
-			"Exhaust gas temperature during dynamic load changes for the physical ATL pilot control"
+			"Exhaust gas temperature during dynamic load changes for the physical ATL pre-control"
 			MAP
 			0x96B4704
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -15244,7 +15608,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqe_b_SptDet4NoiseAcvn_M
-			"Detection of sport mode depending on St_usecase_antr and St_dsc_can"
+			"Sport mode detection depends on St_usecase_antr and St_dsc_can"
 			MAP
 			0x96BC2B4
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -15314,7 +15678,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC GKF_ASPR_NORM_KALT_PF1
-			"Map exhaust spread target value (map normal operation, cold, path 1)"
+			"Exhaust spread map setpoint (normal operation map, cold, path 1)"
 			MAP
 			0x9696FA6
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15353,7 +15717,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC GKF_ASPR_NORM_KALT_PF2
-			"Map exhaust spread target value (map normal operation, cold, load, path 2)"
+			"Exhaust spread map setpoint (normal operation map, cold, load, path 2)"
 			MAP
 			0x9696E26
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15392,7 +15756,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC GKF_ASPR_NORM_WARM_PF1
-			"Map exhaust spread target value (map normal operation, warm, path 1)"
+			"Exhaust spread map setpoint (normal operation map, warm, path 1)"
 			MAP
 			0x9696CA6
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15431,7 +15795,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC GKF_ASPR_NORM_WARM_PF2
-			"Outlet spread setpoint map (normal operation map, warm, path 2)"
+			"Exhaust spread map setpoint (normal operation map, warm, path 2)"
 			MAP
 			0x9696B26
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15508,7 +15872,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC GKF_ESPR_NORM_KALT_PF1
-			"Map of inlet spread setpoint (map of normal operation, cold, load, path 1)"
+			"Intake spread map setpoint (normal operation map, cold, load, path 1)"
 			MAP
 			0x9697AA0
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15547,7 +15911,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC GKF_ESPR_NORM_KALT_PF2
-			"Map of inlet spread setpoint (map of normal operation, cold, load, path 2)"
+			"Intake spread map setpoint (normal operation map, cold, load, path 2)"
 			MAP
 			0x9697920
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15586,7 +15950,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC GKF_ESPR_NORM_WARM_PF1
-			"Inlet spread setpoint map (normal operation map, warm, load, path 1)"
+			"Intake spread map setpoint (normal operation map, warm, load, path 1)"
 			MAP
 			0x96977A0
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15625,7 +15989,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC GKF_ESPR_NORM_WARM_PF2
-			"Map of intake spread setpoint (map of normal operation, warm, load, path 2)"
+			"Intake spread map setpoint (normal operation map, warm, load, path 2)"
 			MAP
 			0x9697620
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15769,7 +16133,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC IKCtl_facKnkRtdtCyl3_M
-			"Retarding per knock event for cylinder 3"
+			"Retardation per knock event for cylinder 3"
 			MAP
 			0x96E91FC
 			RB_Map_S16U8_S8_Static
@@ -19426,7 +19790,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ASPR_NORM_UESP_PF1
-			"Map of outlet spread setpoint (for flushing, path 1)"
+			"Exhaust spread map setpoint (with over-flushing, path 1)"
 			MAP
 			0x96967C4
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -19465,7 +19829,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_BSLGF
-			"Lambda grease limit for component protection filling intervention"
+			"Lambda rich running limit for component protection filling intervention"
 			MAP
 			0x9691090
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -19542,7 +19906,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_DPLDS_PRED
-			"Offset setpoint boost pressure as f(engine speed, dynamic Rf_setpoint damping)"
+			"Offset setpoint boost pressure as f(engine speed, dynamic Rf_soll damping)"
 			MAP
 			0x96B3458
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -19812,7 +20176,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_DZWT_UESP_PF1
-			"Temperature correction ZW knock limit path 1 flush"
+			"Temperature correction ZW knock limit path1 purge"
 			MAP
 			0x96C2748
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -19851,7 +20215,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_DZWT_UESP_PF2
-			"Temperature correction ZW knock limit path 2 flush"
+			"Temperature correction ZW knock limit path2 purge"
 			MAP
 			0x96C26D0
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -19890,7 +20254,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_EDA_ANZ_SPORT_MD_EM1_IST
-			"Adjustment of the moment for the performance display"
+			"Adjusting the moment for the performance display"
 			MAP
 			0x968A450
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -19929,7 +20293,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_EDA_ANZ_SPORT_MDK_IST
-			"Adjustment of the moment for the performance display"
+			"Adjusting the moment for the performance display"
 			MAP
 			0x968A498
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -19968,7 +20332,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_EHUB_MX
-			"Map maximum intake valve lift"
+			"Maximum intake valve lift map"
 			MAP
 			0x9698386
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -20006,7 +20370,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ESPR_NORM_UESP_PF1
-			"Characteristic map intake spread target value (for over-scavenging, path 1)"
+			"Inlet spread map setpoint (with overpurge, path 1)"
 			MAP
 			0x96972BE
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -20045,7 +20409,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_F_MDIMAX_KR
-			"Factor limiting internal torque through knock control (optimal ignition angle cannot be achieved)"
+			"Factor limitation of internal torque by knock control (optimal ignition angle cannot be achieved)"
 			MAP
 			0x96B559C
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -20083,7 +20447,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FDZW_DYN1
-			"Weighting factor dynamic correction via Tans and Dzw_annm for manual transmissions"
+			"Weighting factor dynamic correction via Tans and Dzw_annm for manual transmission"
 			MAP
 			0x96C2338
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -20121,7 +20485,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FDZW_DYN2
-			"Weighting factor dynamic correction via V and gears for manual transmission"
+			"Weighting factor dynamic correction via V and Gangi for manual transmission"
 			MAP
 			0x96C2310
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -20197,7 +20561,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FDZW_DYN4
-			"Weighting factor dynamic correction via V and Gangi for automatic transmissions"
+			"Weighting factor dynamic correction via V and Gangi for automatic transmission"
 			MAP
 			0x96C22D8
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -20235,7 +20599,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FDZWT_BEST_PF1
-			"Factor temperature correction ZW-Best path 1"
+			"Temperature correction factor ZW-Best path 1"
 			MAP
 			0x96A9BFA
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -20274,7 +20638,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FDZWT_BEST_PF2
-			"Factor temperature correction ZW-Best path 2"
+			"Temperature correction factor ZW-Best path 2"
 			MAP
 			0x96A9BB2
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -21717,7 +22081,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1
-			"Map pre-control correction bank 1"
+			"Map feedforward control correction Bank 1"
 			MAP
 			0x968DAFA
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -21756,7 +22120,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF1_Slot0
-			"Map pre-control correction bank 1 (Slot 0, Flex Fuel 1)"
+			"Map feedforward control correction Bank 1 (Slot 0, Flex Fuel 1)"
 			MAP
 			0x977A364
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -21795,7 +22159,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF1_Slot1
-			"Map pre-control correction bank 1 (Slot 1, Flex Fuel 1)"
+			"Map feedforward control correction Bank 1 (Slot 1, Flex Fuel 1)"
 			MAP
 			0x9779B64
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -21834,7 +22198,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF1_Slot2
-			"Map pre-control correction bank 1 (Slot 2, Flex Fuel 1)"
+			"Map feedforward control correction Bank 1 (Slot 2, Flex Fuel 1)"
 			MAP
 			0x9779D64
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -21873,7 +22237,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF1_Slot3
-			"Map pre-control correction bank 1 (Slot 3, Flex Fuel 1)"
+			"Map feedforward control correction Bank 1 (Slot 3, Flex Fuel 1)"
 			MAP
 			0x9779F64
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -21912,7 +22276,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF1_Slot4
-			"Map pre-control correction bank 1 (Slot 4, Flex Fuel 1)"
+			"Map feedforward control correction Bank 1 (Slot 4, Flex Fuel 1)"
 			MAP
 			0x977A164
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -21951,7 +22315,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF2_Slot0
-			"Map pre-control correction bank 1 (Slot 0, Flex Fuel 2)"
+			"Map feedforward control correction Bank 1 (Slot 0, Flex Fuel 2)"
 			MAP
 			0x9704120
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -21990,7 +22354,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF2_Slot1
-			"Map pre-control correction bank 1 (Slot 1, Flex Fuel 2)"
+			"Map feedforward control correction Bank 1 (Slot 1, Flex Fuel 2)"
 			MAP
 			0x9704320
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22029,7 +22393,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF2_Slot2
-			"Map pre-control correction bank 1 (Slot 2, Flex Fuel 2)"
+			"Map feedforward control correction Bank 1 (Slot 2, Flex Fuel 2)"
 			MAP
 			0x9704520
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22068,7 +22432,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF2_Slot3
-			"Map pre-control correction bank 1 (Slot 3, Flex Fuel 2)"
+			"Map feedforward control correction Bank 1 (Slot 3, Flex Fuel 2)"
 			MAP
 			0x9704720
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22107,7 +22471,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_FF2_Slot4
-			"Map pre-control correction bank 1 (Slot 4, Flex Fuel 2)"
+			"Map feedforward control correction Bank 1 (Slot 4, Flex Fuel 2)"
 			MAP
 			0x9704920
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22146,7 +22510,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_PF_Slot0
-			"Map pre-control correction bank 1 (Slot 0, OEM Address)"
+			"Map feedforward control correction Bank 1 (Slot 0, OEM Address)"
 			MAP
 			0x968DAFA
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22185,7 +22549,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_PF_Slot1
-			"Map pre-control correction bank 1 (Slot 1, Pump Fuel)"
+			"Map feedforward control correction Bank 1 (Slot 1, Pump Fuel)"
 			MAP
 			0x9774678
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22224,7 +22588,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_PF_Slot2
-			"Map pre-control correction bank 1 (Slot 2, Pump Fuel)"
+			"Map feedforward control correction Bank 1 (Slot 2, Pump Fuel)"
 			MAP
 			0x9774878
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22263,7 +22627,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_PF_Slot3
-			"Map pre-control correction bank 1 (Slot 3, Pump Fuel)"
+			"Map feedforward control correction Bank 1 (Slot 3, Pump Fuel)"
 			MAP
 			0x9774A78
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22302,7 +22666,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_FRKKORRF_1___MGF_CC_PF_Slot4
-			"Map pre-control correction bank 1 (Slot 4, Pump Fuel)"
+			"Map feedforward control correction Bank 1 (Slot 4, Pump Fuel)"
 			MAP
 			0x9774C78
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22573,7 +22937,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1
-			"Base lambda in the homogeneous bank 1"
+			"Baseline lambda in homogenous bank 1"
 			MAP
 			0x96B7136
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22612,7 +22976,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF1_Slot0
-			"Base lambda in the homogeneous bank 1 (Slot 0, Flex Fuel 1)"
+			"Baseline lambda in homogenous bank 1 (Slot 0, Flex Fuel 1)"
 			MAP
 			0x977AEF4
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22651,7 +23015,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF1_Slot1
-			"Base lambda in the homogeneous bank 1 (Slot 1, Flex Fuel 1)"
+			"Baseline lambda in homogenous bank 1 (Slot 1, Flex Fuel 1)"
 			MAP
 			0x977A564
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22690,7 +23054,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF1_Slot2
-			"Base lambda in the homogeneous bank 1 (Slot 2, Flex Fuel 1)"
+			"Baseline lambda in homogenous bank 1 (Slot 2, Flex Fuel 1)"
 			MAP
 			0x977A7C8
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22729,7 +23093,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF1_Slot3
-			"Base lambda in the homogeneous bank 1 (Slot 3, Flex Fuel 1)"
+			"Baseline lambda in homogenous bank 1 (Slot 3, Flex Fuel 1)"
 			MAP
 			0x977AA2C
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22768,7 +23132,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF1_Slot4
-			"Base lambda in the homogeneous bank 1 (Slot 4, Flex Fuel 1)"
+			"Baseline lambda in homogenous bank 1 (Slot 4, Flex Fuel 1)"
 			MAP
 			0x977AC90
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22807,7 +23171,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF2_Slot0
-			"Base lambda in the homogeneous bank 1 (Slot 0, Flex Fuel 2)"
+			"Baseline lambda in homogenous bank 1 (Slot 0, Flex Fuel 2)"
 			MAP
 			0x9704B20
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22846,7 +23210,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF2_Slot1
-			"Base lambda in the homogeneous bank 1 (Slot 1, Flex Fuel 2)"
+			"Baseline lambda in homogenous bank 1 (Slot 1, Flex Fuel 2)"
 			MAP
 			0x9704D84
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22885,7 +23249,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF2_Slot2
-			"Base lambda in the homogeneous bank 1 (Slot 2, Flex Fuel 2)"
+			"Baseline lambda in homogenous bank 1 (Slot 2, Flex Fuel 2)"
 			MAP
 			0x9704FE8
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22924,7 +23288,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF2_Slot3
-			"Base lambda in the homogeneous bank 1 (Slot 3, Flex Fuel 2)"
+			"Baseline lambda in homogenous bank 1 (Slot 3, Flex Fuel 2)"
 			MAP
 			0x970524C
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -22963,7 +23327,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_FF2_Slot4
-			"Base lambda in the homogeneous bank 1 (Slot 4, Flex Fuel 2)"
+			"Baseline lambda in homogenous bank 1 (Slot 4, Flex Fuel 2)"
 			MAP
 			0x97054B0
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23002,7 +23366,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_PF_Slot0
-			"Base lambda in the homogeneous bank 1 (Slot 0, OEM Address)"
+			"Baseline lambda in homogenous bank 1 (Slot 0, OEM Address)"
 			MAP
 			0x96B7136
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23041,7 +23405,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_PF_Slot1
-			"Base lambda in the homogeneous bank 1 (Slot 1, Pump Fuel)"
+			"Baseline lambda in homogenous bank 1 (Slot 1, Pump Fuel)"
 			MAP
 			0x9772248
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23080,7 +23444,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_PF_Slot2
-			"Base lambda in the homogeneous bank 1 (Slot 2, Pump Fuel)"
+			"Baseline lambda in homogenous bank 1 (Slot 2, Pump Fuel)"
 			MAP
 			0x97724AC
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23119,7 +23483,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_PF_Slot3
-			"Base lambda in the homogeneous bank 1 (Slot 3, Pump Fuel)"
+			"Baseline lambda in homogenous bank 1 (Slot 3, Pump Fuel)"
 			MAP
 			0x9772710
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23158,7 +23522,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_1___MGF_CC_PF_Slot4
-			"Base lambda in the homogeneous bank 1 (Slot 4, Pump Fuel)"
+			"Baseline lambda in homogenous bank 1 (Slot 4, Pump Fuel)"
 			MAP
 			0x9772974
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23197,7 +23561,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LABAS_2
-			"Base lambda in the homogeneous bank 2"
+			"Baseline lambda in homogeneous bank 2"
 			MAP
 			0x96B6ED2
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23236,7 +23600,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_LAMIN_H
-			"Lamda burning limits bold"
+			"Lambda burn limit rich"
 			MAP
 			0x96956FE
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23352,7 +23716,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_MDIMAX_SK
-			"Limitation of the inner moment after pre-ignition (super knocking)"
+			"Limiting internal torque after pre-ignition (super knocking)"
 			MAP
 			0x96B54D8
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -23428,7 +23792,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_MDIMAX_TVDK
-			"Limitation of maximum internal torque via temperature in front of the throttle valve"
+			"Limitation of maximum internal torque via temperature before throttle valve"
 			MAP
 			0x96B5448
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -23729,7 +24093,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_MDR_ABV_SPO
-			"rel. Desired moment for the drive in sports mode"
+			"Relative desired torque for the drive in sports mode"
 			MAP
 			0x96A4E26
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23767,7 +24131,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_MDR_ABV_SPO_HS
-			"rel. Desired torque for the drive in sports mode (manual switch)"
+			"Relative desired torque for the drive in sport mode (manual transmission)"
 			MAP
 			0x96A4B56
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23805,7 +24169,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_MDR_ABV_SPO2
-			"rel. Desired torque for the drive in sports mode (2)"
+			"Relative desired torque for the drive in sports mode (2)"
 			MAP
 			0x96A4D36
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23843,7 +24207,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_MDR_ABV_SPO2_HS
-			"rel. Desired torque for the drive in sports mode (manual switch)"
+			"Relative desired torque for the drive in sport mode (manual transmission)"
 			MAP
 			0x96A4C46
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -23881,7 +24245,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_MDRED_T
-			"Factor for reducing the target motor torque as a function of the temperatures"
+			"Factor for reducing the engine target torque depending on the temperatures"
 			MAP
 			0x96859FA
 			_REC_S5MAP_52_KF_U1_S2_S2
@@ -23917,7 +24281,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_PHA_H_B1_SK_PRE
-			"Characteristic map starting angle ES1 Preventive super knocking."
+			"Map starting angle ES1 super knock preventative."
 			MAP
 			0x968EF9A
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -25171,7 +25535,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_PRAIL_H
-			"Map RAIL PRESSURE HOMOGENOUS -- with active VVT"
+			"Map RAIL PRESSURE HOMOGENEOUS -- with active VVT"
 			MAP
 			0x969B3D2
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -25249,7 +25613,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_PRAIL_HGD
-			"Map RAIL PRESSURE HOMOGENOUS -- with deactivated VVT (GD)"
+			"Map RAIL PRESSURE HOMOGENEOUS -- with deactivated VVT (GD)"
 			MAP
 			0x969B2D2
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -25327,7 +25691,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ST_RKBAS_GD
-			"Map Basic Rk Quantity throttled operation"
+			"Map base Rk amount throttled operation"
 			MAP
 			0x96B69AC
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -25442,7 +25806,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_TA_IKSOLL
-			"Target temperature for exhaust gas temperature in cat"
+			"Target temperature for exhaust gas temperature in catalytic converter"
 			MAP
 			0x96AE946
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -25594,7 +25958,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1
-			"Basic firing angle path 1"
+			"Basic ignition angle path 1"
 			MAP
 			0x96BF40C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25633,7 +25997,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF1_Slot0
-			"Basic firing angle path 1 (Slot 0, Flex Fuel 1)"
+			"Basic ignition angle path 1 (Slot 0, Flex Fuel 1)"
 			MAP
 			0x977B88C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25672,7 +26036,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF1_Slot1
-			"Basic firing angle path 1 (Slot 1, Flex Fuel 1)"
+			"Basic ignition angle path 1 (Slot 1, Flex Fuel 1)"
 			MAP
 			0x977B38C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25711,7 +26075,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF1_Slot2
-			"Basic firing angle path 1 (Slot 2, Flex Fuel 1)"
+			"Basic ignition angle path 1 (Slot 2, Flex Fuel 1)"
 			MAP
 			0x977B4CC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25750,7 +26114,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF1_Slot3
-			"Basic firing angle path 1 (Slot 3, Flex Fuel 1)"
+			"Basic ignition angle path 1 (Slot 3, Flex Fuel 1)"
 			MAP
 			0x977B60C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25789,7 +26153,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF1_Slot4
-			"Basic firing angle path 1 (Slot 4, Flex Fuel 1)"
+			"Basic ignition angle path 1 (Slot 4, Flex Fuel 1)"
 			MAP
 			0x977B74C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25828,7 +26192,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF2_Slot0
-			"Basic firing angle path 1 (Slot 0, Flex Fuel 2)"
+			"Basic ignition angle path 1 (Slot 0, Flex Fuel 2)"
 			MAP
 			0x97066B4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25867,7 +26231,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF2_Slot1
-			"Basic firing angle path 1 (Slot 1, Flex Fuel 2)"
+			"Basic ignition angle path 1 (Slot 1, Flex Fuel 2)"
 			MAP
 			0x97067F4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25906,7 +26270,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF2_Slot2
-			"Basic firing angle path 1 (Slot 2, Flex Fuel 2)"
+			"Basic ignition angle path 1 (Slot 2, Flex Fuel 2)"
 			MAP
 			0x9706934
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25945,7 +26309,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF2_Slot3
-			"Basic firing angle path 1 (Slot 3, Flex Fuel 2)"
+			"Basic ignition angle path 1 (Slot 3, Flex Fuel 2)"
 			MAP
 			0x9706A74
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -25984,7 +26348,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_FF2_Slot4
-			"Basic firing angle path 1 (Slot 4, Flex Fuel 2)"
+			"Basic ignition angle path 1 (Slot 4, Flex Fuel 2)"
 			MAP
 			0x9706BB4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26023,7 +26387,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_PF_Slot0
-			"Basic firing angle path 1 (Slot 0, OEM Address)"
+			"Basic ignition angle path 1 (Slot 0, OEM Address)"
 			MAP
 			0x96BF40C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26062,7 +26426,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_PF_Slot1
-			"Basic firing angle path 1 (Slot 1, Pump Fuel)"
+			"Basic ignition angle path 1 (Slot 1, Pump Fuel)"
 			MAP
 			0x9771108
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26101,7 +26465,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_PF_Slot2
-			"Basic firing angle path 1 (Slot 2, Pump Fuel)"
+			"Basic ignition angle path 1 (Slot 2, Pump Fuel)"
 			MAP
 			0x9771248
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26140,7 +26504,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_PF_Slot3
-			"Basic firing angle path 1 (Slot 3, Pump Fuel)"
+			"Basic ignition angle path 1 (Slot 3, Pump Fuel)"
 			MAP
 			0x9771388
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26179,7 +26543,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF1___MGF_CC_PF_Slot4
-			"Basic firing angle path 1 (Slot 4, Pump Fuel)"
+			"Basic ignition angle path 1 (Slot 4, Pump Fuel)"
 			MAP
 			0x97714C8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26218,7 +26582,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2
-			"Basic firing angle path 2"
+			"Basic ignition angle path 2"
 			MAP
 			0x96BF2CC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26257,7 +26621,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF1_Slot0
-			"Basic firing angle path 2 (Slot 0, Flex Fuel 1)"
+			"Basic ignition angle path 2 (Slot 0, Flex Fuel 1)"
 			MAP
 			0x977BEE1
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26296,7 +26660,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF1_Slot1
-			"Basic firing angle path 2 (Slot 1, Flex Fuel 1)"
+			"Basic ignition angle path 2 (Slot 1, Flex Fuel 1)"
 			MAP
 			0x977B9E1
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26335,7 +26699,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF1_Slot2
-			"Basic firing angle path 2 (Slot 2, Flex Fuel 1)"
+			"Basic ignition angle path 2 (Slot 2, Flex Fuel 1)"
 			MAP
 			0x977BB21
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26374,7 +26738,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF1_Slot3
-			"Basic firing angle path 2 (Slot 3, Flex Fuel 1)"
+			"Basic ignition angle path 2 (Slot 3, Flex Fuel 1)"
 			MAP
 			0x977BC61
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26413,7 +26777,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF1_Slot4
-			"Basic firing angle path 2 (Slot 4, Flex Fuel 1)"
+			"Basic ignition angle path 2 (Slot 4, Flex Fuel 1)"
 			MAP
 			0x977BDA1
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26452,7 +26816,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF2_Slot0
-			"Basic firing angle path 2 (Slot 0, Flex Fuel 2)"
+			"Basic ignition angle path 2 (Slot 0, Flex Fuel 2)"
 			MAP
 			0x9706CF4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26491,7 +26855,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF2_Slot1
-			"Basic firing angle path 2 (Slot 1, Flex Fuel 2)"
+			"Basic ignition angle path 2 (Slot 1, Flex Fuel 2)"
 			MAP
 			0x9706E34
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26530,7 +26894,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF2_Slot2
-			"Basic firing angle path 2 (Slot 2, Flex Fuel 2)"
+			"Basic ignition angle path 2 (Slot 2, Flex Fuel 2)"
 			MAP
 			0x9706F74
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26569,7 +26933,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF2_Slot3
-			"Basic firing angle path 2 (Slot 3, Flex Fuel 2)"
+			"Basic ignition angle path 2 (Slot 3, Flex Fuel 2)"
 			MAP
 			0x97070B4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26608,7 +26972,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_FF2_Slot4
-			"Basic firing angle path 2 (Slot 4, Flex Fuel 2)"
+			"Basic ignition angle path 2 (Slot 4, Flex Fuel 2)"
 			MAP
 			0x97071F4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26647,7 +27011,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_PF_Slot0
-			"Basic firing angle path 2 (Slot 0, OEM Address)"
+			"Basic ignition angle path 2 (Slot 0, OEM Address)"
 			MAP
 			0x96BF2CC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26686,7 +27050,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_PF_Slot1
-			"Basic firing angle path 2 (Slot 1, Pump Fuel)"
+			"Basic ignition angle path 2 (Slot 1, Pump Fuel)"
 			MAP
 			0x9770C08
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26725,7 +27089,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_PF_Slot2
-			"Basic firing angle path 2 (Slot 2, Pump Fuel)"
+			"Basic ignition angle path 2 (Slot 2, Pump Fuel)"
 			MAP
 			0x9770D48
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26764,7 +27128,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_PF_Slot3
-			"Basic firing angle path 2 (Slot 3, Pump Fuel)"
+			"Basic ignition angle path 2 (Slot 3, Pump Fuel)"
 			MAP
 			0x9770E88
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -26803,7 +27167,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_PF2___MGF_CC_PF_Slot4
-			"Basic firing angle path 2 (Slot 4, Pump Fuel)"
+			"Basic ignition angle path 2 (Slot 4, Pump Fuel)"
 			MAP
 			0x9770FC8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28090,7 +28454,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1
-			"Basic ignition angle overflush path 1"
+			"Basic ignition angle purge path 1"
 			MAP
 			0x96BEFC0
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28129,7 +28493,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF1_Slot0
-			"Basic ignition angle overflush path 1 (Slot 0, Flex Fuel 1)"
+			"Basic ignition angle purge path 1 (Slot 0, Flex Fuel 1)"
 			MAP
 			0x977C72B
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28168,7 +28532,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF1_Slot1
-			"Basic ignition angle overflush path 1 (Slot 1, Flex Fuel 1)"
+			"Basic ignition angle purge path 1 (Slot 1, Flex Fuel 1)"
 			MAP
 			0x977C4FB
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28207,7 +28571,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF1_Slot2
-			"Basic ignition angle overflush path 1 (Slot 2, Flex Fuel 1)"
+			"Basic ignition angle purge path 1 (Slot 2, Flex Fuel 1)"
 			MAP
 			0x977C587
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28246,7 +28610,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF1_Slot3
-			"Basic ignition angle overflush path 1 (Slot 3, Flex Fuel 1)"
+			"Basic ignition angle purge path 1 (Slot 3, Flex Fuel 1)"
 			MAP
 			0x977C613
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28285,7 +28649,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF1_Slot4
-			"Basic ignition angle overflush path 1 (Slot 4, Flex Fuel 1)"
+			"Basic ignition angle purge path 1 (Slot 4, Flex Fuel 1)"
 			MAP
 			0x977C69F
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28324,7 +28688,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF2_Slot0
-			"Basic ignition angle overflush path 1 (Slot 0, Flex Fuel 2)"
+			"Basic ignition angle purge path 1 (Slot 0, Flex Fuel 2)"
 			MAP
 			0x9707FB4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28363,7 +28727,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF2_Slot1
-			"Basic ignition angle overflush path 1 (Slot 1, Flex Fuel 2)"
+			"Basic ignition angle purge path 1 (Slot 1, Flex Fuel 2)"
 			MAP
 			0x9708040
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28402,7 +28766,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF2_Slot2
-			"Basic ignition angle overflush path 1 (Slot 2, Flex Fuel 2)"
+			"Basic ignition angle purge path 1 (Slot 2, Flex Fuel 2)"
 			MAP
 			0x97080CC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28441,7 +28805,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF2_Slot3
-			"Basic ignition angle overflush path 1 (Slot 3, Flex Fuel 2)"
+			"Basic ignition angle purge path 1 (Slot 3, Flex Fuel 2)"
 			MAP
 			0x9708158
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28480,7 +28844,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_FF2_Slot4
-			"Basic ignition angle overflush path 1 (Slot 4, Flex Fuel 2)"
+			"Basic ignition angle purge path 1 (Slot 4, Flex Fuel 2)"
 			MAP
 			0x97081E4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28519,7 +28883,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_PF_Slot0
-			"Basic ignition angle overflush path 1 (Slot 0, OEM Address)"
+			"Basic ignition angle purge path 1 (Slot 0, OEM Address)"
 			MAP
 			0x96BEFC0
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28558,7 +28922,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_PF_Slot1
-			"Basic ignition angle overflush path 1 (Slot 1, Pump Fuel)"
+			"Basic ignition angle purge path 1 (Slot 1, Pump Fuel)"
 			MAP
 			0x977C7B7
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28597,7 +28961,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_PF_Slot2
-			"Basic ignition angle overflush path 1 (Slot 2, Pump Fuel)"
+			"Basic ignition angle purge path 1 (Slot 2, Pump Fuel)"
 			MAP
 			0x977C843
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28636,7 +29000,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_PF_Slot3
-			"Basic ignition angle overflush path 1 (Slot 3, Pump Fuel)"
+			"Basic ignition angle purge path 1 (Slot 3, Pump Fuel)"
 			MAP
 			0x977C8CF
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28675,7 +29039,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF1___MGF_CC_PF_Slot4
-			"Basic ignition angle overflush path 1 (Slot 4, Pump Fuel)"
+			"Basic ignition angle purge path 1 (Slot 4, Pump Fuel)"
 			MAP
 			0x977C95B
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28714,7 +29078,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2
-			"Basic ignition angle over-scavenging path 2"
+			"Basic ignition angle purge path 2"
 			MAP
 			0x96BEF34
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28753,7 +29117,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF1_Slot0
-			"Basic ignition angle over-scavenging path 2 (Slot 0, Flex Fuel 1)"
+			"Basic ignition angle purge path 2 (Slot 0, Flex Fuel 1)"
 			MAP
 			0x977CC2C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28792,7 +29156,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF1_Slot1
-			"Basic ignition angle over-scavenging path 2 (Slot 1, Flex Fuel 1)"
+			"Basic ignition angle purge path 2 (Slot 1, Flex Fuel 1)"
 			MAP
 			0x977C9FC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28831,7 +29195,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF1_Slot2
-			"Basic ignition angle over-scavenging path 2 (Slot 2, Flex Fuel 1)"
+			"Basic ignition angle purge path 2 (Slot 2, Flex Fuel 1)"
 			MAP
 			0x977CA88
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28870,7 +29234,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF1_Slot3
-			"Basic ignition angle over-scavenging path 2 (Slot 3, Flex Fuel 1)"
+			"Basic ignition angle purge path 2 (Slot 3, Flex Fuel 1)"
 			MAP
 			0x977CB14
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28909,7 +29273,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF1_Slot4
-			"Basic ignition angle over-scavenging path 2 (Slot 4, Flex Fuel 1)"
+			"Basic ignition angle purge path 2 (Slot 4, Flex Fuel 1)"
 			MAP
 			0x977CBA0
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28948,7 +29312,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF2_Slot0
-			"Basic ignition angle over-scavenging path 2 (Slot 0, Flex Fuel 2)"
+			"Basic ignition angle purge path 2 (Slot 0, Flex Fuel 2)"
 			MAP
 			0x9708270
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -28987,7 +29351,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF2_Slot1
-			"Basic ignition angle over-scavenging path 2 (Slot 1, Flex Fuel 2)"
+			"Basic ignition angle purge path 2 (Slot 1, Flex Fuel 2)"
 			MAP
 			0x97082FC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29026,7 +29390,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF2_Slot2
-			"Basic ignition angle over-scavenging path 2 (Slot 2, Flex Fuel 2)"
+			"Basic ignition angle purge path 2 (Slot 2, Flex Fuel 2)"
 			MAP
 			0x9708388
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29065,7 +29429,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF2_Slot3
-			"Basic ignition angle over-scavenging path 2 (Slot 3, Flex Fuel 2)"
+			"Basic ignition angle purge path 2 (Slot 3, Flex Fuel 2)"
 			MAP
 			0x9708414
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29104,7 +29468,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_FF2_Slot4
-			"Basic ignition angle over-scavenging path 2 (Slot 4, Flex Fuel 2)"
+			"Basic ignition angle purge path 2 (Slot 4, Flex Fuel 2)"
 			MAP
 			0x97084A0
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29143,7 +29507,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_PF_Slot0
-			"Basic ignition angle over-scavenging path 2 (Slot 0, OEM Address)"
+			"Basic ignition angle purge path 2 (Slot 0, OEM Address)"
 			MAP
 			0x96BEF34
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29182,7 +29546,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_PF_Slot1
-			"Basic ignition angle over-scavenging path 2 (Slot 1, Pump Fuel)"
+			"Basic ignition angle purge path 2 (Slot 1, Pump Fuel)"
 			MAP
 			0x977CCB8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29221,7 +29585,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_PF_Slot2
-			"Basic ignition angle over-scavenging path 2 (Slot 2, Pump Fuel)"
+			"Basic ignition angle purge path 2 (Slot 2, Pump Fuel)"
 			MAP
 			0x977CD44
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29260,7 +29624,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_PF_Slot3
-			"Basic ignition angle over-scavenging path 2 (Slot 3, Pump Fuel)"
+			"Basic ignition angle purge path 2 (Slot 3, Pump Fuel)"
 			MAP
 			0x977CDD0
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29299,7 +29663,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_UESP_PF2___MGF_CC_PF_Slot4
-			"Basic ignition angle over-scavenging path 2 (Slot 4, Pump Fuel)"
+			"Basic ignition angle purge path 2 (Slot 4, Pump Fuel)"
 			MAP
 			0x977CE5C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29338,7 +29702,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1
-			"Map for ignition angle vanos in stop F_basis=1 path 1"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1"
 			MAP
 			0x96C3034
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29377,7 +29741,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF1_Slot0
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 0, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 0, Flex Fuel 1)"
 			MAP
 			0x977DCA8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29416,7 +29780,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF1_Slot1
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 1, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 1, Flex Fuel 1)"
 			MAP
 			0x977D7A8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29455,7 +29819,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF1_Slot2
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 2, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 2, Flex Fuel 1)"
 			MAP
 			0x977D8E8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29494,7 +29858,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF1_Slot3
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 3, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 3, Flex Fuel 1)"
 			MAP
 			0x977DA28
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29533,7 +29897,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF1_Slot4
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 4, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 4, Flex Fuel 1)"
 			MAP
 			0x977DB68
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29572,7 +29936,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF2_Slot0
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 0, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 0, Flex Fuel 2)"
 			MAP
 			0x970852C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29611,7 +29975,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF2_Slot1
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 1, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 1, Flex Fuel 2)"
 			MAP
 			0x970866C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29650,7 +30014,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF2_Slot2
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 2, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 2, Flex Fuel 2)"
 			MAP
 			0x97087AC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29689,7 +30053,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF2_Slot3
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 3, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 3, Flex Fuel 2)"
 			MAP
 			0x97088EC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29728,7 +30092,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_FF2_Slot4
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 4, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 4, Flex Fuel 2)"
 			MAP
 			0x9708A2C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29767,7 +30131,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_PF_Slot0
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 0, OEM Address)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 0, OEM Address)"
 			MAP
 			0x96C3034
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29806,7 +30170,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_PF_Slot1
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 1, Pump Fuel)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 1, Pump Fuel)"
 			MAP
 			0x9771B08
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29845,7 +30209,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_PF_Slot2
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 2, Pump Fuel)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 2, Pump Fuel)"
 			MAP
 			0x9771C48
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29884,7 +30248,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_PF_Slot3
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 3, Pump Fuel)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 3, Pump Fuel)"
 			MAP
 			0x9771D88
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29923,7 +30287,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF1___MGF_CC_PF_Slot4
-			"Map for ignition angle vanos in stop F_basis=1 path 1 (Slot 4, Pump Fuel)"
+			"Map for ignition angle Vanos at stop F_basis=1 Path 1 (Slot 4, Pump Fuel)"
 			MAP
 			0x9771EC8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -29962,7 +30326,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2
-			"Map for ignition angle vanos in stop F_basis=1 path 2"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2"
 			MAP
 			0x96C2EF4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30001,7 +30365,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF1_Slot0
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 0, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 0, Flex Fuel 1)"
 			MAP
 			0x977E2E8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30040,7 +30404,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF1_Slot1
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 1, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 1, Flex Fuel 1)"
 			MAP
 			0x977DDE8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30079,7 +30443,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF1_Slot2
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 2, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 2, Flex Fuel 1)"
 			MAP
 			0x977DF28
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30118,7 +30482,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF1_Slot3
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 3, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 3, Flex Fuel 1)"
 			MAP
 			0x977E068
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30157,7 +30521,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF1_Slot4
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 4, Flex Fuel 1)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 4, Flex Fuel 1)"
 			MAP
 			0x977E1A8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30196,7 +30560,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF2_Slot0
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 0, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 0, Flex Fuel 2)"
 			MAP
 			0x9708B6C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30235,7 +30599,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF2_Slot1
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 1, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 1, Flex Fuel 2)"
 			MAP
 			0x9708CAC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30274,7 +30638,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF2_Slot2
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 2, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 2, Flex Fuel 2)"
 			MAP
 			0x9708DEC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30313,7 +30677,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF2_Slot3
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 3, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 3, Flex Fuel 2)"
 			MAP
 			0x9708F2C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30352,7 +30716,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_FF2_Slot4
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 4, Flex Fuel 2)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 4, Flex Fuel 2)"
 			MAP
 			0x970906C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30391,7 +30755,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_PF_Slot0
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 0, OEM Address)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 0, OEM Address)"
 			MAP
 			0x96C2EF4
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30430,7 +30794,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_PF_Slot1
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 1, Pump Fuel)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 1, Pump Fuel)"
 			MAP
 			0x9771608
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30469,7 +30833,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_PF_Slot2
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 2, Pump Fuel)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 2, Pump Fuel)"
 			MAP
 			0x9771748
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30508,7 +30872,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_PF_Slot3
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 3, Pump Fuel)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 3, Pump Fuel)"
 			MAP
 			0x9771888
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30547,7 +30911,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZW_VP_PF2___MGF_CC_PF_Slot4
-			"Map for ignition angle vanos in stop F_basis=1 path 2 (Slot 4, Pump Fuel)"
+			"Map for ignition angle Vanos at stop F_basis=1 path 2 (Slot 4, Pump Fuel)"
 			MAP
 			0x97719C8
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30586,7 +30950,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_KSOT
-			"Zwmin for sound tuning cold"
+			"Zwimin for sound tuning cold"
 			MAP
 			0x96C2BCC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30624,7 +30988,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_KSOT___MGF_CC_PF_Slot0
-			"Zwmin for sound tuning cold (Slot 0, at 0 RPM, X-Axis and Y-Axis do not switch, OEM Address)"
+			"Zwimin for sound tuning cold (Slot 0, at 0 RPM, X-Axis and Y-Axis do not switch, OEM Address)"
 			MAP
 			0x96C2BCC
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30662,7 +31026,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_KSOT___MGF_CC_PF_Slot1
-			"Zwmin for sound tuning cold (Slot 1, at 1000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning cold (Slot 1, at 1000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x9770000
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30700,7 +31064,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_KSOT___MGF_CC_PF_Slot2
-			"Zwmin for sound tuning cold (Slot 2, at 2000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning cold (Slot 2, at 2000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x9770040
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30738,7 +31102,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_KSOT___MGF_CC_PF_Slot3
-			"Zwmin for sound tuning cold (Slot 3, at 3000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning cold (Slot 3, at 3000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x9770080
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30776,7 +31140,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_KSOT___MGF_CC_PF_Slot4
-			"Zwmin for sound tuning cold (Slot 4, at 4000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning cold (Slot 4, at 4000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x97700C0
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30814,7 +31178,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_KSOT___MGF_CC_PF_Slot5
-			"Zwmin for sound tuning cold (Slot 5, at 5000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning cold (Slot 5, at 5000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x9770100
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30852,7 +31216,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_WSOT
-			"Zwmin for sound tuning warm"
+			"Zwimin for sound tuning warm"
 			MAP
 			0x96C2B8C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30890,7 +31254,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot0
-			"Zwmin for sound tuning warm (Slot 0, at 0 RPM, X-Axis and Y-Axis do not switch, OEM Address)"
+			"Zwimin for sound tuning warm (Slot 0, at 0 RPM, X-Axis and Y-Axis do not switch, OEM Address)"
 			MAP
 			0x96C2B8C
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30928,7 +31292,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot1
-			"Zwmin for sound tuning warm (Slot 1, at 1000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning warm (Slot 1, at 1000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x97758EE
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -30966,7 +31330,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot2
-			"Zwmin for sound tuning warm (Slot 2, at 2000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning warm (Slot 2, at 2000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x977592E
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -31004,7 +31368,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot3
-			"Zwmin for sound tuning warm (Slot 3, at 3000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning warm (Slot 3, at 3000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x977596E
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -31042,7 +31406,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot4
-			"Zwmin for sound tuning warm (Slot 4, at 4000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning warm (Slot 4, at 4000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x97759AE
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -31080,7 +31444,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_ZWMIN_WSOT___MGF_CC_PF_Slot5
-			"Zwmin for sound tuning warm (Slot 5, at 5000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
+			"Zwimin for sound tuning warm (Slot 5, at 5000 RPM, X-Axis and Y-Axis do not switch, Pump Fuel)"
 			MAP
 			0x97759EE
 			_REC_A1CUR_2_MBSE_S1_S1
@@ -31118,7 +31482,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin MEASUREMENT Anz_b_sound
-			"Activation counter B_sound_bmw"
+			"Counter for activation B_sound_bmw"
 			UBYTE
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
 			1 100
@@ -31188,7 +31552,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWlpi_t_Fu_sw
-			"Fuel temperature low pressure system before HPP"
+			"Fuel temperature low-pressure system before HDP"
 			SWORD
 			DchEpAd_DBCFgoa_Ckhahgc_q__aoa0
 			1 100
@@ -31224,7 +31588,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWlpsc_st_TankCod_ub
-			"Coding tank"
+			"Tank coding"
 			UBYTE
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
 			1 100
@@ -31295,7 +31659,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWtchctr_rat_mf_TrbWg_uw
-			"Splitting factor turbine / wastegate"
+			"Turbine/wastegate split factor"
 			UWORD
 			ilxsavd_hkzmBfc_lAzCpAb_nR_1oa0
 			1 100
@@ -31343,7 +31707,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWtchsp_rat_p_CmprLim_uw
-			"Desired supercharging factor - boost pressure Desired value for pressure in front of the compressor"
+			"Target boost factor - boost pressure target value to pressure before compressor"
 			UWORD
 			acriqBc_tfkBqod_ocgjxzc_nR_8oa0
 			1 100
@@ -31367,7 +31731,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Dtans_tumg_wm
-			"Difference in ambient temperature and intake air temperature in the WMK"
+			"Difference between ambient temperature and intake air temperature in the WMK"
 			SWORD
 			___MGF_CC_TemperatureCelsius_d10
 			1 100
@@ -31401,7 +31765,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Dzw_tot_kr
-			"total retraction angle from ignition angle optimum value"
+			"total retraction angle from the ignition angle optimum value"
 			SWORD
 			juwcFuc_Dtmczic_mCgfamd_q__aa0o
 			1 100
@@ -31413,7 +31777,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Epm_nEng
-			"Mean engine speed over a cylinder segment"
+			"Average engine speed over a cylinder segment"
 			SWORD
 			EngN
 			1 100
@@ -31481,7 +31845,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Gang_gb1_ist
-			"Actual gear transmission 1"
+			"Actual gear gearbox 1"
 			SBYTE
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
 			1 100
@@ -31505,7 +31869,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Gangi
-			"Current gear internal (including neutral and reverse)"
+			"Current gear internally (including neutral and reverse)"
 			UBYTE
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
 			1 100
@@ -31517,7 +31881,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT IKCtl_facKnkInten_u8
-			"Ratio integrator / reference level knock control"
+			"Ratio of integrator / reference level knock control"
 			UBYTE
 			fak_ub_b16
 			1 100
@@ -31541,7 +31905,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Nkw
-			"number of revolutions"
+			"speed"
 			SWORD
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			1 100
@@ -31576,7 +31940,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Nkw_plaus
-			"Plausible speed of the crankshaft of the combustion engine"
+			"Plausibility check of the crankshaft speed of the combustion engine"
 			SWORD
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			1 100
@@ -31588,7 +31952,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Nkw_ref
-			"ASD. Calculated truck speed reference."
+			"ASD. Calculated commercial vehicle speed reference."
 			SWORD
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			1 100
@@ -31667,7 +32031,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Rf_zh_ber
-			"Relative air charge for the calculation of the detonator parameters"
+			"Relative air filling for the calculation of the ignition hook parameters"
 			SWORD
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
 			1 100
@@ -31679,7 +32043,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Rf_zwv
-			"rel. Actual filling or actual volume for ignition angle calculation"
+			"Relative actual filling or actual volume for ignition angle calculation"
 			SWORD
 			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
 			1 100
@@ -31691,7 +32055,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT rl_msg
-			"Relative air filling"
+			"relative air filling"
 			UBYTE
 			rel_ub_q0p75
 			1 100
@@ -31715,7 +32079,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Status_usecase_antr
-			"Status use case ANTR: initial size of the ASM for gb2; eBS; FP; EGS"
+			"Status Usecase ANTR: Output size of the ASM for gb2; eBS; FP; EGS"
 			UBYTE
 			raChrxc_kBtBrmb_FmDuEFa_n__aa0o
 			1 100
@@ -31737,7 +32101,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Tans
-			"Mean intake air temperature"
+			"Intake air temperature average"
 			SWORD
 			___MGF_CC_TemperatureCelsius_d10
 			1 100
@@ -31749,7 +32113,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT tfuelsq_msg
-			"Fuel temperature (sensor, model or fixed replacement value)"
+			"Fuel temperature (sensor, model or fixed substitute value)"
 			UBYTE
 			temp_ub_q0p75_o48
 			1 100
@@ -31761,7 +32125,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Tmot
-			"cooling water temperature"
+			"Cooling water temperature"
 			SWORD
 			DchEpAd_DBCFgoa_Ckhahgc_q__aoa0
 			1 100
@@ -31784,7 +32148,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Tn_start_10
-			"Time after start end resolved in 10ms"
+			"Time after start resolved in 10ms"
 			UWORD
 			camcxxd_bxlpdsa_Cshlhgc_sR_1a0o
 			1 100
@@ -31806,7 +32170,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Toel_wm
-			"Engine oil temperature in the WMK"
+			"Engine oil temperature in WMK"
 			SWORD
 			___MGF_CC_TemperatureCelsius_d10
 			1 100
@@ -31817,7 +32181,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Tumg
-			"ambient temperature"
+			"Ambient temperature"
 			SWORD
 			___MGF_CC_TemperatureCelsius_d10
 			1 100
@@ -31840,7 +32204,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Tvdk
-			"Mean temperature in front of the throttle valve"
+			"Temperature before throttle valve average"
 			SWORD
 			___MGF_CC_TemperatureCelsius_d10
 			1 100
@@ -31876,7 +32240,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT V_fzg_plaus
-			"Vehicle speed checked for plausibility"
+			"Plausible vehicle speed"
 			SWORD
 			jgbhAma_smpAegb_hlEBAmd_k__0oa0
 			1 100
@@ -32119,6 +32483,12 @@ ASAP2_VERSION 1 60
 			""
 			/begin DEF_CHARACTERISTIC
 				CW_FlexFuelBlending___MGF_CC CW_FlexFuel___MGF_CC CW_SensorEthanol___MGF_CC CW_UseMultipleFlexFuelSlots___MGF_CC CW_UsePumpFuelMapWhenBlendFactorIsGreaterThan1___MGF_CC
+				CW_FlexFuelBlending_BMWtchsp_p_ReqMax_C___MGF_CC CW_FlexFuelBlending_BMWtchctr_pwr_Pctl_M___MGF_CC CW_FlexFuelBlending_BMWtchctr_pct_WgBasc_M___MGF_CC CW_FlexFuelBlending_KL_RF_MAX___MGF_CC CW_FlexFuelBlending_KL_RF_MAX_UESP___MGF_CC
+				CW_FlexFuelBlending_KF_LABAS_1___MGF_CC CW_FlexFuelBlending_KF_LABAS_2___MGF_CC CW_FlexFuelBlending_KF_FRKKORRF_1___MGF_CC CW_FlexFuelBlending_BMWtchctr_p_DifCrtnPp_M___MGF_CC CW_FlexFuelBlending_BMWtchctr_pwr_Dp_M___MGF_CC
+				CW_FlexFuelBlending_KF_ZW_PF1___MGF_CC CW_FlexFuelBlending_KF_ZW_PF2___MGF_CC CW_FlexFuelBlending_KF_ZW_S_PF1___MGF_CC CW_FlexFuelBlending_KF_ZW_S_PF2___MGF_CC CW_FlexFuelBlending_KF_ZW_VP_PF1___MGF_CC
+				CW_FlexFuelBlending_KF_ZW_VP_PF2___MGF_CC CW_FlexFuelBlending_KF_FDZWT_PF1___MGF_CC CW_FlexFuelBlending_KF_FDZWT_PF2___MGF_CC CW_FlexFuelBlending_KF_PHA_H_B1_W___MGF_CC CW_FlexFuelBlending_KF_PHA_H_E1___MGF_CC
+				CW_FlexFuelBlending_KF_ZW_UESP_PF1___MGF_CC CW_FlexFuelBlending_KF_ZW_UESP_PF2___MGF_CC CW_FlexFuelBlending_IKCtl_FacKnockDetThd0_GM___MGF_CC CW_FlexFuelBlending_IKCtl_FacKnockDetThd1_GM___MGF_CC CW_FlexFuelBlending_IKCtl_FacKnockDetThd2_GM___MGF_CC
+				CW_FlexFuelBlending_IKCtl_FacKnockDetThd3_GM___MGF_CC CW_FlexFuelBlending_IKCtl_FacKnockDetThd4_GM___MGF_CC CW_FlexFuelBlending_IKCtl_FacKnockDetThd5_GM___MGF_CC
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
