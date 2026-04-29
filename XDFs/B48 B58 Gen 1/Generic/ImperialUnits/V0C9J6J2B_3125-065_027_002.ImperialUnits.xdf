@@ -6938,7 +6938,7 @@
       <decimalpl>0</decimalpl>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x6F85E7" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x6F85E8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
@@ -15406,6 +15406,119 @@
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x68FD58" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>2</decimalpl>
+      <min>-327.68</min>
+      <max>327.67</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <description>KF_FRKKORRF_1_SLAVE</description>
+    <title>Map feedforward correction bank 1 slave</title>
+    <CATEGORYMEM index="0" category="8" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x68FB1A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <min>-32768</min>
+      <max>32767</max>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x68FAFA" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>2</decimalpl>
+      <min>-327.68</min>
+      <max>327.67</max>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x68F8FA" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>5</decimalpl>
+      <min>0</min>
+      <max>1.99996948242188</max>
+      <MATH equation="X/32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <description>AXX_KF_FRKKORRF_1_SLAVE</description>
+    <title>Map feedforward correction bank 1 slave [X Axis]</title>
+    <CATEGORYMEM index="0" category="8" />
+    <CATEGORYMEM index="1" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA />
+      <units />
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA />
+      <units />
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x68FB1A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <min>-32768</min>
+      <max>32767</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <description>AXY_KF_FRKKORRF_1_SLAVE</description>
+    <title>Map feedforward correction bank 1 slave [Y Axis]</title>
+    <CATEGORYMEM index="0" category="8" />
+    <CATEGORYMEM index="1" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA />
+      <units />
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA />
+      <units />
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x68FAFA" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>16</indexcount>
       <decimalpl>2</decimalpl>

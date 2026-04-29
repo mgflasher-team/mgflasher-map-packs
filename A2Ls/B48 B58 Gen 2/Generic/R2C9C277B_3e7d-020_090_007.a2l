@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   4/2/2026 
+   4/28/2026 
    Created with optimization mode
 */
 
@@ -2286,7 +2286,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_TKW_HI
-			"Kuehlmittel-Solltemperatur in der Betriebsart High in Abhaengigkeit der Umgebungstemperatur"
+			"Coolant target temperature in High operating mode depending on ambient temperature"
 			0x80729D68
 			Tumg_wm
 			_REC_A1AXS_1_MBSE_S2
@@ -3960,7 +3960,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWls_pct_FiMaxCondRisk_Ax
-			"Achse fuer maximale Fuellung ueber Drehzahl aufgrund von Kondesatrisiko am Ladeluftkuehler"
+			"Axis for maximum filling over RPM due to condensation risk at the charge air cooler"
 			0x807165B8
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -4020,7 +4020,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWosc_n_Gb1Max_Ax
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz"
+			"Maximum reliable engine speed for gearbox protection"
 			0x80743F82
 			Gangi
 			_REC_A1AXS_1_MBSE_U1
@@ -4560,7 +4560,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtqe_st_SptDet4NoiseAcvn_Ax
-			"Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) axis x direction(X-Achse)"
+			"Torque engine status sport detection 4 noise activation X-axis"
 			0x8073FD31
 			Status_usecase_antr
 			_REC_A1AXS_1_MBSE_U1
@@ -4575,7 +4575,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtqe_st_SptDet4NoiseAcvn_Ay
-			"Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) axis y direction(Y-Achse)"
+			"Torque engine status sport detection 4 noise activation Y-axis"
 			0x8073FD2D
 			St_dsc_can
 			_REC_A1AXS_1_MBSE_U1
@@ -5074,7 +5074,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosd_pwr_MaxSptDispkW_C
-			"Sportanzeigen Bereichsende Leistung - Rohwert in kW"
+			"Sport display range end power - raw value in kW"
 			VALUE
 			0x80708CE4
 			KwUw
@@ -5086,7 +5086,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosd_tq_MaxSptDispNm_C
-			"Sportanzeigen Bereichsende Drehmoment - Rohwert in Nm"
+			"Sport display range end torque - raw value in Nm"
 			VALUE
 			0x80708CE2
 			KwUw
@@ -5123,7 +5123,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchbpi_p_MaxTcSptDisp_C
-			"Anzeigebereich Ladedruck"
+			"Display range boost pressure"
 			VALUE
 			0x80747554
 			FklWUb
@@ -6669,7 +6669,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWls_pct_FiMaxCondRisk_T
-			"Maximale Fuellung ueber Drehzahl aufgrund von Kondesatrisiko am Ladeluftkuehler"
+			"Maximum filling over RPM due to condensation risk at the charge air cooler"
 			CURVE
 			0x80716560
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -6695,7 +6695,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosc_n_Gb1Max_MT
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz im Handschalter"
+			"Maximum reliable engine speed for gearbox protection in manual transmission"
 			CURVE
 			0x8072BF9C
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -6721,7 +6721,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosc_n_Gb1Max_T
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz"
+			"Maximum reliable engine speed for gearbox protection"
 			CURVE
 			0x8072BF88
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -7204,7 +7204,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC FuPHi_FlmMaxpl_T
-			"Kennlinie maximale relative Kraftstoffmasse für Plausibilisierung des Hochdrucksystems"
+			"Characteristic curve maximum relative fuel mass for plausibility check of the high-pressure system"
 			CURVE
 			0x807675C2
 			RB_Curve_S16_U16_Static
@@ -10647,7 +10647,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqe_st_SptDet4NoiseAcvn_M
-			"Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) map(Kennfeld)"
+			"Torque engine status sport detection 4 noise activation map"
 			MAP
 			0x8073FCF1
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -13589,7 +13589,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_N_GASSTOSS_ANFAHR_KUPP
-			"Max. zulaessige Anfahrdrehzahl (normal Mode) bei getretener Kupplung"
+			"Max. permissible launch RPM (normal mode) with clutch depressed"
 			MAP
 			0x8071C4E4
 			_REC_A1CUR_2_MBSE_S2_S1
@@ -13743,7 +13743,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_NEWP_LLK_TANS
-			"Anforderung der EW_LLK in Abhaengigkeit der Ansauglufttemperatur und Differenz zwischen Ansauglufttemperatur und Umgebungstemperatur"
+			"EW_LLK request depending on intake air temperature and difference between intake air temperature and ambient temperature"
 			MAP
 			0x807456FC
 			_REC_A1CUR_2_MBSE_U1_S1
@@ -14237,7 +14237,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_PRAIL_HDPWARM_KH
-			"Kennfeld RAILDRUCK bei Schutz vor warmen HDP während KH"
+			"Map rail pressure for protection against warm HDP during catalyst heating"
 			MAP
 			0x8071A828
 			_REC_A1CUR_2_MBSE_U2_S1
@@ -15353,7 +15353,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT FupHi_nEngLResHDR
-			"Wichtungsfaktor PI-Regler-Parameter HDR; P-Anteil"
+			"Weighting factor PI controller parameter HDR; P-component"
 			UBYTE
 			nmot_q40
 			1 100
@@ -16436,7 +16436,7 @@ ASAP2_VERSION 1 60
 			""
 			TAB_VERB
 			"%6.3" ""
-			COMPU_TAB_REF ACCMPR_CODAVL_SY_Compu
+			COMPU_TAB_REF ACCLNTVLV_ASWTYPTWINFLWSTD_SY_Compu
 		/end COMPU_METHOD
 
 		/begin COMPU_METHOD bdktxuc_qvvFmxd_seefaCc_q__aa0o
@@ -16646,7 +16646,7 @@ ASAP2_VERSION 1 60
 			"fgjpsvb_fDqjECa_acgrbDd_n_dae__"
 			TAB_VERB
 			"%6.3" "-"
-			COMPU_TAB_REF fgjpsvb_fDqjECa_acgrbDd_n_dae__
+			COMPU_TAB_REF ADqnehd_cFCEtgc_vrrfDpc_ntd_1G2
 		/end COMPU_METHOD
 
 		/begin COMPU_METHOD fqCirwd_flsbrkc_xChfaCb_n__aa0o
@@ -16992,20 +16992,18 @@ ASAP2_VERSION 1 60
 			COEFFS 0 512 0 0 0 25
 		/end COMPU_METHOD
 
-		/begin COMPU_VTAB ACCMPR_CODAVL_SY_Compu
+		/begin COMPU_VTAB ACCLNTVLV_ASWTYPTWINFLWSTD_SY_Compu
 			""
 			TAB_VERB
-			2
-			0 "FALSE"
-			1 "TRUE"
+			1
+			0 ""
 		/end COMPU_VTAB
 
-		/begin COMPU_VTAB fgjpsvb_fDqjECa_acgrbDd_n_dae__
-			"fgjpsvb_fDqjECa_acgrbDd_n_dae__"
+		/begin COMPU_VTAB ADqnehd_cFCEtgc_vrrfDpc_ntd_1G2
+			"ADqnehd_cFCEtgc_vrrfDpc_ntd_1G2"
 			TAB_VERB
-			2
-			0 "false"
-			1 "true"
+			1
+			0 ""
 			DEFAULT_VALUE "Zustand nicht definiert"
 		/end COMPU_VTAB
 

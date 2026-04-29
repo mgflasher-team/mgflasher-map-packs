@@ -33,7 +33,7 @@
 
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWext_lam_MinCptPronInit_Ca</description>
-    <title>Minimal Lambda Bauteilschutz in Init; Vektorelement 0 = VorATL, 1=VorKat, 2=InKat</title>
+    <title>Minimum lambda component protection in Init; vector element 0 = pre-turbo, 1 = pre-catalyst, 2 = in-catalyst</title>
     <CATEGORYMEM index="0" category="10" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA />
@@ -770,7 +770,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWlpa_volf_FuMaxBoosCtlr_T</description>
-    <title>LoPAsst Kraftstoffvolumenstrom bei Boost Nachfuehrung (Kennlinie)</title>
+    <title>LoPAsst fuel volume flow at boost tracking (characteristic curve)</title>
     <CATEGORYMEM index="0" category="10" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7344C4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -806,7 +806,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWlpa_volf_FuMaxBoosCtlr_Ax</description>
-    <title>LoPAsst Kraftstoffvolumenstrom bei Boost Nachfuehrung (Kennlinie) [X Axis]</title>
+    <title>LoPAsst fuel volume flow at boost tracking (characteristic curve) [X Axis]</title>
     <CATEGORYMEM index="0" category="10" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -980,7 +980,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWls_pct_FiMaxCondRisk_T</description>
-    <title>Maximale Fuellung ueber Drehzahl aufgrund von Kondesatrisiko am Ladeluftkuehler</title>
+    <title>Maximum filling over RPM due to condensation risk at the charge air cooler</title>
     <CATEGORYMEM index="0" category="14" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71848A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -1016,7 +1016,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWls_pct_FiMaxCondRisk_Ax</description>
-    <title>Maximale Fuellung ueber Drehzahl aufgrund von Kondesatrisiko am Ladeluftkuehler [X Axis]</title>
+    <title>Maximum filling over RPM due to condensation risk at the charge air cooler [X Axis]</title>
     <CATEGORYMEM index="0" category="14" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -1050,7 +1050,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWosc_n_Gb1Max_MT</description>
-    <title>Maximale zuverlassige Motordrehzahl für Getriebeschutz im Handschalter</title>
+    <title>Maximum reliable engine speed for gearbox protection in manual transmission</title>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x74DFE7" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -1086,7 +1086,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWosc_n_Gb1Max_Ax</description>
-    <title>Maximale zuverlassige Motordrehzahl für Getriebeschutz im Handschalter [X Axis]</title>
+    <title>Maximum reliable engine speed for gearbox protection in manual transmission [X Axis]</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -1120,7 +1120,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWosc_n_Gb1Max_T</description>
-    <title>Maximale zuverlassige Motordrehzahl für Getriebeschutz</title>
+    <title>Maximum reliable engine speed for gearbox protection</title>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x74DFE7" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -1156,7 +1156,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWosc_n_Gb1Max_Ax</description>
-    <title>Maximale zuverlassige Motordrehzahl für Getriebeschutz [X Axis]</title>
+    <title>Maximum reliable engine speed for gearbox protection [X Axis]</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -2514,7 +2514,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>FuPHi_FlmMaxpl_T</description>
-    <title>Kennlinie maximale relative Kraftstoffmasse für Plausibilisierung des Hochdrucksystems</title>
+    <title>Characteristic curve maximum relative fuel mass for plausibility check of the high-pressure system</title>
     <CATEGORYMEM index="0" category="10" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x787E48" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -2547,7 +2547,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>FuPHi_FlmMaxpl_T_X_Axis</description>
-    <title>Kennlinie maximale relative Kraftstoffmasse für Plausibilisierung des Hochdrucksystems [X Axis]</title>
+    <title>Characteristic curve maximum relative fuel mass for plausibility check of the high-pressure system [X Axis]</title>
     <CATEGORYMEM index="0" category="10" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -2782,7 +2782,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_FK_TUMG_OPF</description>
-    <title>Faktor zur Anpassung der OPF-Regeneration-Lüfteranforderung in Abhaengigkeit des Umgebungstemperatur</title>
+    <title>Factor for adjusting OPF regeneration fan request depending on ambient temperature</title>
     <CATEGORYMEM index="0" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73CF3C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -2818,7 +2818,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_FK_TUMG_OPF</description>
-    <title>Faktor zur Anpassung der OPF-Regeneration-Lüfteranforderung in Abhaengigkeit des Umgebungstemperatur [X Axis]</title>
+    <title>Factor for adjusting OPF regeneration fan request depending on ambient temperature [X Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -3902,7 +3902,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_MD_K_MAX_PB</description>
-    <title>Drehzahlabhängige PowerBoost-Kennlinie des Verbrennungsmotors (Nkw_opt)</title>
+    <title>RPM-dependent PowerBoost characteristic curve of the combustion engine (Nkw_opt)</title>
     <CATEGORYMEM index="0" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73C492" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -3938,7 +3938,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_MD_K_MAX_PB</description>
-    <title>Drehzahlabhängige PowerBoost-Kennlinie des Verbrennungsmotors (Nkw_opt) [X Axis]</title>
+    <title>RPM-dependent PowerBoost characteristic curve of the combustion engine (Nkw_opt) [X Axis]</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -3972,7 +3972,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_MD_K_MAX_PB_STRG_AT</description>
-    <title>Drehzahlabhängige strategische Getriebeeingangbegrenzung während Powerboost für Automat</title>
+    <title>RPM-dependent strategic transmission input limitation during PowerBoost for automatic transmission</title>
     <CATEGORYMEM index="0" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73B452" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -4008,7 +4008,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_MD_K_MAX_PB_STRG_AT</description>
-    <title>Drehzahlabhängige strategische Getriebeeingangbegrenzung während Powerboost für Automat [X Axis]</title>
+    <title>RPM-dependent strategic transmission input limitation during PowerBoost for automatic transmission [X Axis]</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -4252,7 +4252,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_MD_K_MAX_RST_STRG_AT</description>
-    <title>Drehzahlabhängige strategische Getriebeeingangbegrenzung während Rennstart für Automat</title>
+    <title>RPM-dependent strategic transmission input limitation during race start for automatic transmission</title>
     <CATEGORYMEM index="0" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73B422" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -4288,7 +4288,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_MD_K_MAX_RST_STRG_AT</description>
-    <title>Drehzahlabhängige strategische Getriebeeingangbegrenzung während Rennstart für Automat [X Axis]</title>
+    <title>RPM-dependent strategic transmission input limitation during race start for automatic transmission [X Axis]</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -4322,7 +4322,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_MD_K_MAX_SGASSE</description>
-    <title>Drehzahlabhängige PowerBoost-Kennlinie des Verbrennungsmotors (Nkw_opt)</title>
+    <title>RPM-dependent PowerBoost characteristic curve of the combustion engine (Nkw_opt)</title>
     <CATEGORYMEM index="0" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73C44A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -4358,7 +4358,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_MD_K_MAX_SGASSE</description>
-    <title>Drehzahlabhängige PowerBoost-Kennlinie des Verbrennungsmotors (Nkw_opt) [X Axis]</title>
+    <title>RPM-dependent PowerBoost characteristic curve of the combustion engine (Nkw_opt) [X Axis]</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -4392,7 +4392,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_MD_K_MAX_SGASSE_STRG_AT</description>
-    <title>Drehzahlabhängige strategische Getriebeeingangbegrenzung während SGASSE für Automat</title>
+    <title>RPM-dependent strategic transmission input limitation during S-gear for automatic transmission</title>
     <CATEGORYMEM index="0" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73B40A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -4428,7 +4428,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_MD_K_MAX_SGASSE_STRG_AT</description>
-    <title>Drehzahlabhängige strategische Getriebeeingangbegrenzung während SGASSE für Automat [X Axis]</title>
+    <title>RPM-dependent strategic transmission input limitation during S-gear for automatic transmission [X Axis]</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -4672,7 +4672,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_MD_K_MAX_VL_STRG_AT</description>
-    <title>Drehzahlabhängige strategische Getriebeeingangbegrenzung während Eco für Automat</title>
+    <title>RPM-dependent strategic transmission input limitation during Eco for automatic transmission</title>
     <CATEGORYMEM index="0" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73B3DA" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -4708,7 +4708,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_MD_K_MAX_VL_STRG_AT</description>
-    <title>Drehzahlabhängige strategische Getriebeeingangbegrenzung während Eco für Automat [X Axis]</title>
+    <title>RPM-dependent strategic transmission input limitation during Eco for automatic transmission [X Axis]</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -5862,7 +5862,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_NEL_VSKR_TUMG</description>
-    <title>Faktor zur Anpassung der E-Luefterdrehzahl über Kraftstoffverbrauch</title>
+    <title>Factor for adjusting E-fan speed based on fuel consumption</title>
     <CATEGORYMEM index="0" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73CF24" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -5898,7 +5898,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_NEL_VSKR_TUMG</description>
-    <title>Faktor zur Anpassung der E-Luefterdrehzahl über Kraftstoffverbrauch [X Axis]</title>
+    <title>Factor for adjusting E-fan speed based on fuel consumption [X Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7341,7 +7341,7 @@
       <decimalpl>0</decimalpl>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x795DCB" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x795DCC" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
@@ -9885,7 +9885,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWtchctr_pwr_PctlWideRng_M</description>
-    <title>Verdichterkennfeld mit erforderlicher Verdichter- / Turbinenleistung</title>
+    <title>Compressor map with required compressor / turbine power</title>
     <CATEGORYMEM index="0" category="22" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x71DD2E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -9930,7 +9930,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWtchctr_pwr_Pctl_Ax</description>
-    <title>Verdichterkennfeld mit erforderlicher Verdichter- / Turbinenleistung [X Axis]</title>
+    <title>Compressor map with required compressor / turbine power [X Axis]</title>
     <CATEGORYMEM index="0" category="22" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -9964,7 +9964,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWtchctr_pwr_PctlWideRng_Ay</description>
-    <title>Verdichterkennfeld mit erforderlicher Verdichter- / Turbinenleistung [Y Axis]</title>
+    <title>Compressor map with required compressor / turbine power [Y Axis]</title>
     <CATEGORYMEM index="0" category="22" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -10563,7 +10563,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWtqe_st_SptDet4NoiseAcvn_M</description>
-    <title>Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) map(Kennfeld)</title>
+    <title>Torque engine status sport detection 4 noise activation map</title>
     <CATEGORYMEM index="0" category="6" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x748F9B" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -10608,7 +10608,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWtqe_st_SptDet4NoiseAcvn_Ax</description>
-    <title>Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) map(Kennfeld) [X Axis]</title>
+    <title>Torque engine status sport detection 4 noise activation map [X Axis]</title>
     <CATEGORYMEM index="0" category="6" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -10642,7 +10642,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>BMWtqe_st_SptDet4NoiseAcvn_Ay</description>
-    <title>Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) map(Kennfeld) [Y Axis]</title>
+    <title>Torque engine status sport detection 4 noise activation map [Y Axis]</title>
     <CATEGORYMEM index="0" category="6" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -15825,6 +15825,119 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <description>KF_FRKKORRF_1_SLAVE</description>
+    <title>Map feedforward correction bank 1 slave</title>
+    <CATEGORYMEM index="0" category="8" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x70CA2A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <min>-32768</min>
+      <max>32767</max>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x70CA0A" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>2</decimalpl>
+      <min>-327.68</min>
+      <max>327.67</max>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x70C80A" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>5</decimalpl>
+      <min>0</min>
+      <max>1.99996948242188</max>
+      <MATH equation="X/32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <description>AXX_KF_FRKKORRF_1_SLAVE</description>
+    <title>Map feedforward correction bank 1 slave [X Axis]</title>
+    <CATEGORYMEM index="0" category="8" />
+    <CATEGORYMEM index="1" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA />
+      <units />
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA />
+      <units />
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x70CA2A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <min>-32768</min>
+      <max>32767</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <description>AXY_KF_FRKKORRF_1_SLAVE</description>
+    <title>Map feedforward correction bank 1 slave [Y Axis]</title>
+    <CATEGORYMEM index="0" category="8" />
+    <CATEGORYMEM index="1" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA />
+      <units />
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA />
+      <units />
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x70CA0A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>2</decimalpl>
+      <min>-327.68</min>
+      <max>327.67</max>
+      <outputtype>1</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KF_FTRANSVL</description>
     <title>Map setpoint F_transvl (= crossfade factor Wdk_soll to KL_DKVL)</title>
     <CATEGORYMEM index="0" category="18" />
@@ -18425,7 +18538,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KF_N_GASSTOSS_ANFAHR_KUPP</description>
-    <title>Max. zulaessige Anfahrdrehzahl (normal Mode) bei getretener Kupplung</title>
+    <title>Max. permissible launch RPM (normal mode) with clutch depressed</title>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71F144" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -18470,7 +18583,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KF_N_GASSTOSS_UND_ANFAHR</description>
-    <title>Max. zulaessige Anfahrdrehzahl (normal Mode) bei getretener Kupplung [X Axis]</title>
+    <title>Max. permissible launch RPM (normal mode) with clutch depressed [X Axis]</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -18504,7 +18617,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXY_KF_N_GASSTOSS_UND_ANFAHR</description>
-    <title>Max. zulaessige Anfahrdrehzahl (normal Mode) bei getretener Kupplung [Y Axis]</title>
+    <title>Max. permissible launch RPM (normal mode) with clutch depressed [Y Axis]</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -18651,7 +18764,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KF_NEL_OPF_V</description>
-    <title>E-Luefterdrehzahlanforderung durch OPF-Temperatur über Fahrgeschwindigkeit</title>
+    <title>E-fan speed request based on OPF temperature over vehicle speed</title>
     <CATEGORYMEM index="0" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73CF80" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -18696,7 +18809,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KF_NEL_OPF_V</description>
-    <title>E-Luefterdrehzahlanforderung durch OPF-Temperatur über Fahrgeschwindigkeit [X Axis]</title>
+    <title>E-fan speed request based on OPF temperature over vehicle speed [X Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -18730,7 +18843,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXY_KF_NEL_OPF_V</description>
-    <title>E-Luefterdrehzahlanforderung durch OPF-Temperatur über Fahrgeschwindigkeit [Y Axis]</title>
+    <title>E-fan speed request based on OPF temperature over vehicle speed [Y Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -18990,7 +19103,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KF_NEL_TGET</description>
-    <title>E-Luefterdrehzahlanforderung durch die Getriebeoeltemperatur und Geschwindigkeit</title>
+    <title>E-fan speed request based on transmission oil temperature and speed</title>
     <CATEGORYMEM index="0" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73CF04" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -19035,7 +19148,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KF_NEL_TGET</description>
-    <title>E-Luefterdrehzahlanforderung durch die Getriebeoeltemperatur und Geschwindigkeit [X Axis]</title>
+    <title>E-fan speed request based on transmission oil temperature and speed [X Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19069,7 +19182,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXY_KF_NEL_TGET</description>
-    <title>E-Luefterdrehzahlanforderung durch die Getriebeoeltemperatur und Geschwindigkeit [Y Axis]</title>
+    <title>E-fan speed request based on transmission oil temperature and speed [Y Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19103,7 +19216,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KF_NEL_TMOT_TKA</description>
-    <title>E-Luefterdrehzahlanforderung durch Delta Tkwsoll zu Tmot über Tka</title>
+    <title>E-fan speed request based on delta coolant target temp to engine temp over radiator outlet temp</title>
     <CATEGORYMEM index="0" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73CEEC" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -19148,7 +19261,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KF_NEL_TMOT_TKA</description>
-    <title>E-Luefterdrehzahlanforderung durch Delta Tkwsoll zu Tmot über Tka [X Axis]</title>
+    <title>E-fan speed request based on delta coolant target temp to engine temp over radiator outlet temp [X Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19182,7 +19295,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXY_KF_NEL_TMOT_TKA</description>
-    <title>E-Luefterdrehzahlanforderung durch Delta Tkwsoll zu Tmot über Tka [Y Axis]</title>
+    <title>E-fan speed request based on delta coolant target temp to engine temp over radiator outlet temp [Y Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19216,7 +19329,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KF_NEL_VSKR</description>
-    <title>E-Luefterdrehzahlanforderung über Kraftstoffverbrauch</title>
+    <title>E-fan speed request based on fuel consumption</title>
     <CATEGORYMEM index="0" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x73D004" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -19261,7 +19374,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KF_NEL_VSKR</description>
-    <title>E-Luefterdrehzahlanforderung über Kraftstoffverbrauch [X Axis]</title>
+    <title>E-fan speed request based on fuel consumption [X Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19295,7 +19408,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXY_KF_NEL_VSKR</description>
-    <title>E-Luefterdrehzahlanforderung über Kraftstoffverbrauch [Y Axis]</title>
+    <title>E-fan speed request based on fuel consumption [Y Axis]</title>
     <CATEGORYMEM index="0" category="3" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19329,7 +19442,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KF_NEWP_LLK_TANS</description>
-    <title>Anforderung der EW_LLK in Abhaengigkeit der Ansauglufttemperatur und Differenz zwischen Ansauglufttemperatur und Umgebungstemperatur</title>
+    <title>EW_LLK request depending on intake air temperature and difference between intake air temperature and ambient temperature</title>
     <CATEGORYMEM index="0" category="2" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x73D4C2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -19374,7 +19487,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KF_NEWP_LLK_TANS</description>
-    <title>Anforderung der EW_LLK in Abhaengigkeit der Ansauglufttemperatur und Differenz zwischen Ansauglufttemperatur und Umgebungstemperatur [X Axis]</title>
+    <title>EW_LLK request depending on intake air temperature and difference between intake air temperature and ambient temperature [X Axis]</title>
     <CATEGORYMEM index="0" category="2" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -19408,7 +19521,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXY_KF_NEWP_LLK_TANS</description>
-    <title>Anforderung der EW_LLK in Abhaengigkeit der Ansauglufttemperatur und Differenz zwischen Ansauglufttemperatur und Umgebungstemperatur [Y Axis]</title>
+    <title>EW_LLK request depending on intake air temperature and difference between intake air temperature and ambient temperature [Y Axis]</title>
     <CATEGORYMEM index="0" category="2" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -20762,7 +20875,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KF_PRAIL_HDPWARM_KH</description>
-    <title>Kennfeld RAILDRUCK bei Schutz vor warmen HDP während KH</title>
+    <title>Map rail pressure for protection against warm HDP during catalyst heating</title>
     <CATEGORYMEM index="0" category="10" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71C6F0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -20807,7 +20920,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KF_PRAIL_HDPWARM</description>
-    <title>Kennfeld RAILDRUCK bei Schutz vor warmen HDP während KH [X Axis]</title>
+    <title>Map rail pressure for protection against warm HDP during catalyst heating [X Axis]</title>
     <CATEGORYMEM index="0" category="10" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -20841,7 +20954,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXY_KF_PRAIL_HDPWARM</description>
-    <title>Kennfeld RAILDRUCK bei Schutz vor warmen HDP während KH [Y Axis]</title>
+    <title>Map rail pressure for protection against warm HDP during catalyst heating [Y Axis]</title>
     <CATEGORYMEM index="0" category="10" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -22974,7 +23087,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>BMWchst_t_CatMax_C</description>
-    <title>threshold cat temperatur for canceling catalyst heating</title>
+    <title>Threshold catalyst temperature for canceling catalyst heating</title>
     <CATEGORYMEM index="0" category="6" />
     <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x709D34" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>°C</units>
@@ -23130,7 +23243,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>BMWlpa_volf_FuBoosRstOfs_C</description>
-    <title>LoPAsst Kraftstoffvolumenstrom fuer Boost Reset Offset</title>
+    <title>LoPAsst fuel volume flow for boost reset offset</title>
     <CATEGORYMEM index="0" category="10" />
     <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7344A4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>l/h</units>
@@ -23195,7 +23308,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>BMWosd_pwr_MaxSptDispkW_C</description>
-    <title>Sportanzeigen Bereichsende Leistung - Rohwert in kW</title>
+    <title>Sport display range end power - raw value in kW</title>
     <CATEGORYMEM index="0" category="4" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x707C00" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>BHP</units>
@@ -23208,7 +23321,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>BMWosd_tq_MaxSptDispNm_C</description>
-    <title>Sportanzeigen Bereichsende Drehmoment - Rohwert in Nm</title>
+    <title>Sport display range end torque - raw value in Nm</title>
     <CATEGORYMEM index="0" category="4" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x707BFE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>lb·ft</units>
@@ -23247,7 +23360,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>BMWtchbpi_p_MaxTcSptDisp_C</description>
-    <title>Anzeigebereich Ladedruck</title>
+    <title>Display range boost pressure</title>
     <CATEGORYMEM index="0" category="4" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x751C85" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>psi</units>
@@ -23403,7 +23516,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>BMWtqe_st_ProhCylOffGc_C</description>
-    <title>manual request to prohibit EZA during gear change (request to EGS) (0 = kein Verbot, 1 = Verbot)</title>
+    <title>Manual request to prohibit EZA during gear change (request to EGS) (0 = no prohibition, 1 = prohibition)</title>
     <CATEGORYMEM index="0" category="6" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x748CF5" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>-</units>
@@ -23416,7 +23529,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>BMWtqe_swi_NoiseWiDiDfco_C</description>
-    <title>Switch, um die Funktionalitaet eines Schubblubberns trotz Verbot-SA zu aktivieren</title>
+    <title>Switch to activate overrun burble functionality despite prohibition SA</title>
     <CATEGORYMEM index="0" category="6" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x748F2F" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>-</units>
@@ -23689,7 +23802,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>K_FK_NEL_VSKR</description>
-    <title>Filterung der E-Luefteranforderung über Kraftstoffverbrauch</title>
+    <title>Filtering of E-fan request based on fuel consumption</title>
     <CATEGORYMEM index="0" category="3" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x74FAEA" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>-</units>
@@ -24183,7 +24296,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>K_TDOFF_HEIZ_OPF</description>
-    <title>OPF Heizung Zeitverzögerung für E-Lüfteranforderung</title>
+    <title>OPF heating time delay for E-fan request</title>
     <CATEGORYMEM index="0" category="3" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x73CD36" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>-</units>
@@ -24196,7 +24309,7 @@
 
   <XDFCONSTANT uniqueid="0x0" flags="0x0">
     <description>K_TDON_HEIZ_OPF</description>
-    <title>OPF Heizung Zeitverzögerung für E-Lüfteranforderung</title>
+    <title>OPF heating time delay for E-fan request</title>
     <CATEGORYMEM index="0" category="3" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x73CD34" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
     <units>-</units>

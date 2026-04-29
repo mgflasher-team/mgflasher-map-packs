@@ -4353,7 +4353,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>KL_MDKMX_VL_APPLZ</description>
-    <title>Appliziabares Begrenzung von Mdk_max_vm_nobgr</title>
+    <title>Applicable limitation of Mdk_max_vm_nobgr</title>
     <CATEGORYMEM index="0" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x6A3E56" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -4389,7 +4389,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <description>AXX_KL_MDKMX_VL_APPLZ</description>
-    <title>Appliziabares Begrenzung von Mdk_max_vm_nobgr [X Axis]</title>
+    <title>Applicable limitation of Mdk_max_vm_nobgr [X Axis]</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -6518,7 +6518,7 @@
       <decimalpl>0</decimalpl>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x6EA861" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x6EA862" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
