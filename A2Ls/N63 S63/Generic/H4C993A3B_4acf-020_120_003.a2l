@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   4/2/2026 
+   4/28/2026 
    Created with optimization mode
 */
 
@@ -938,6 +938,21 @@ ASAP2_VERSION 1 60
 			DEPOSIT ABSOLUTE
 		/end AXIS_PTS
 
+		/begin AXIS_PTS AXX_KF_FRKKORRF_1_SLAVE
+			"AXX_KF_FRKKORRF_1_SLAVE"
+			0x8070E042
+			Nkw
+			_REC_A1AXS_1_MBSE_S2
+			65535
+			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+			16
+			-32768 32767
+			DISPLAY_IDENTIFIER AXX_KF_FRKKORRF_1_SLAVE
+			FORMAT "%5.0"
+			BYTE_ORDER MSB_LAST
+			DEPOSIT ABSOLUTE
+		/end AXIS_PTS
+
 		/begin AXIS_PTS AXX_KF_FTRANSVL
 			"AXX_KF_FTRANSVL"
 			0x80735AEC
@@ -1851,7 +1866,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_MD_K_MAX_PB_STRG_AT
-			"Stuetzstelle Drehzahl"
+			"Support point RPM"
 			0x8073A310
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -1911,7 +1926,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_MD_K_MAX_RST_STRG_AT
-			"Stuetzstelle Drehzahl"
+			"Support point RPM"
 			0x8073A2E0
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -1941,7 +1956,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_MD_K_MAX_SGASSE_STRG_AT
-			"Stuetzstelle Drehzahl"
+			"Support point RPM"
 			0x8073A2C8
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2001,7 +2016,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_MD_K_MAX_VL_STRG_AT
-			"Stuetzstelle Drehzahl"
+			"Support point RPM"
 			0x8073A298
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -2429,7 +2444,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_TKW_HI
-			"Kuehlmittel-Solltemperatur in der Betriebsart High in Abhaengigkeit der Umgebungstemperatur"
+			"Coolant target temperature in High operating mode depending on ambient temperature"
 			0x8072BE0E
 			Tumg_wm
 			_REC_A1AXS_1_MBSE_S2
@@ -2927,6 +2942,21 @@ ASAP2_VERSION 1 60
 			16
 			-327.68 327.67
 			DISPLAY_IDENTIFIER AXY_KF_FRKKORRF_1
+			FORMAT "%7.2"
+			BYTE_ORDER MSB_LAST
+			DEPOSIT ABSOLUTE
+		/end AXIS_PTS
+
+		/begin AXIS_PTS AXY_KF_FRKKORRF_1_SLAVE
+			"AXY_KF_FRKKORRF_1_SLAVE"
+			0x8070E022
+			Rf
+			_REC_A1AXS_1_MBSE_S2
+			655.35
+			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+			16
+			-327.68 327.67
+			DISPLAY_IDENTIFIER AXY_KF_FRKKORRF_1_SLAVE
 			FORMAT "%7.2"
 			BYTE_ORDER MSB_LAST
 			DEPOSIT ABSOLUTE
@@ -3730,7 +3760,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_st_OpmBasCatCold_Ax
-			"axis for BMWchas_st_OpmBasCatCold_T"
+			"Axis for BMWchas_st_OpmBasCatCold_T"
 			0x8070B1B6
 			BMWchst_t_Eng_sw
 			_REC_A1AXS_1_MBSE_S2
@@ -3745,7 +3775,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_st_OpmBasLiOff_Ax
-			"axis for BMWchas_st_OpmBasLiOff_T"
+			"Axis for BMWchas_st_OpmBasLiOff_T"
 			0x8070B1A6
 			BMWchst_t_Eng_sw
 			_REC_A1AXS_1_MBSE_S2
@@ -4041,7 +4071,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWlpa_volf_FuMaxBoosCtlr_Ax
-			"LoPAsst Kraftstoffvolumenstrom bei Boost Nachfuehrung (X-Achse)"
+			"LoPAsst fuel volume flow at boost tracking (X-axis)"
 			0x807333A4
 			BMWlpsc_p_DeSp_sw
 			_REC_A1AXS_1_MBSE_S2
@@ -4145,7 +4175,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWls_pct_FiMaxCondRisk_Ax
-			"Achse fuer maximale Fuellung ueber Drehzahl aufgrund von Kondesatrisiko am Ladeluftkuehler"
+			"Axis for maximum filling over RPM due to condensation risk at the charge air cooler"
 			0x80718B50
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -4235,7 +4265,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWosc_n_Gb1Max_Ax
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz"
+			"Maximum reliable engine speed for gearbox protection"
 			0x8074BC81
 			Gangi
 			_REC_A1AXS_1_MBSE_U1
@@ -4790,7 +4820,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtqe_st_SptDet4NoiseAcvn_Ax
-			"Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) axis x direction(X-Achse)"
+			"Torque engine status sport detection 4 noise activation X-axis"
 			0x80746CD4
 			Status_usecase_antr
 			_REC_A1AXS_1_MBSE_U1
@@ -4805,7 +4835,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWtqe_st_SptDet4NoiseAcvn_Ay
-			"Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) axis y direction(Y-Achse)"
+			"Torque engine status sport detection 4 noise activation Y-axis"
 			0x80746CD0
 			St_dsc_can
 			_REC_A1AXS_1_MBSE_U1
@@ -5168,7 +5198,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWchst_t_CatMax_C
-			"threshold cat temperatur for canceling catalyst heating"
+			"Threshold catalyst temperature for canceling catalyst heating"
 			VALUE
 			0x8070B36E
 			CurG_Ws16
@@ -5316,7 +5346,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_volf_FuBoosRstOfs_C
-			"LoPAsst Kraftstoffvolumenstrom fuer Boost Reset Offset"
+			"LoPAsst fuel volume flow for boost reset offset"
 			VALUE
 			0x80733384
 			CurG_Ws16
@@ -5377,7 +5407,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosd_pwr_MaxSptDispkW_C
-			"Sportanzeigen Bereichsende Leistung - Rohwert in kW"
+			"Sport display range end power - raw value in kW"
 			VALUE
 			0x807090C2
 			KwUw
@@ -5389,7 +5419,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosd_tq_MaxSptDispNm_C
-			"Sportanzeigen Bereichsende Drehmoment - Rohwert in Nm"
+			"Sport display range end torque - raw value in Nm"
 			VALUE
 			0x807090C0
 			KwUw
@@ -5426,7 +5456,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchbpi_p_MaxTcSptDisp_C
-			"Anzeigebereich Ladedruck"
+			"Display range boost pressure"
 			VALUE
 			0x8074F60F
 			FklWUb
@@ -5581,7 +5611,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqe_st_ProhCylOffGc_C
-			"manual request to prohibit EZA during gear change (request to EGS) (0 = kein Verbot, 1 = Verbot)"
+			"Manual request to prohibit EZA during gear change (request to EGS) (0 = no prohibition, 1 = prohibition)"
 			VALUE
 			0x80746A2E
 			FklWUb
@@ -5594,7 +5624,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqe_swi_NoiseWiDiDfco_C
-			"Switch, um die Funktionalitaet eines Schubblubberns trotz Verbot-SA zu aktivieren"
+			"Switch to activate overrun burble functionality despite prohibition SA"
 			VALUE
 			0x80746C68
 			FklWUb
@@ -6328,7 +6358,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_TDOFF_HEIZ_OPF
-			"OPF Heizung Zeitverzögerung für E-Lüfteranforderung"
+			"OPF heating time delay for E-fan request"
 			VALUE
 			0x8073BD72
 			KwUw
@@ -6340,7 +6370,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC K_TDON_HEIZ_OPF
-			"OPF Heizung Zeitverzögerung für E-Lüfteranforderung"
+			"OPF heating time delay for E-fan request"
 			VALUE
 			0x8073BD70
 			KwUw
@@ -6929,7 +6959,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWlpa_volf_FuMaxBoosCtlr_T
-			"LoPAsst Kraftstoffvolumenstrom bei Boost Nachfuehrung (Kennlinie)"
+			"LoPAsst fuel volume flow at boost tracking (characteristic curve)"
 			CURVE
 			0x80733390
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -7005,7 +7035,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWls_pct_FiMaxCondRisk_T
-			"Maximale Fuellung ueber Drehzahl aufgrund von Kondesatrisiko am Ladeluftkuehler"
+			"Maximum filling over RPM due to condensation risk at the charge air cooler"
 			CURVE
 			0x80718AE0
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -7031,7 +7061,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosc_n_Gb1Max_MT
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz im Handschalter"
+			"Maximum reliable engine speed for gearbox protection in manual transmission"
 			CURVE
 			0x8072EE90
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -7057,7 +7087,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosc_n_Gb1Max_T
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz"
+			"Maximum reliable engine speed for gearbox protection"
 			CURVE
 			0x8072EE7C
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -7566,7 +7596,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC FuPHi_FlmMaxpl_T
-			"Kennlinie maximale relative Kraftstoffmasse für Plausibilisierung des Hochdrucksystems"
+			"Characteristic curve maximum relative fuel mass for plausibility check of the high-pressure system"
 			CURVE
 			0x807822D8
 			RB_Curve_S16_U16_Static
@@ -7665,7 +7695,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_FK_TUMG_OPF
-			"Faktor zur Anpassung der OPF-Regeneration-Lüfteranforderung in Abhaengigkeit des Umgebungstemperatur"
+			"Factor for adjusting OPF regeneration fan request depending on ambient temperature"
 			CURVE
 			0x8074D5D8
 			_REC_A1CUR_1_MBSE_U1_S1
@@ -8077,7 +8107,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_PB
-			"Drehzahlabhängige PowerBoost-Kennlinie des Verbrennungsmotors (Nkw_opt)"
+			"RPM-dependent PowerBoost characteristic curve of the combustion engine (Nkw_opt)"
 			CURVE
 			0x8073B22C
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -8102,7 +8132,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_PB_STRG_AT
-			"Drehzahlabhängige strategische Getriebeeingangbegrenzung während Powerboost für Automat"
+			"RPM-dependent strategic transmission input limitation during PowerBoost for automatic transmission"
 			CURVE
 			0x8073A250
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -8204,7 +8234,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_RST_STRG_AT
-			"Drehzahlabhängige strategische Getriebeeingangbegrenzung während Rennstart für Automat"
+			"RPM-dependent strategic transmission input limitation during race start for automatic transmission"
 			CURVE
 			0x8073A220
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -8230,7 +8260,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_SGASSE
-			"Drehzahlabhängige PowerBoost-Kennlinie des Verbrennungsmotors (Nkw_opt)"
+			"RPM-dependent PowerBoost characteristic curve of the combustion engine (Nkw_opt)"
 			CURVE
 			0x8073B1E4
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -8255,7 +8285,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_SGASSE_STRG_AT
-			"Drehzahlabhängige strategische Getriebeeingangbegrenzung während SGASSE für Automat"
+			"RPM-dependent strategic transmission input limitation during S-gear for automatic transmission"
 			CURVE
 			0x8073A208
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -8357,7 +8387,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KL_MD_K_MAX_VL_STRG_AT
-			"Drehzahlabhängige strategische Getriebeeingangbegrenzung während Eco für Automat"
+			"RPM-dependent strategic transmission input limitation during Eco for automatic transmission"
 			CURVE
 			0x8073A1D8
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -10178,7 +10208,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_PctlWideRng_M
-			"Verdichterkennfeld mit erforderlicher Verdichter- / Turbinenleistung"
+			"Compressor map with required compressor / turbine power"
 			MAP
 			0x8071C594
 			_REC_A1CUR_1_MBSE_U2_S1
@@ -10411,7 +10441,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtqe_st_SptDet4NoiseAcvn_M
-			"Torque Engine(Moment Verbrennungsmotor) status, state(Status, Zustand, Bitleiste) sport(Sport) detection(Erkennung) four(vier, 4) noise(Geräusche) activation(Aktivierung) map(Kennfeld)"
+			"Torque engine status sport detection 4 noise activation map"
 			MAP
 			0x80746C94
 			_REC_A1CUR_1_MBSE_U1_S1
@@ -12214,6 +12244,45 @@ ASAP2_VERSION 1 60
 			/end AXIS_DESCR
 		/end CHARACTERISTIC
 
+		/begin CHARACTERISTIC KF_FRKKORRF_1_SLAVE
+			"Map feedforward correction bank 1 slave"
+			MAP
+			0x8070DE22
+			_REC_A1CUR_1_MBSE_U2_S1
+			1.99996948242188
+			Bhvfwhc_bigEubd_BBEupBd_nR_3oa0
+			0 1.99996948242188
+			DISPLAY_IDENTIFIER KF_FRKKORRF_1_SLAVE
+			FORMAT "%14.5"
+			BYTE_ORDER MSB_LAST
+			/begin AXIS_DESCR
+				COM_AXIS
+				Nkw
+				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+				16
+				-32768 32767
+				AXIS_PTS_REF AXX_KF_FRKKORRF_1_SLAVE
+				FORMAT "%5.0"
+				PHYS_UNIT "1/min"
+				BYTE_ORDER MSB_LAST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+			/begin AXIS_DESCR
+				COM_AXIS
+				Rf
+				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+				16
+				-327.68 327.67
+				AXIS_PTS_REF AXY_KF_FRKKORRF_1_SLAVE
+				FORMAT "%7.2"
+				PHYS_UNIT "%"
+				BYTE_ORDER MSB_LAST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+		/end CHARACTERISTIC
+
 		/begin CHARACTERISTIC KF_FTRANSVL
 			"Map setpoint F_transvl (= crossfade factor Wdk_soll to KL_DKVL)"
 			MAP
@@ -13061,7 +13130,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_N_GASSTOSS_ANFAHR_KUPP
-			"Max. zulaessige Anfahrdrehzahl (normal Mode) bei getretener Kupplung"
+			"Max. permissible launch RPM (normal mode) with clutch depressed"
 			MAP
 			0x8071E0AA
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -13139,7 +13208,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_NEL_OPF_V
-			"E-Luefterdrehzahlanforderung durch OPF-Temperatur über Fahrgeschwindigkeit"
+			"E-fan speed request based on OPF temperature over vehicle speed"
 			MAP
 			0x8074D5E2
 			_REC_A1CUR_1_MBSE_U1_S1
@@ -13253,7 +13322,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_NEWP_LLK_TANS
-			"Anforderung der EW_LLK in Abhaengigkeit der Ansauglufttemperatur und Differenz zwischen Ansauglufttemperatur und Umgebungstemperatur"
+			"EW_LLK request depending on intake air temperature and difference between intake air temperature and ambient temperature"
 			MAP
 			0x8074D7D2
 			_REC_A1CUR_1_MBSE_U1_S1
@@ -13747,7 +13816,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_PRAIL_HDPWARM_KH
-			"Kennfeld RAILDRUCK bei Schutz vor warmen HDP während KH"
+			"Map rail pressure for protection against warm HDP during catalyst heating"
 			MAP
 			0x8071C04E
 			_REC_A1CUR_1_MBSE_U2_S1
@@ -14495,7 +14564,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWchst_t_Eng_sw
-			"Motortemperatur zur Verwendung im Katheizmanager (umschaltbar zwischen Kühlwassertemperatur Tmot und Bauteiltemperatur Tbt_mot)"
+			"Engine temperature for use in the catalyst heating manager (switchable between coolant temperature Tmot and component temperature Tbt_mot)"
 			SWORD
 			DchEpAd_DBCFgoa_Ckhahgc_q__aoa0
 			1 100
@@ -14531,7 +14600,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWlpi_p_HiPAbs
-			"absoluter Kraftstoffhochdruck"
+			"Absolute fuel high pressure"
 			UWORD
 			bukAcFc_hypjrAa_CBhougc_MCRooa0
 			1 100
@@ -14542,7 +14611,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWlpi_p_HiPAbsSp
-			"absoluter Kraftstoffhochdrucksollwert"
+			"Absolute fuel high pressure setpoint"
 			UWORD
 			bukAcFc_hypjrAa_CBhougc_MCRooa0
 			1 100
@@ -14577,7 +14646,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWlpsc_p_DeSp_sw
-			"Niederdruckkreislauf Druckabweichung vom Sollwert"
+			"Low-pressure circuit pressure deviation from setpoint"
 			SWORD
 			rgduxyd_mlihaBb_gsCghzb_bCRa0a0
 			1 100
@@ -14636,7 +14705,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWrail_p_RpsActVal
-			"Raildruck"
+			"Rail pressure"
 			UWORD
 			bukAcFc_hypjrAa_CBhougc_MCRooa0
 			1 100
@@ -14720,7 +14789,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWtchsp_mf_CmprNormWideRng_uw
-			"Sollmassenstrom korrigiert für Ladedruckregelung"
+			"Target mass flow corrected for boost pressure control"
 			UWORD
 			wpxDCba_sgbvDxb_FliBAmd_k__0oa0
 			1 100
@@ -14932,7 +15001,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT FupHi_nEngLResHDR
-			"Wichtungsfaktor PI-Regler-Parameter HDR; P-Anteil"
+			"Weighting factor PI controller parameter HDR; P-component"
 			UBYTE
 			nmot_q40
 			1 100
@@ -15036,7 +15105,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT Nkw_10ms
-			"Drehzahl im 10ms Ratser über 1 Zylindersegment gemittelt"
+			"RPM in 10ms raster averaged over 1 cylinder segment"
 			SWORD
 			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
 			1 100
@@ -15173,7 +15242,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT T_opf_in_wm
-			"Abgastemperatur in der Mitte des Partikelfilters"
+			"Exhaust gas temperature in the middle of the particulate filter"
 			SWORD
 			BMW_q0p1_degC
 			1 100
@@ -15653,7 +15722,7 @@ ASAP2_VERSION 1 60
 		/begin FUNCTION FuelCorrection
 			"Lambda modifiers"
 			/begin DEF_CHARACTERISTIC
-				KF_FRKKORRF_1 KF_PHA_H_B1_W KF_PHA_H_E1
+				KF_FRKKORRF_1_SLAVE KF_FRKKORRF_1 KF_PHA_H_B1_W KF_PHA_H_E1
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 

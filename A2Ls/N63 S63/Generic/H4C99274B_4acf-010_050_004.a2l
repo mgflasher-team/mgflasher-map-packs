@@ -1,6 +1,6 @@
 /*
    The MG Flasher Team
-   4/2/2026 
+   4/28/2026 
    Created with optimization mode
 */
 
@@ -879,6 +879,21 @@ ASAP2_VERSION 1 60
 			16
 			-32768 32767
 			DISPLAY_IDENTIFIER AXX_KF_FRKKORRF_1
+			FORMAT "%5.0"
+			BYTE_ORDER MSB_LAST
+			DEPOSIT ABSOLUTE
+		/end AXIS_PTS
+
+		/begin AXIS_PTS AXX_KF_FRKKORRF_1_SLAVE
+			"AXX_KF_FRKKORRF_1_SLAVE"
+			0x8070D4A0
+			Nkw
+			_REC_A1AXS_1_MBSE_S2
+			65535
+			caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+			16
+			-32768 32767
+			DISPLAY_IDENTIFIER AXX_KF_FRKKORRF_1_SLAVE
 			FORMAT "%5.0"
 			BYTE_ORDER MSB_LAST
 			DEPOSIT ABSOLUTE
@@ -2261,7 +2276,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS AXX_KL_TKW_HI
-			"Kuehlmittel-Solltemperatur in der Betriebsart High in Abhaengigkeit der Umgebungstemperatur"
+			"Coolant target temperature in High operating mode depending on ambient temperature"
 			0x8072A3AE
 			Tumg_wm
 			_REC_A1AXS_1_MBSE_S2
@@ -2759,6 +2774,21 @@ ASAP2_VERSION 1 60
 			16
 			-327.68 327.67
 			DISPLAY_IDENTIFIER AXY_KF_FRKKORRF_1
+			FORMAT "%7.2"
+			BYTE_ORDER MSB_LAST
+			DEPOSIT ABSOLUTE
+		/end AXIS_PTS
+
+		/begin AXIS_PTS AXY_KF_FRKKORRF_1_SLAVE
+			"AXY_KF_FRKKORRF_1_SLAVE"
+			0x8070D480
+			Rf
+			_REC_A1AXS_1_MBSE_S2
+			655.35
+			CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+			16
+			-327.68 327.67
+			DISPLAY_IDENTIFIER AXY_KF_FRKKORRF_1_SLAVE
 			FORMAT "%7.2"
 			BYTE_ORDER MSB_LAST
 			DEPOSIT ABSOLUTE
@@ -3548,7 +3578,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_st_OpmBasCatCold_Ax
-			"axis for BMWchas_st_OpmBasCatCold_T"
+			"Axis for BMWchas_st_OpmBasCatCold_T"
 			0x8070A642
 			BMWchst_t_Eng_sw
 			_REC_A1AXS_1_MBSE_S2
@@ -3563,7 +3593,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWchas_st_OpmBasLiOff_Ax
-			"axis for BMWchas_st_OpmBasLiOff_T"
+			"Axis for BMWchas_st_OpmBasLiOff_T"
 			0x8070A632
 			BMWchst_t_Eng_sw
 			_REC_A1AXS_1_MBSE_S2
@@ -3816,7 +3846,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWls_pct_FiMaxCondRisk_Ax
-			"Achse fuer maximale Fuellung ueber Drehzahl aufgrund von Kondesatrisiko am Ladeluftkuehler"
+			"Axis for maximum filling over RPM due to condensation risk at the charge air cooler"
 			0x80717B00
 			NO_INPUT_QUANTITY
 			_REC_A1AXS_1_MBSE_S2
@@ -3876,7 +3906,7 @@ ASAP2_VERSION 1 60
 		/end AXIS_PTS
 
 		/begin AXIS_PTS BMWosc_n_Gb1Max_Ax
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz"
+			"Maximum reliable engine speed for gearbox protection"
 			0x80747639
 			Gangi
 			_REC_A1AXS_1_MBSE_U1
@@ -4707,7 +4737,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWchst_t_CatMax_C
-			"threshold cat temperatur for canceling catalyst heating"
+			"Threshold catalyst temperature for canceling catalyst heating"
 			VALUE
 			0x8070A7E8
 			CurG_Ws16
@@ -4880,7 +4910,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchbpi_p_MaxTcSptDisp_C
-			"Anzeigebereich Ladedruck"
+			"Display range boost pressure"
 			VALUE
 			0x8074AC2E
 			FklWUb
@@ -6282,7 +6312,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWls_pct_FiMaxCondRisk_T
-			"Maximale Fuellung ueber Drehzahl aufgrund von Kondesatrisiko am Ladeluftkuehler"
+			"Maximum filling over RPM due to condensation risk at the charge air cooler"
 			CURVE
 			0x80717AA8
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -6308,7 +6338,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosc_n_Gb1Max_MT
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz im Handschalter"
+			"Maximum reliable engine speed for gearbox protection in manual transmission"
 			CURVE
 			0x8072D238
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -6334,7 +6364,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWosc_n_Gb1Max_T
-			"Maximale zuverlassige Motordrehzahl für Getriebeschutz"
+			"Maximum reliable engine speed for gearbox protection"
 			CURVE
 			0x8072D224
 			_REC_A1CUR_1_MBSE_S2_S1
@@ -6767,7 +6797,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC FuPHi_FlmMaxpl_T
-			"Kennlinie maximale relative Kraftstoffmasse für Plausibilisierung des Hochdrucksystems"
+			"Characteristic curve maximum relative fuel mass for plausibility check of the high-pressure system"
 			CURVE
 			0x80776BEA
 			RB_Curve_S16_U16_Static
@@ -9046,7 +9076,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC BMWtchctr_pwr_PctlWideRng_M
-			"Verdichterkennfeld mit erforderlicher Verdichter- / Turbinenleistung"
+			"Compressor map with required compressor / turbine power"
 			MAP
 			0x8071B510
 			_REC_A1CUR_1_MBSE_U2_S1
@@ -11005,6 +11035,45 @@ ASAP2_VERSION 1 60
 			/end AXIS_DESCR
 		/end CHARACTERISTIC
 
+		/begin CHARACTERISTIC KF_FRKKORRF_1_SLAVE
+			"Map feedforward correction bank 1 slave"
+			MAP
+			0x8070D280
+			_REC_A1CUR_1_MBSE_U2_S1
+			1.99996948242188
+			Bhvfwhc_bigEubd_BBEupBd_nR_3oa0
+			0 1.99996948242188
+			DISPLAY_IDENTIFIER KF_FRKKORRF_1_SLAVE
+			FORMAT "%14.5"
+			BYTE_ORDER MSB_LAST
+			/begin AXIS_DESCR
+				COM_AXIS
+				Nkw
+				caoddzd_oAjpfzb_cAcEEha_1nR_oa0
+				16
+				-32768 32767
+				AXIS_PTS_REF AXX_KF_FRKKORRF_1_SLAVE
+				FORMAT "%5.0"
+				PHYS_UNIT "1/min"
+				BYTE_ORDER MSB_LAST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+			/begin AXIS_DESCR
+				COM_AXIS
+				Rf
+				CgkBooc_wkiDfEd_Czglhgc_fR_1a0o
+				16
+				-327.68 327.67
+				AXIS_PTS_REF AXY_KF_FRKKORRF_1_SLAVE
+				FORMAT "%7.2"
+				PHYS_UNIT "%"
+				BYTE_ORDER MSB_LAST
+				MONOTONY STRICT_INCREASE
+				DEPOSIT ABSOLUTE
+			/end AXIS_DESCR
+		/end CHARACTERISTIC
+
 		/begin CHARACTERISTIC KF_FTRANSVL
 			"Map setpoint F_transvl (= crossfade factor Wdk_soll to KL_DKVL)"
 			MAP
@@ -11967,7 +12036,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_NEWP_LLK_TANS
-			"Anforderung der EW_LLK in Abhaengigkeit der Ansauglufttemperatur und Differenz zwischen Ansauglufttemperatur und Umgebungstemperatur"
+			"EW_LLK request depending on intake air temperature and difference between intake air temperature and ambient temperature"
 			MAP
 			0x80748FA0
 			_REC_A1CUR_1_MBSE_U1_S1
@@ -12461,7 +12530,7 @@ ASAP2_VERSION 1 60
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC KF_PRAIL_HDPWARM_KH
-			"Kennfeld RAILDRUCK bei Schutz vor warmen HDP während KH"
+			"Map rail pressure for protection against warm HDP during catalyst heating"
 			MAP
 			0x80736398
 			_REC_A1CUR_1_MBSE_U2_S1
@@ -13209,7 +13278,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWchst_t_Eng_sw
-			"Motortemperatur zur Verwendung im Katheizmanager (umschaltbar zwischen Kühlwassertemperatur Tmot und Bauteiltemperatur Tbt_mot)"
+			"Engine temperature for use in the catalyst heating manager (switchable between coolant temperature Tmot and component temperature Tbt_mot)"
 			SWORD
 			DchEpAd_DBCFgoa_Ckhahgc_q__aoa0
 			1 100
@@ -13376,7 +13445,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT BMWtchsp_mf_CmprNormWideRng_uw
-			"Sollmassenstrom korrigiert für Ladedruckregelung"
+			"Target mass flow corrected for boost pressure control"
 			UWORD
 			wpxDCba_sgbvDxb_FliBAmd_k__0oa0
 			1 100
@@ -13565,7 +13634,7 @@ ASAP2_VERSION 1 60
 		/end MEASUREMENT
 
 		/begin MEASUREMENT FupHi_nEngLResHDR
-			"Wichtungsfaktor PI-Regler-Parameter HDR; P-Anteil"
+			"Weighting factor PI controller parameter HDR; P-component"
 			UBYTE
 			nmot_q40
 			1 100
@@ -14284,7 +14353,7 @@ ASAP2_VERSION 1 60
 		/begin FUNCTION FuelCorrection
 			"Lambda modifiers"
 			/begin DEF_CHARACTERISTIC
-				KF_FRKKORRF_1 KF_PHA_H_B1_W KF_PHA_H_E1
+				KF_FRKKORRF_1_SLAVE KF_FRKKORRF_1 KF_PHA_H_B1_W KF_PHA_H_E1
 			/end DEF_CHARACTERISTIC
 		/end FUNCTION
 
